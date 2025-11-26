@@ -46,11 +46,65 @@ export default function HomePage() {
     { icon: '💬', title: '24/7 Support', description: 'Ongoing maintenance included' },
   ];
 
+  const tools = [
+    {
+      icon: '📊',
+      title: 'Profitability Calculator',
+      description: 'Run 1,000 Monte Carlo simulations to see how your strategy could perform over time.',
+      href: '/tools/calculator',
+      color: 'from-[#00d4ff] to-[#0088cc]',
+      stats: '1,000 simulations',
+    },
+    {
+      icon: '💰',
+      title: 'Cost Estimator',
+      description: 'Get an instant price range for your EA project in under 2 minutes.',
+      href: '/tools/estimator',
+      color: 'from-[#00ff88] to-[#00cc6a]',
+      stats: 'Instant quote',
+    },
+    {
+      icon: '🔍',
+      title: 'Strategy Audit',
+      description: 'Paste your Pine Script and get complexity analysis, issues, and conversion estimate.',
+      href: '/tools/audit',
+      color: 'from-[#ff6b6b] to-[#ee5a5a]',
+      stats: 'Free analysis',
+    },
+  ];
+
+  const trackRecord = [
+    { name: 'Momentum Scalper', gain: 127.4, drawdown: 12.3, status: 'live' },
+    { name: 'SwingMaster EA', gain: 84.2, drawdown: 8.7, status: 'live' },
+    { name: 'Grid Recovery', gain: 156.8, drawdown: 24.5, status: 'demo' },
+    { name: 'Breakout Hunter', gain: 52.3, drawdown: 6.2, status: 'live' },
+  ];
+
+  const blogPosts = [
+    {
+      title: 'Why Your Pine Script Strategy Won\'t Work Directly as an EA',
+      category: 'Conversion',
+      readTime: '8 min',
+      href: '/blog/pine-script-to-mql-conversion-guide',
+    },
+    {
+      title: 'MT4 vs MT5 for EA Development: Which Platform?',
+      category: 'Platform',
+      readTime: '10 min',
+      href: '/blog/mt4-vs-mt5-ea-development',
+    },
+    {
+      title: 'How to Properly Backtest Your Expert Advisor',
+      category: 'Testing',
+      readTime: '12 min',
+      href: '/blog/how-to-backtest-ea-properly',
+    },
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center py-20 px-4 overflow-hidden">
-        {/* Animated backgrounds */}
         <GlowingOrbs variant="hero" />
         <FloatingParticles count={30} />
         <GridBackground />
@@ -103,14 +157,14 @@ export default function HomePage() {
             {/* CTA Buttons */}
             <AnimatedSection delay={0.6}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-                <AnimatedButton href="/contact" variant="glow" size="lg">
-                  <span>Start Your Project</span>
+                <AnimatedButton href="/tools/estimator" variant="glow" size="lg">
+                  <span>Get Instant Quote</span>
                   <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </AnimatedButton>
-                <AnimatedButton href="/services" variant="ghost" size="lg">
-                  <span>View Services</span>
+                <AnimatedButton href="/tools/calculator" variant="ghost" size="lg">
+                  <span>Test Your Strategy</span>
                 </AnimatedButton>
               </div>
             </AnimatedSection>
@@ -153,6 +207,91 @@ export default function HomePage() {
             />
           </div>
         </motion.div>
+      </section>
+
+      {/* Free Tools Section */}
+      <section className="relative py-24 px-4 overflow-hidden bg-gradient-to-b from-transparent via-[#00ff88]/5 to-transparent">
+        <div className="container mx-auto relative z-10">
+          <AnimatedSection className="text-center mb-16">
+            <motion.div
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6"
+              whileHover={{ scale: 1.02 }}
+            >
+              <span className="text-[#00ff88]">🎁</span>
+              <span className="text-sm font-medium text-gray-300">100% Free Tools</span>
+            </motion.div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-display">
+              Plan Your Project <span className="text-gradient">Before You Start</span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Use our free tools to analyze your strategy, estimate costs, and simulate performance - no sign-up required.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {tools.map((tool, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.15 }}
+              >
+                <Link href={tool.href}>
+                  <motion.div
+                    className="relative glass-card rounded-2xl p-8 h-full group overflow-hidden"
+                    whileHover={{ y: -10 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {/* Gradient overlay on hover */}
+                    <motion.div
+                      className={`absolute inset-0 bg-gradient-to-br ${tool.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                    />
+
+                    {/* Icon with glow */}
+                    <motion.div
+                      className="relative text-6xl mb-6"
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                    >
+                      {tool.icon}
+                      <motion.div
+                        className={`absolute inset-0 bg-gradient-to-r ${tool.color} blur-2xl opacity-30`}
+                        animate={{ scale: [1, 1.2, 1] }}
+                        transition={{ duration: 2, repeat: Infinity }}
+                      />
+                    </motion.div>
+
+                    {/* Badge */}
+                    <div className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold mb-4 bg-gradient-to-r ${tool.color} text-white`}>
+                      {tool.stats}
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-white mb-3 font-display group-hover:text-[#00d4ff] transition-colors">
+                      {tool.title}
+                    </h3>
+                    <p className="text-gray-400 mb-6">
+                      {tool.description}
+                    </p>
+
+                    <div className="flex items-center gap-2 text-[#00d4ff] font-medium">
+                      <span>Try Now</span>
+                      <motion.svg
+                        className="w-5 h-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        animate={{ x: [0, 5, 0] }}
+                        transition={{ duration: 1.5, repeat: Infinity }}
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </motion.svg>
+                    </div>
+                  </motion.div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Services Section */}
@@ -208,6 +347,89 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Track Record Section */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <div className="container mx-auto relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <AnimatedSection direction="left">
+              <motion.div
+                className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6"
+                whileHover={{ scale: 1.02 }}
+              >
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
+                </span>
+                <span className="text-sm font-medium text-gray-300">Live Verified Results</span>
+              </motion.div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-display">
+                Our <span className="text-gradient">Track Record</span>
+              </h2>
+              <p className="text-xl text-gray-400 mb-8 leading-relaxed">
+                Real results from Expert Advisors we've built. All accounts verified through third-party tracking services.
+              </p>
+
+              {/* Mini Stats */}
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="glass-card rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-[#00ff88]">+97%</div>
+                  <div className="text-xs text-gray-400">Avg Gain</div>
+                </div>
+                <div className="glass-card rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-yellow-400">13%</div>
+                  <div className="text-xs text-gray-400">Avg DD</div>
+                </div>
+                <div className="glass-card rounded-xl p-4 text-center">
+                  <div className="text-2xl font-bold text-[#00d4ff]">6</div>
+                  <div className="text-xs text-gray-400">Live EAs</div>
+                </div>
+              </div>
+
+              <AnimatedButton href="/results" variant="glow">
+                View Full Track Record
+              </AnimatedButton>
+            </AnimatedSection>
+
+            <AnimatedSection direction="right" delay={0.2}>
+              <div className="space-y-4">
+                {trackRecord.map((ea, index) => (
+                  <motion.div
+                    key={index}
+                    className="glass-card rounded-xl p-5 flex items-center justify-between"
+                    initial={{ opacity: 0, x: 30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 }}
+                    whileHover={{ x: 10, scale: 1.02 }}
+                  >
+                    <div className="flex items-center gap-4">
+                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#00d4ff]/20 to-[#00ff88]/20 flex items-center justify-center text-xl">
+                        🤖
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <h4 className="font-bold text-white">{ea.name}</h4>
+                          <span className={`text-xs px-2 py-0.5 rounded-full ${
+                            ea.status === 'live' ? 'bg-[#00ff88]/20 text-[#00ff88]' : 'bg-yellow-500/20 text-yellow-400'
+                          }`}>
+                            {ea.status.toUpperCase()}
+                          </span>
+                        </div>
+                        <div className="text-sm text-gray-400">Max DD: {ea.drawdown}%</div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-2xl font-bold text-[#00ff88]">+{ea.gain}%</div>
+                      <div className="text-xs text-gray-500">Total Gain</div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
+
       {/* Why Choose Us Section */}
       <section className="relative py-24 px-4 bg-gradient-to-b from-transparent via-[#00d4ff]/5 to-transparent">
         <div className="container mx-auto">
@@ -245,7 +467,6 @@ export default function HomePage() {
 
             <AnimatedSection direction="right" delay={0.2}>
               <div className="relative">
-                {/* Decorative code block */}
                 <motion.div
                   className="glass-card rounded-2xl p-8 font-mono text-sm"
                   whileHover={{ scale: 1.02 }}
@@ -278,7 +499,6 @@ void OnTick() {
                   </pre>
                 </motion.div>
 
-                {/* Floating badges */}
                 <motion.div
                   className="absolute -top-4 -right-4 glass px-4 py-2 rounded-full text-sm text-white"
                   animate={{ y: [0, -10, 0] }}
@@ -299,6 +519,76 @@ void OnTick() {
         </div>
       </section>
 
+      {/* Knowledge Base Section */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <GlowingOrbs variant="section" />
+
+        <div className="container mx-auto relative z-10">
+          <AnimatedSection className="text-center mb-16">
+            <motion.div
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6"
+              whileHover={{ scale: 1.02 }}
+            >
+              <span className="text-[#00d4ff]">📚</span>
+              <span className="text-sm font-medium text-gray-300">Knowledge Base</span>
+            </motion.div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-display">
+              Learn From <span className="text-gradient">The Experts</span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Free guides and tutorials on EA development, strategy conversion, and automated trading.
+            </p>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {blogPosts.map((post, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Link href={post.href}>
+                  <motion.article
+                    className="glass-card rounded-xl overflow-hidden h-full group"
+                    whileHover={{ y: -5 }}
+                  >
+                    <div className="h-32 bg-gradient-to-br from-[#00d4ff]/20 to-[#00ff88]/20 relative">
+                      <div className="absolute bottom-3 left-3">
+                        <span className="px-2 py-1 bg-[#00d4ff] text-black text-xs font-bold rounded">
+                          {post.category}
+                        </span>
+                      </div>
+                    </div>
+                    <div className="p-5">
+                      <h3 className="font-bold text-white mb-3 group-hover:text-[#00d4ff] transition-colors line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="text-gray-500">{post.readTime} read</span>
+                        <span className="text-[#00d4ff] flex items-center gap-1">
+                          Read
+                          <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </motion.article>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+
+          <AnimatedSection delay={0.4} className="text-center mt-12">
+            <AnimatedButton href="/blog" variant="ghost">
+              View All Articles
+            </AnimatedButton>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="relative py-24 px-4 overflow-hidden">
         <GlowingOrbs variant="section" />
@@ -310,7 +600,6 @@ void OnTick() {
               whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.3 }}
             >
-              {/* Animated border */}
               <div className="absolute inset-0 rounded-3xl border border-[#00d4ff]/20" />
               <motion.div
                 className="absolute inset-0 rounded-3xl"
@@ -326,17 +615,17 @@ void OnTick() {
                   Ready to Automate <span className="text-gradient">Your Trading?</span>
                 </h2>
                 <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
-                  Schedule a free consultation to discuss your project. No obligations, just expert advice.
+                  Start with our free tools or schedule a consultation to discuss your project.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <AnimatedButton href="/contact" variant="glow" size="lg">
-                    Get Free Consultation
+                  <AnimatedButton href="/tools/estimator" variant="glow" size="lg">
+                    Get Instant Quote
                   </AnimatedButton>
-                  <AnimatedButton href="tel:+233XXXXXXXX" variant="ghost" size="lg">
+                  <AnimatedButton href="/contact" variant="ghost" size="lg">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
-                    <span>Call Us Now</span>
+                    <span>Book Consultation</span>
                   </AnimatedButton>
                 </div>
               </div>
