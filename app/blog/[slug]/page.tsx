@@ -25,6 +25,30 @@ const blogMeta: Record<string, { title: string; description: string }> = {
     title: 'MT4 vs MT5 for EA Development | TradeMetrics Pro',
     description: 'A comprehensive comparison of MetaTrader 4 and MetaTrader 5 for automated trading. Covers execution, testing, and when to choose each platform.',
   },
+  'how-to-backtest-ea-properly': {
+    title: 'How to Properly Backtest Your EA (Avoid These 7 Mistakes) | TradeMetrics Pro',
+    description: 'Most traders backtest incorrectly and get misleading results. Learn the right way to test your EA with proper data quality, spread simulation, and forward testing.',
+  },
+  'ea-risk-management-guide': {
+    title: 'Complete EA Risk Management Guide: Position Sizing & Drawdown Control | TradeMetrics Pro',
+    description: 'Master position sizing, stop loss strategies, and drawdown control. Learn the Kelly Criterion and how to implement proper risk management in your Expert Advisor.',
+  },
+  'common-ea-development-mistakes': {
+    title: '10 Common EA Development Mistakes That Kill Profitability | TradeMetrics Pro',
+    description: 'From curve fitting to ignoring slippage, these mistakes can turn a winning strategy into a losing one. Learn how to avoid them and build robust EAs.',
+  },
+  'ea-optimization-best-practices': {
+    title: 'EA Optimization Best Practices: Find Robust Parameters | TradeMetrics Pro',
+    description: 'Learn how to use the Strategy Tester effectively, implement walk-forward analysis, and find parameters that work in live trading without overfitting.',
+  },
+  'mql4-vs-mql5-differences': {
+    title: 'MQL4 vs MQL5: Key Differences Every EA Developer Should Know | TradeMetrics Pro',
+    description: 'While similar in syntax, MQL4 and MQL5 have significant differences in event handling, order management, and indicator access. Complete comparison guide.',
+  },
+  'ea-news-filter-implementation': {
+    title: 'How to Implement a News Filter in Your EA (Step-by-Step) | TradeMetrics Pro',
+    description: 'High-impact news events can cause massive slippage and losses. Learn how to add a robust news filter to protect your EA during volatile periods.',
+  },
 };
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
