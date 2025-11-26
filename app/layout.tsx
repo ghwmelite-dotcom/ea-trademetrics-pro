@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import TelegramChat from "@/components/ui/TelegramChat";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -44,6 +45,7 @@ export default function RootLayout({
         <Header />
         <main className="relative">{children}</main>
         <Footer />
+        <TelegramChat username="my_ea_hub" />
       </body>
     </html>
   );
