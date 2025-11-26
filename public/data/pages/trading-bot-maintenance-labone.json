@@ -1,0 +1,53 @@
+{
+  "id": "trading-bot-maintenance-labone",
+  "service": "EA Maintenance & Support Plans",
+  "serviceSlug": "trading-bot-maintenance",
+  "location": "Labone",
+  "locationSlug": "labone",
+  "serviceNiche": "Expert Advisor Development",
+  "pageTitle": "EA Maintenance Labone - Professional Trading Bot Support | Boutique District",
+  "metaDescription": "Professional EA maintenance in Labone. Priority support, MT4/MT5 updates, performance optimization for automated trading. Serving Labone's boutique business community!",
+  "heroHeadline": "Professional EA Maintenance & Support in Labone",
+  "heroSubheadline": "Boutique Service Quality • Priority Support • Performance Optimization • 24/7 Monitoring",
+  "description": "Expert Advisor maintenance and support services for Labone's boutique residential and business community between Osu and Cantonments. Known for its cafes, cultural centers, and peaceful atmosphere, Labone attracts discerning professionals who appreciate quality service. Our EA maintenance provides the attentive, personalized support that matches Labone's boutique character. We serve Labone residents including cafe owners, cultural professionals, creative entrepreneurs, international consultants, and traders who prefer the area's refined atmosphere. Trading automation requires careful attention - your EAs need monitoring, platform updates, performance optimization, and expert support when issues arise. Our maintenance plans deliver priority developer access with personal attention, proactive monitoring preventing problems, regular MT4/MT5 compatibility updates, monthly performance reviews with insights, broker adaptation for your needs, and guaranteed response times. Whether you're running a single well-tuned EA or managing a small portfolio of trading bots, we provide the boutique service quality Labone residents appreciate. Choose from Bronze ($99/mo) for 1-2 EAs, Silver ($199/mo) for 3-5 EAs with comprehensive support, or Gold ($399/mo) for unlimited EAs with dedicated manager. All plans include the personalized attention expected in Labone.",
+  "shortDescription": "EA maintenance for Labone's boutique community. Personalized support, proactive monitoring, MT4/MT5 updates, and performance optimization with attention to detail matching Labone's refined atmosphere.",
+  "benefits": ["Boutique service quality with personal attention", "Priority support for Labone professionals", "24-48 hour guaranteed response times", "Proactive monitoring with careful oversight", "Regular MT4/MT5 platform updates", "Monthly performance reviews with insights", "Personalized optimization recommendations", "Support for international brokers", "Emergency response for critical issues", "Service quality matching Labone's refined character"],
+  "process": [
+    {"step": 1, "title": "Personal Consultation", "description": "One-on-one discussion of your EA portfolio, trading goals, and support preferences. Select the maintenance plan that fits your needs."},
+    {"step": 2, "title": "Detailed System Analysis", "description": "Thorough analysis of your Expert Advisors with careful attention to detail, baseline metrics, and complete documentation."},
+    {"step": 3, "title": "Careful Monitoring Setup", "description": "Implementation of attentive monitoring systems with performance tracking, error detection, and personalized alert preferences."},
+    {"step": 4, "title": "Personalized Ongoing Support", "description": "Continuous monitoring with personal attention, proactive updates, thoughtful optimization recommendations, and responsive support."},
+    {"step": 5, "title": "Insightful Monthly Reviews", "description": "Detailed performance analysis with personalized insights, optimization opportunities, and comprehensive maintenance summary."}
+  ],
+  "pricingInfo": "Bronze: $99/month (1-2 EAs, 48hr response, personal attention) • Silver: $199/month (3-5 EAs, 24hr response, comprehensive reviews) • Gold: $399/month (unlimited EAs, 12hr response, dedicated manager)",
+  "serviceArea": "Labone and surrounding boutique neighborhoods within 4km of Osu and Cantonments",
+  "availability": "24/7 monitoring with personalized business hours support, emergency response available",
+  "qualifications": ["10+ years MQL4/MQL5 development", "MetaTrader platform specialists", "International broker expertise", "Personalized service approach"],
+  "yearsExperience": "10+ years",
+  "guarantees": ["Guaranteed response times", "Personal attention to your portfolio", "Monthly performance insights", "Flexible month-to-month terms"],
+  "emergencyAvailable": true,
+  "images": {
+    "heroImage": {"url": "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&w=1920&q=80", "alt": "Professional EA maintenance for Labone's boutique community", "caption": "Boutique EA Maintenance Services in Labone", "credit": {"photographer": "freestocks", "unsplashUrl": "https://unsplash.com/photos/I_pOqP6kCOI"}},
+    "gallery": [
+      {"url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Detailed trading system maintenance", "caption": "Careful attention to EA performance", "credit": {"photographer": "Christopher Gower", "unsplashUrl": "https://unsplash.com/photos/m_HRfLhgABo"}},
+      {"url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Professional monitoring services", "caption": "Attentive EA monitoring", "credit": {"photographer": "Kevin Ku", "unsplashUrl": "https://unsplash.com/photos/w7ZyuGYNpRQ"}},
+      {"url": "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Professional support specialist", "caption": "Personalized support for Labone", "credit": {"photographer": "Tim van der Kuip", "unsplashUrl": "https://unsplash.com/photos/CPs2X8JYmS8"}},
+      {"url": "https://images.unsplash.com/photo-1497493292307-31c376b6e479?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Dedicated technical support", "caption": "Boutique service quality", "credit": {"photographer": "Simon Abrams", "unsplashUrl": "https://unsplash.com/photos/k_T9Zj3SE8k"}}
+    ]
+  },
+  "h2Headings": ["Why Labone Professionals Choose Our EA Maintenance", "Boutique Maintenance Plans with Personal Attention", "Careful Monitoring & Thoughtful Optimization", "EA Maintenance FAQs for Labone Community", "Start Personalized EA Maintenance in Labone"],
+  "faq": [
+    {"question": "Why do Labone residents need EA maintenance?", "answer": "Even well-designed EAs need ongoing attention. Platform updates, broker changes, and market shifts require expert care. Our boutique service provides the personalized maintenance and thoughtful optimization that Labone's discerning professionals appreciate."},
+    {"question": "What makes your service suitable for Labone's boutique community?", "answer": "We provide personalized, attentive service matching Labone's refined character. Personal consultations, careful monitoring, thoughtful optimization, and responsive support - not mass-market generic service. Many Labone professionals prefer our boutique approach."},
+    {"question": "How quickly do you respond to issues?", "answer": "Bronze: 48 hours, Silver: 24 hours, Gold: 12 hours - all with personal attention. Critical live trading issues receive expedited response. We understand Labone residents appreciate both speed and quality in support."},
+    {"question": "Can you provide personalized optimization recommendations?", "answer": "Absolutely! Monthly reviews include insights specific to your EAs, personalized parameter recommendations, strategy adjustments for your trading style, and thoughtful suggestions for improvement - not generic advice."},
+    {"question": "Do you work with international brokers?", "answer": "Yes. We have experience with 50+ international brokers. We can adapt your EAs for broker-specific requirements and ensure compatibility with your chosen platform - with careful attention to detail."},
+    {"question": "What plan do Labone traders typically choose?", "answer": "Silver ($199/mo) is popular for 3-5 EAs with 24hr response and comprehensive monthly reviews. Provides excellent balance of personalized attention and value. Gold ($399/mo) preferred by those wanting dedicated manager."},
+    {"question": "Can you maintain EAs from other developers?", "answer": "Yes! We maintain any EA with source code access. We approach each EA individually, understanding its unique logic and characteristics - the boutique attention to detail Labone residents expect."}
+  ],
+  "keywords": ["EA maintenance", "Expert Advisor support", "boutique trading bot maintenance", "MT4 MT5 support", "personalized EA support", "professional trading maintenance"],
+  "localKeywords": ["EA maintenance Labone", "Expert Advisor support Labone Accra", "trading bot maintenance Labone", "boutique EA support Labone", "personalized trading support Labone"],
+  "ctaPhone": "+233-XX-XXX-XXXX",
+  "ctaText": "Start Boutique EA Maintenance in Labone",
+  "ctaSecondary": "Schedule Personal Consultation"
+}

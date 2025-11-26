@@ -1,0 +1,187 @@
+{
+  "id": "strategy-backtesting-optimization-ashaiman",
+  "service": "EA Strategy Backtesting & Optimization",
+  "serviceSlug": "strategy-backtesting-optimization",
+  "location": "Ashaiman",
+  "locationSlug": "ashaiman",
+  "serviceNiche": "Expert Advisor Development",
+  "platform": "TradeMetrics Pro",
+  "pageTitle": "EA Backtesting Ashaiman - Validate Strategy | TradeMetrics Pro",
+  "metaDescription": "Professional EA backtesting in Ashaiman. Test 5-10 years data, parameter optimization, walk-forward analysis.",
+  "heroHeadline": "EA Backtesting & Optimization in Ashaiman",
+  "heroSubheadline": "Validate Your Trading Strategy with Professional Historical Testing",
+  "description": "Validate your Expert Advisor in Ashaiman with TradeMetrics Pro professional backtesting. Serving Ashaiman and Greater Accra with rigorous testing using years of high-quality tick data. Our optimization identifies best parameters for maximum profitability for traders in Ashaiman. We test multiple symbols and timeframes. Clients receive detailed reports with profit factor, Sharpe ratio, win rate, drawdown. We perform walk-forward analysis and Monte Carlo simulations. Perfect for Ashaiman-based traders wanting confidence before going live.",
+  "shortDescription": "Professional backtesting services in Ashaiman. Comprehensive historical testing with detailed analysis.",
+  "benefits": [
+    "Validate EA in Ashaiman",
+    "Optimal parameters",
+    "Understand EA behavior",
+    "Detect over-optimization",
+    "Statistical confidence",
+    "5-10 years data",
+    "Service for Ashaiman",
+    "Walk-forward analysis"
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "Strategy Review",
+      "description": "Analyze EA for Ashaiman trading goals."
+    },
+    {
+      "step": 2,
+      "title": "Data Prep",
+      "description": "Prepare 5-10 years historical data."
+    },
+    {
+      "step": 3,
+      "title": "Backtesting",
+      "description": "Run extensive backtests."
+    },
+    {
+      "step": 4,
+      "title": "Optimization",
+      "description": "Use genetic algorithms."
+    },
+    {
+      "step": 5,
+      "title": "Reporting",
+      "description": "PDF with metrics."
+    }
+  ],
+  "timeframe": "1-2 weeks",
+  "priceRange": {
+    "min": 150,
+    "max": 600,
+    "currency": "USD",
+    "note": "Depends on complexity."
+  },
+  "pricingInfo": "In Ashaiman starts at $150. Packages $300-$600.",
+  "serviceArea": "Ashaiman and Greater Accra",
+  "availability": "Mon-Fri 8AM-6PM GMT",
+  "qualifications": [
+    "15+ years experience",
+    "MQL4/MQL5 certified",
+    "Statistical analysis",
+    "Strategy testing"
+  ],
+  "yearsExperience": "15+",
+  "guarantees": [
+    "Data accuracy",
+    "Detailed report",
+    "Professional analysis",
+    "Confidential"
+  ],
+  "emergencyAvailable": false,
+  "images": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1535320903710-d993d3d77d29?ixlib=rb-4.0.3&w=1920&q=80",
+      "alt": "Trading chart analysis for EA backtesting",
+      "caption": "Expert EA Backtesting Services",
+      "credit": {
+        "photographer": "m.",
+        "unsplashUrl": "https://unsplash.com/@m_____me"
+      }
+    },
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Trading data visualization",
+        "caption": "Multi-Year Backtesting",
+        "credit": {
+          "photographer": "Maxim Hopman",
+          "unsplashUrl": "https://unsplash.com/@nampoh"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762279389020-eeeb69c25813?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Data visualization",
+        "caption": "Advanced Analytics",
+        "credit": {
+          "photographer": "Logan Voss",
+          "unsplashUrl": "https://unsplash.com/@loganvoss"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1563986768711-b3bde3dc821e?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Trader analyzing data",
+        "caption": "Expert Analysis",
+        "credit": {
+          "photographer": "Austin Distel",
+          "unsplashUrl": "https://unsplash.com/@austindistel"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1639754390580-2e7437267698?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Market charts",
+        "caption": "Performance Reports",
+        "credit": {
+          "photographer": "Behnam Norouzi",
+          "unsplashUrl": "https://unsplash.com/@behy_studio"
+        }
+      }
+    ]
+  },
+  "h2Headings": [
+    "Why Ashaiman?",
+    "Historical Testing",
+    "Our Process",
+    "Metrics",
+    "FAQs Ashaiman",
+    "Start in Ashaiman"
+  ],
+  "faq": [
+    {
+      "question": "How many years data?",
+      "answer": "5-10 years covering market conditions."
+    },
+    {
+      "question": "Backtest vs optimize?",
+      "answer": "Backtesting evaluates fixed parameters. Optimization finds best settings."
+    },
+    {
+      "question": "Prevent over-optimization?",
+      "answer": "Walk-forward analysis, Monte Carlo simulations."
+    },
+    {
+      "question": "Test uncoded strategies?",
+      "answer": "Yes! We code basic EA for testing."
+    },
+    {
+      "question": "Data quality?",
+      "answer": "High-quality tick data from providers."
+    },
+    {
+      "question": "How long?",
+      "answer": "1-2 weeks depending on complexity."
+    },
+    {
+      "question": "Serve Greater Accra?",
+      "answer": "Yes! All Greater Accra and Ghana."
+    }
+  ],
+  "relatedServices": [
+    "mt4-expert-advisor-development",
+    "mt5-expert-advisor-development"
+  ],
+  "targetAudience": [
+    "Ashaiman traders",
+    "EA owners",
+    "Developers",
+    "Prop traders"
+  ],
+  "keywords": [
+    "EA backtesting",
+    "strategy optimization",
+    "MT5 testing"
+  ],
+  "localKeywords": [
+    "EA backtesting Ashaiman",
+    "optimization Ashaiman",
+    "forex Ghana"
+  ],
+  "ctaPhone": "+233 (0) 55 123 4567",
+  "ctaEmail": "backtesting@trademetricspro.com",
+  "ctaText": "Get Validated in Ashaiman",
+  "ctaSecondary": "Request Consultation"
+}

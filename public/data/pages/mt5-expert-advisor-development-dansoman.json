@@ -1,0 +1,83 @@
+{
+  "serviceId": "mt5-expert-advisor-development",
+  "serviceName": "MT5 Expert Advisor Development",
+  "locationId": "dansoman",
+  "locationName": "Dansoman",
+  "slug": "mt5-expert-advisor-development-dansoman",
+  "pageTitle": "MT5 Expert Advisor Development in Dansoman - Professional MQL5 Programming | Accra",
+  "metaDescription": "Professional MT5 EA development in Dansoman, Accra. Custom MQL5 programming for automated forex trading. Local support for Dansoman traders.",
+  "heroHeadline": "MT5 Expert Advisor Development in Dansoman",
+  "heroSubheadline": "Professional automated trading solutions with advanced MQL5 programming",
+  "localizedContent": {
+    "intro": "TradeMetrics Pro provides professional MT5 Expert Advisor development to Dansoman and Greater Accra traders. Our MQL5 expertise creates advanced EAs leveraging MetaTrader 5's object-oriented programming, multi-asset support, and tick-level backtesting for professional trading automation.",
+    "whyChooseUs": "We deliver MT5 EAs that combine world-class MQL5 development with understanding of Ghanaian trading needs. Our process includes detailed consultations, expert coding, comprehensive testing, and full training with source code and documentation.",
+    "localBenefits": [
+      "Serving Dansoman and Greater Accra Region",
+      "Ghana business hours support (GMT timezone)",
+      "Understanding of West African trading environment",
+      "Experience with brokers serving Ghana",
+      "VPS optimization for Ghana connectivity",
+      "Local payment options including mobile money",
+      "TradeMetrics Pro platform integration",
+      "Community of Ghanaian EA traders"
+    ]
+  },
+  "images": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1620266757065-5814239881fd?ixlib=rb-4.0.3&w=1920&q=80",
+      "alt": "MT5 trading in Dansoman",
+      "caption": "EA development for Dansoman",
+      "credit": {
+        "photographer": "Kanchanara",
+        "unsplashUrl": "https://unsplash.com/photos/5hcV51EeeWc"
+      }
+    },
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Mobile trading",
+        "caption": "Trade from Dansoman",
+        "credit": {
+          "photographer": "Marga Santoso",
+          "unsplashUrl": "https://unsplash.com/photos/OmPqCwX422Y"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Chart analysis",
+        "caption": "Professional backtesting",
+        "credit": {
+          "photographer": "Tech Daily",
+          "unsplashUrl": "https://unsplash.com/photos/ztYmIQecyH4"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Algorithm",
+        "caption": "Advanced automation",
+        "credit": {
+          "photographer": "Maxim Hopman",
+          "unsplashUrl": "https://unsplash.com/photos/fiXLQXAhCfk"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1737301214226-3f959016436f?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Development",
+        "caption": "EA solutions",
+        "credit": {
+          "photographer": "Jakub Żerdzicki",
+          "unsplashUrl": "https://unsplash.com/photos/wX062bi-T50"
+        }
+      }
+    ]
+  },
+  "cta": {
+    "primary": "Request Free Consultation",
+    "secondary": "View EA Portfolio",
+    "phone": "+233 (0) 24 XXX XXXX",
+    "whatsapp": "+233 24 XXX XXXX",
+    "email": "ea@trademetricspro.com"
+  },
+  "serviceArea": "Dansoman and Greater Accra Region",
+  "lastUpdated": "2025-11-26"
+}

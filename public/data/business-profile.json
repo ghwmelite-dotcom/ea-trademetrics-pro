@@ -1,0 +1,87 @@
+{
+  "businessName": "TradeMetrics Pro",
+  "subdomainService": "EA Development Services",
+  "suggestedSubdomain": "ea.trademetricspro.com",
+  "parentCompany": "Hodges & Co. / OHWP Studios",
+  "mainDomain": "trademetricspro.com",
+  "parentDomain": "ohwpstudios.org",
+  "tagline": "AI-Powered Trading Solutions",
+  "serviceTagline": "Custom Expert Advisors & Strategy Automation",
+  "description": "TradeMetrics Pro is the world's first AI-Powered Trading Psychology Platform that transforms trading performance with AI psychology coaching, advanced analytics, and automated trade tracking. Now expanding into custom Expert Advisor development services.",
+  "serviceDescription": "Professional EA development services for MT4/MT5 traders. We convert your TradingView strategies, Pine Script indicators, and manual trading systems into fully automated Expert Advisors.",
+  "history": "TradeMetrics Pro was built to help traders improve their performance through AI-powered psychology coaching and advanced analytics. With active MT4 and MT5 integrations already in place, expanding into EA development is a natural evolution to provide traders with complete automation solutions.",
+  "existingFeatures": [
+    "AI Psychology Coaching",
+    "Advanced Trade Analytics",
+    "Automated Trade Tracking",
+    "MT4 Integration (Active)",
+    "MT5 Integration (Active)",
+    "TradingView Integration (Coming Soon)",
+    "cTrader Integration (Coming Soon)",
+    "Emotion Tracking & Behavioral Analysis",
+    "Trade Journal",
+    "Gamification System",
+    "Performance Dashboard",
+    "Risk Analytics"
+  ],
+  "newServices": [
+    "Custom MT4 Expert Advisor Development",
+    "Custom MT5 Expert Advisor Development",
+    "TradingView to EA Conversion",
+    "Pine Script to MQL4/MQL5 Conversion",
+    "Strategy Backtesting & Optimization",
+    "EA Modification & Enhancement",
+    "Trading Bot Maintenance & Support",
+    "Multi-timeframe EA Development",
+    "Risk Management EA Integration"
+  ],
+  "platformStats": {
+    "tradesAnalyzed": "8,833+",
+    "activeTraders": "500+",
+    "countriesServed": "50+",
+    "uptime": "99.9%"
+  },
+  "testimonials": [
+    {
+      "name": "Michael Chen",
+      "role": "Professional Day Trader",
+      "quote": "The Psychology Coach changed everything. My win rate went from 45% to 68% in 2 months. Game changer!"
+    },
+    {
+      "name": "Sarah Williams",
+      "role": "Swing Trader",
+      "quote": "Best trading journal I've ever used. The emotion tracking helped me identify patterns I never knew existed."
+    },
+    {
+      "name": "David Kumar",
+      "role": "Forex Trader",
+      "quote": "MT4 integration is seamless. Analytics dashboard is incredibly powerful yet easy to understand."
+    }
+  ],
+  "values": [
+    "AI-Powered Excellence",
+    "Trader Success First",
+    "Continuous Innovation",
+    "Data-Driven Decisions",
+    "Security & Privacy"
+  ],
+  "mission": "To empower traders worldwide with AI-powered tools that improve psychology, automate strategies, and maximize trading performance.",
+  "compliance": [
+    "SOC 2 Compliant",
+    "GDPR Ready",
+    "AES-256 Encrypted",
+    "99.9% Uptime SLA"
+  ],
+  "serviceArea": {
+    "primary": "Accra, Ghana",
+    "scope": "Global (50+ countries)"
+  },
+  "brandColors": {
+    "primary": "Dark theme background (#0a0a0a, #1a1a2e)",
+    "accent": "Blue/Cyan (#00d4ff, #0066ff)",
+    "success": "Green (#00ff88, #22c55e)",
+    "text": "White/Gray (#ffffff, #a0a0a0)"
+  },
+  "brandTone": "Professional, innovative, trustworthy, data-driven, modern fintech aesthetic",
+  "designStyle": "Dark mode, glassmorphism effects, gradient accents, trading charts/graphs aesthetic, clean modern UI"
+}

@@ -1,0 +1,691 @@
+{
+  "serviceArea": {
+    "mainCity": "Accra",
+    "region": "Greater Accra Region",
+    "country": "Ghana",
+    "serviceRadius": {
+      "value": 40,
+      "unit": "km",
+      "note": "Professional services typically serve metro area and surrounding districts"
+    }
+  },
+  "totalLocations": 52,
+  "locations": [
+    {
+      "id": "accra-central",
+      "name": "Accra Central (CBD)",
+      "slug": "accra-central",
+      "type": "district",
+      "isMainCity": true,
+      "distanceFromMain": {
+        "value": 0,
+        "unit": "km"
+      },
+      "description": "Central Business District - financial and commercial heart of Ghana",
+      "keywords": ["CBD", "Makola Market", "government offices", "banking hub"]
+    },
+    {
+      "id": "osu",
+      "name": "Osu",
+      "slug": "osu",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 3,
+        "unit": "km"
+      },
+      "description": "Vibrant commercial and entertainment district with Oxford Street",
+      "keywords": ["Oxford Street", "nightlife", "restaurants", "shopping"]
+    },
+    {
+      "id": "cantonments",
+      "name": "Cantonments",
+      "slug": "cantonments",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 4,
+        "unit": "km"
+      },
+      "description": "Prestigious district housing embassies and diplomatic missions",
+      "keywords": ["embassies", "upscale", "diplomatic", "luxury"]
+    },
+    {
+      "id": "airport-residential",
+      "name": "Airport Residential Area",
+      "slug": "airport-residential",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 5,
+        "unit": "km"
+      },
+      "description": "Premium neighborhood near Kotoka International Airport",
+      "keywords": ["airport", "luxury homes", "business travelers", "expats"]
+    },
+    {
+      "id": "east-legon",
+      "name": "East Legon",
+      "slug": "east-legon",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 13,
+        "unit": "km"
+      },
+      "description": "Modern upscale residential and commercial area",
+      "keywords": ["shopping malls", "international schools", "tech businesses", "luxury"]
+    },
+    {
+      "id": "labone",
+      "name": "Labone",
+      "slug": "labone",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 4,
+        "unit": "km"
+      },
+      "description": "Boutique residential area between Osu and Cantonments",
+      "keywords": ["cafes", "cultural centers", "residential", "peaceful"]
+    },
+    {
+      "id": "dzorwulu",
+      "name": "Dzorwulu",
+      "slug": "dzorwulu",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 7,
+        "unit": "km"
+      },
+      "description": "Central location with excellent transportation access",
+      "keywords": ["business centers", "Accra Mall", "commercial", "residential"]
+    },
+    {
+      "id": "tema",
+      "name": "Tema",
+      "slug": "tema",
+      "type": "city",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 25,
+        "unit": "km"
+      },
+      "description": "Major port city and industrial hub east of Accra",
+      "keywords": ["seaport", "industrial", "harbor", "manufacturing"]
+    },
+    {
+      "id": "spintex",
+      "name": "Spintex",
+      "slug": "spintex",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 10,
+        "unit": "km"
+      },
+      "description": "Commercial corridor connecting Accra to Tema",
+      "keywords": ["commercial", "industrial", "residential", "mixed-use"]
+    },
+    {
+      "id": "madina",
+      "name": "Madina",
+      "slug": "madina",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 14,
+        "unit": "km"
+      },
+      "description": "Vibrant commercial hub near University of Ghana",
+      "keywords": ["market", "universities", "commercial", "diverse"]
+    },
+    {
+      "id": "adenta",
+      "name": "Adenta",
+      "slug": "adenta",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 16,
+        "unit": "km"
+      },
+      "description": "Rapidly growing residential and commercial area",
+      "keywords": ["residential", "growing", "suburban", "family-friendly"]
+    },
+    {
+      "id": "teshie",
+      "name": "Teshie",
+      "slug": "teshie",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 12,
+        "unit": "km"
+      },
+      "description": "Coastal Ga community with fishing heritage",
+      "keywords": ["coastal", "fishing", "traditional", "community"]
+    },
+    {
+      "id": "nungua",
+      "name": "Nungua",
+      "slug": "nungua",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 15,
+        "unit": "km"
+      },
+      "description": "Coastal town with growing development along Spintex corridor",
+      "keywords": ["coastal", "beach", "developing", "traditional"]
+    },
+    {
+      "id": "la",
+      "name": "La (Labadi)",
+      "slug": "la",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 8,
+        "unit": "km"
+      },
+      "description": "Coastal area famous for Labadi Beach",
+      "keywords": ["beach", "tourism", "coastal", "entertainment"]
+    },
+    {
+      "id": "ashaiman",
+      "name": "Ashaiman",
+      "slug": "ashaiman",
+      "type": "city",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 20,
+        "unit": "km"
+      },
+      "description": "Large urban settlement near Tema",
+      "keywords": ["urban", "residential", "market", "growing"]
+    },
+    {
+      "id": "legon",
+      "name": "Legon",
+      "slug": "legon",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 12,
+        "unit": "km"
+      },
+      "description": "University town home to University of Ghana",
+      "keywords": ["university", "education", "academic", "student area"]
+    },
+    {
+      "id": "haatso",
+      "name": "Haatso",
+      "slug": "haatso",
+      "type": "suburb",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 11,
+        "unit": "km"
+      },
+      "description": "Residential suburb near Atomic Junction",
+      "keywords": ["residential", "peaceful", "suburban", "family-friendly"]
+    },
+    {
+      "id": "achimota",
+      "name": "Achimota",
+      "slug": "achimota",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 9,
+        "unit": "km"
+      },
+      "description": "Northern district with famous Achimota School",
+      "keywords": ["education", "residential", "school", "historic"]
+    },
+    {
+      "id": "dome",
+      "name": "Dome",
+      "slug": "dome",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 15,
+        "unit": "km"
+      },
+      "description": "Growing northern suburb with market",
+      "keywords": ["residential", "market", "growing", "suburban"]
+    },
+    {
+      "id": "kwabenya",
+      "name": "Kwabenya",
+      "slug": "kwabenya",
+      "type": "suburb",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 18,
+        "unit": "km"
+      },
+      "description": "Northern suburb near Ashesi University",
+      "keywords": ["residential", "university", "hills", "developing"]
+    },
+    {
+      "id": "ashongman",
+      "name": "Ashongman",
+      "slug": "ashongman",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 16,
+        "unit": "km"
+      },
+      "description": "Northern residential area with estates",
+      "keywords": ["estates", "residential", "hills", "suburban"]
+    },
+    {
+      "id": "dansoman",
+      "name": "Dansoman",
+      "slug": "dansoman",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 10,
+        "unit": "km"
+      },
+      "description": "Large diverse working-class community west of Accra",
+      "keywords": ["diverse", "residential", "estates", "community"]
+    },
+    {
+      "id": "kaneshie",
+      "name": "Kaneshie",
+      "slug": "kaneshie",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 6,
+        "unit": "km"
+      },
+      "description": "Major commercial area with large market",
+      "keywords": ["market", "commercial", "transport hub", "shopping"]
+    },
+    {
+      "id": "kasoa",
+      "name": "Kasoa",
+      "slug": "kasoa",
+      "type": "city",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 35,
+        "unit": "km"
+      },
+      "description": "Rapidly expanding town west of Accra",
+      "keywords": ["growing", "residential", "market", "affordable"]
+    },
+    {
+      "id": "weija",
+      "name": "Weija",
+      "slug": "weija",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 18,
+        "unit": "km"
+      },
+      "description": "Western district near Weija Dam",
+      "keywords": ["residential", "dam", "lakeside", "scenic"]
+    },
+    {
+      "id": "gbawe",
+      "name": "Gbawe",
+      "slug": "gbawe",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 15,
+        "unit": "km"
+      },
+      "description": "Western residential area",
+      "keywords": ["residential", "suburban", "growing", "community"]
+    },
+    {
+      "id": "kokomlemle",
+      "name": "Kokomlemle",
+      "slug": "kokomlemle",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 4,
+        "unit": "km"
+      },
+      "description": "Central district with commercial activity",
+      "keywords": ["central", "commercial", "residential", "accessible"]
+    },
+    {
+      "id": "tesano",
+      "name": "Tesano",
+      "slug": "tesano",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 8,
+        "unit": "km"
+      },
+      "description": "Residential and commercial district",
+      "keywords": ["residential", "commercial", "estates", "schools"]
+    },
+    {
+      "id": "roman-ridge",
+      "name": "Roman Ridge",
+      "slug": "roman-ridge",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 5,
+        "unit": "km"
+      },
+      "description": "Upscale residential area",
+      "keywords": ["upscale", "residential", "luxury", "quiet"]
+    },
+    {
+      "id": "north-ridge",
+      "name": "North Ridge",
+      "slug": "north-ridge",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 3,
+        "unit": "km"
+      },
+      "description": "Historic ridge area with government buildings",
+      "keywords": ["government", "historic", "central", "ridge"]
+    },
+    {
+      "id": "west-ridge",
+      "name": "West Ridge",
+      "slug": "west-ridge",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 2,
+        "unit": "km"
+      },
+      "description": "Government and diplomatic area",
+      "keywords": ["government", "embassies", "diplomatic", "official"]
+    },
+    {
+      "id": "east-ridge",
+      "name": "East Ridge",
+      "slug": "east-ridge",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 3,
+        "unit": "km"
+      },
+      "description": "Central district with government offices",
+      "keywords": ["government", "offices", "central", "official"]
+    },
+    {
+      "id": "airport-hills",
+      "name": "Airport Hills",
+      "slug": "airport-hills",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 6,
+        "unit": "km"
+      },
+      "description": "Upscale area near airport",
+      "keywords": ["upscale", "airport", "residential", "luxury"]
+    },
+    {
+      "id": "kanda",
+      "name": "Kanda",
+      "slug": "kanda",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 5,
+        "unit": "km"
+      },
+      "description": "Residential area known as '37' military area",
+      "keywords": ["residential", "military", "estates", "37"]
+    },
+    {
+      "id": "nima",
+      "name": "Nima",
+      "slug": "nima",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 6,
+        "unit": "km"
+      },
+      "description": "Densely populated urban community",
+      "keywords": ["urban", "community", "market", "diverse"]
+    },
+    {
+      "id": "maamobi",
+      "name": "Maamobi",
+      "slug": "maamobi",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 7,
+        "unit": "km"
+      },
+      "description": "Urban residential community",
+      "keywords": ["residential", "urban", "community", "market"]
+    },
+    {
+      "id": "adabraka",
+      "name": "Adabraka",
+      "slug": "adabraka",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 2,
+        "unit": "km"
+      },
+      "description": "Central commercial and residential area",
+      "keywords": ["commercial", "residential", "Circle", "transport hub"]
+    },
+    {
+      "id": "asylum-down",
+      "name": "Asylum Down",
+      "slug": "asylum-down",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 3,
+        "unit": "km"
+      },
+      "description": "Central district with commercial activity",
+      "keywords": ["commercial", "central", "offices", "residential"]
+    },
+    {
+      "id": "jamestown",
+      "name": "Jamestown",
+      "slug": "jamestown",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 1,
+        "unit": "km"
+      },
+      "description": "Historic fishing community with colonial heritage",
+      "keywords": ["historic", "fishing", "colonial", "lighthouse"]
+    },
+    {
+      "id": "usshertown",
+      "name": "Usshertown",
+      "slug": "usshertown",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 1,
+        "unit": "km"
+      },
+      "description": "Historic area with Makola Market",
+      "keywords": ["historic", "Makola", "market", "central"]
+    },
+    {
+      "id": "korle-bu",
+      "name": "Korle Bu",
+      "slug": "korle-bu",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 4,
+        "unit": "km"
+      },
+      "description": "Medical district with teaching hospital",
+      "keywords": ["hospital", "medical", "teaching", "healthcare"]
+    },
+    {
+      "id": "mamprobi",
+      "name": "Mamprobi",
+      "slug": "mamprobi",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 7,
+        "unit": "km"
+      },
+      "description": "Western residential community",
+      "keywords": ["residential", "community", "coastal", "western"]
+    },
+    {
+      "id": "chorkor",
+      "name": "Chorkor",
+      "slug": "chorkor",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 9,
+        "unit": "km"
+      },
+      "description": "Coastal fishing community",
+      "keywords": ["fishing", "coastal", "beach", "traditional"]
+    },
+    {
+      "id": "abossey-okai",
+      "name": "Abossey Okai",
+      "slug": "abossey-okai",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 5,
+        "unit": "km"
+      },
+      "description": "Auto spare parts trading hub",
+      "keywords": ["auto parts", "commercial", "trading", "industrial"]
+    },
+    {
+      "id": "darkuman",
+      "name": "Darkuman",
+      "slug": "darkuman",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 12,
+        "unit": "km"
+      },
+      "description": "Western residential area",
+      "keywords": ["residential", "suburban", "growing", "western"]
+    },
+    {
+      "id": "awoshie",
+      "name": "Awoshie",
+      "slug": "awoshie",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 13,
+        "unit": "km"
+      },
+      "description": "Western residential community",
+      "keywords": ["residential", "estates", "suburban", "western"]
+    },
+    {
+      "id": "sowutuom",
+      "name": "Sowutuom",
+      "slug": "sowutuom",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 14,
+        "unit": "km"
+      },
+      "description": "Western district with estates",
+      "keywords": ["estates", "residential", "suburban", "western"]
+    },
+    {
+      "id": "amasaman",
+      "name": "Amasaman",
+      "slug": "amasaman",
+      "type": "district",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 22,
+        "unit": "km"
+      },
+      "description": "Western district capital of Ga West",
+      "keywords": ["district capital", "residential", "growing", "western"]
+    },
+    {
+      "id": "taifa",
+      "name": "Taifa",
+      "slug": "taifa",
+      "type": "suburb",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 17,
+        "unit": "km"
+      },
+      "description": "Northern suburb near Dome",
+      "keywords": ["residential", "suburban", "market", "northern"]
+    },
+    {
+      "id": "prampram",
+      "name": "Prampram",
+      "slug": "prampram",
+      "type": "town",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 38,
+        "unit": "km"
+      },
+      "description": "Coastal town east of Accra",
+      "keywords": ["coastal", "beach", "traditional", "fishing"]
+    },
+    {
+      "id": "dodowa",
+      "name": "Dodowa",
+      "slug": "dodowa",
+      "type": "town",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 32,
+        "unit": "km"
+      },
+      "description": "Historic town north of Accra",
+      "keywords": ["historic", "traditional", "market", "northern"]
+    },
+    {
+      "id": "sakumono",
+      "name": "Sakumono",
+      "slug": "sakumono",
+      "type": "suburb",
+      "isMainCity": false,
+      "distanceFromMain": {
+        "value": 17,
+        "unit": "km"
+      },
+      "description": "Coastal suburb between Tema and Accra",
+      "keywords": ["coastal", "residential", "estates", "beach"]
+    }
+  ]
+}

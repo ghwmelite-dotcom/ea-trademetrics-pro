@@ -1,0 +1,1324 @@
+{
+  "schemaVersion": "1.0",
+  "serviceNiche": "Expert Advisor Development",
+  "platform": "TradeMetrics Pro",
+  "subdomain": "ea.trademetricspro.com",
+  "location": "Accra, Ghana",
+  "serviceArea": "Global (Remote Services)",
+  "totalServices": 12,
+  "lastUpdated": "2025-11-26",
+  "dataSource": "Jina AI research from competitor websites, freelance platforms, and MT4/MT5 development marketplaces",
+
+  "services": [
+    {
+      "id": "mt4-expert-advisor-development",
+      "name": "MT4 Expert Advisor Development",
+      "slug": "mt4-expert-advisor-development",
+      "category": "custom-development",
+      "shortDescription": "Transform your trading strategy into a fully automated MT4 Expert Advisor. Custom-built EAs with precise entry/exit logic, risk management, and optimized performance for MetaTrader 4 platform.",
+      "longDescription": "Turn your manual trading strategy into a powerful automated system with our professional MT4 Expert Advisor development service. Our experienced MQL4 developers create custom EAs tailored to your exact specifications, incorporating your trading rules, indicators, and risk parameters. Whether you're a scalper, swing trader, or position trader, we build robust, backtested Expert Advisors that execute trades 24/7 with precision. Each EA includes comprehensive risk management, customizable settings, detailed documentation, and ongoing support. We specialize in complex multi-timeframe strategies, indicator-based systems, price action EAs, grid and hedging strategies, and news trading bots. All code is clean, optimized, and fully commented for easy modification. With over 15 years of combined experience in forex trading and MQL4 programming, we deliver production-ready EAs that perform reliably in live market conditions.",
+      "features": [
+        "Custom MQL4 programming from scratch",
+        "Multi-timeframe and multi-currency support",
+        "Advanced risk management (SL, TP, trailing stops, breakeven)",
+        "Indicator integration (RSI, MACD, Bollinger Bands, custom indicators)",
+        "Backtesting and optimization included",
+        "Clean, commented code for easy modifications",
+        "Email, push, and sound alerts"
+      ],
+      "benefits": [
+        "24/7 automated trading without manual intervention",
+        "Eliminate emotional trading decisions",
+        "Execute trades at optimal speed and precision",
+        "Backtest years of historical data in minutes",
+        "Consistent application of your trading rules"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategy Consultation",
+          "description": "We discuss your trading strategy, rules, indicators, and risk parameters in detail to understand your exact requirements."
+        },
+        {
+          "step": 2,
+          "title": "Development & Coding",
+          "description": "Our MQL4 developers build your EA with clean, optimized code following best practices and your specifications."
+        },
+        {
+          "step": 3,
+          "title": "Backtesting & Optimization",
+          "description": "We rigorously backtest your EA on historical data, optimize parameters, and fine-tune performance."
+        },
+        {
+          "step": 4,
+          "title": "Testing & Delivery",
+          "description": "You receive the EA file (.ex4), source code (.mq4), installation guide, and user manual with full documentation."
+        },
+        {
+          "step": 5,
+          "title": "Support & Refinement",
+          "description": "We provide 30 days of free support and minor adjustments to ensure your EA performs as expected."
+        }
+      ],
+      "timeframe": "2-4 weeks",
+      "priceRange": {
+        "min": 300,
+        "max": 1500,
+        "currency": "USD",
+        "note": "Pricing depends on complexity, number of indicators, and custom features required"
+      },
+      "faq": [
+        {
+          "question": "Will I get the source code (.mq4) for my EA?",
+          "answer": "Yes, you receive both the compiled EA file (.ex4) and the full source code (.mq4) so you can modify it in the future."
+        },
+        {
+          "question": "How long does MT4 EA development take?",
+          "answer": "Most custom EAs are completed within 2-4 weeks depending on complexity. Simple strategies may be ready in 1-2 weeks, while advanced multi-indicator systems may take 4-6 weeks."
+        },
+        {
+          "question": "Can you convert my TradingView Pine Script strategy to MT4?",
+          "answer": "Absolutely! We specialize in Pine Script to MQL4 conversion. This is a popular service - see our dedicated Pine Script conversion service for more details."
+        },
+        {
+          "question": "Do you provide backtesting results?",
+          "answer": "Yes, we include backtesting on at least 3 years of historical data with optimization reports showing performance metrics like profit factor, drawdown, and win rate."
+        },
+        {
+          "question": "What if the EA doesn't work as expected?",
+          "answer": "We provide 30 days of free support and minor adjustments. We'll work with you until the EA performs according to your specifications."
+        }
+      ],
+      "relatedServices": [
+        "mt5-expert-advisor-development",
+        "pine-script-to-mql-conversion",
+        "ea-modification-enhancement",
+        "strategy-backtesting-optimization"
+      ],
+      "targetAudience": [
+        "Forex traders with proven manual strategies",
+        "Traders seeking automation and 24/7 trading",
+        "System traders needing custom indicators and logic",
+        "Prop firm traders requiring consistent execution",
+        "Portfolio managers running multiple strategies"
+      ],
+      "seoKeywords": [
+        "MT4 expert advisor development",
+        "MQL4 programming",
+        "custom MT4 EA",
+        "automated trading bot MT4",
+        "forex robot development",
+        "MetaTrader 4 EA developer"
+      ]
+    },
+    {
+      "id": "mt5-expert-advisor-development",
+      "name": "MT5 Expert Advisor Development",
+      "slug": "mt5-expert-advisor-development",
+      "category": "custom-development",
+      "shortDescription": "Professional MT5 Expert Advisor development with advanced MQL5 features. Build sophisticated trading robots with object-oriented programming, multi-asset support, and enhanced backtesting capabilities.",
+      "longDescription": "Leverage the power of MetaTrader 5 with our professional MT5 Expert Advisor development service. MQL5 offers significant advantages over MQL4 including object-oriented programming, faster execution, more sophisticated testing capabilities, and support for stocks, futures, and options alongside forex. Our MQL5 developers create high-performance EAs that utilize MT5's advanced features including economic calendar integration, depth of market data, multi-threading, and enhanced order management. Perfect for traders migrating from MT4 or those starting fresh on MT5, we build scalable, maintainable EAs with modern coding practices. Whether you need a simple single-strategy EA or a complex multi-strategy portfolio manager, we deliver production-ready solutions backed by comprehensive testing and documentation.",
+      "features": [
+        "Advanced MQL5 object-oriented programming",
+        "Multi-asset support (Forex, stocks, indices, commodities)",
+        "Enhanced backtesting with tick-level precision",
+        "Custom classes and libraries for reusability",
+        "Economic calendar integration for news trading",
+        "Multi-threading for complex calculations",
+        "Strategy tester agent support for distributed testing"
+      ],
+      "benefits": [
+        "Superior execution speed compared to MT4",
+        "Access to more sophisticated market analysis tools",
+        "Better position management and hedging capabilities",
+        "More accurate backtesting with real ticks",
+        "Future-proof platform with ongoing MetaQuotes support"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Requirements Analysis",
+          "description": "Detailed consultation to understand your strategy, preferred assets, MT5 features needed, and performance goals."
+        },
+        {
+          "step": 2,
+          "title": "Architecture Design",
+          "description": "We design the EA structure using OOP principles, create UML diagrams, and plan class hierarchies for optimal performance."
+        },
+        {
+          "step": 3,
+          "title": "MQL5 Development",
+          "description": "Professional coding with modern MQL5 syntax, custom classes, error handling, and MT5-specific optimizations."
+        },
+        {
+          "step": 4,
+          "title": "Advanced Testing",
+          "description": "Comprehensive testing using MT5 Strategy Tester with real ticks, genetic optimization, and forward testing."
+        },
+        {
+          "step": 5,
+          "title": "Delivery & Training",
+          "description": "Complete package with EA files, source code, documentation, and training on MT5-specific features and settings."
+        }
+      ],
+      "timeframe": "3-6 weeks",
+      "priceRange": {
+        "min": 400,
+        "max": 2000,
+        "currency": "USD",
+        "note": "MT5 development typically costs 20-30% more than MT4 due to advanced features and complexity"
+      },
+      "faq": [
+        {
+          "question": "What are the advantages of MT5 over MT4 for EAs?",
+          "answer": "MT5 offers faster execution, more accurate backtesting with real ticks, support for multiple asset classes, better order management, economic calendar integration, and modern object-oriented programming capabilities."
+        },
+        {
+          "question": "Can you upgrade my existing MT4 EA to MT5?",
+          "answer": "Yes! We offer MT4 to MT5 migration services. Most EAs can be upgraded to take advantage of MT5's enhanced features and performance improvements."
+        },
+        {
+          "question": "Does MT5 EA development cost more than MT4?",
+          "answer": "Generally yes, by about 20-30%, because MQL5 requires more advanced programming skills and offers more sophisticated features that take time to implement properly."
+        },
+        {
+          "question": "Can I use the same EA on MT4 and MT5?",
+          "answer": "No, MT4 and MT5 use different programming languages (MQL4 vs MQL5) and are not compatible. However, we can develop parallel versions for both platforms."
+        },
+        {
+          "question": "How accurate is MT5 backtesting compared to MT4?",
+          "answer": "MT5 backtesting is significantly more accurate because it can use real tick data with every tick mode, providing near-perfect simulation of live trading conditions."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt4-to-mt5-upgrade",
+        "pine-script-to-mql5-conversion",
+        "strategy-backtesting-optimization"
+      ],
+      "targetAudience": [
+        "Professional traders seeking advanced automation",
+        "Multi-asset traders (forex, stocks, futures)",
+        "Algorithmic traders requiring precise backtesting",
+        "Hedge funds and trading firms",
+        "Traders migrating from MT4 to MT5"
+      ],
+      "seoKeywords": [
+        "MT5 expert advisor development",
+        "MQL5 programming",
+        "MetaTrader 5 EA developer",
+        "custom MT5 robot",
+        "automated trading MT5",
+        "MQL5 developer for hire"
+      ]
+    },
+    {
+      "id": "pine-script-to-mql-conversion",
+      "name": "TradingView Pine Script to MT4/MT5 Conversion",
+      "slug": "pine-script-to-mql-conversion",
+      "category": "conversion",
+      "shortDescription": "Convert your profitable TradingView Pine Script strategies to fully functional MT4/MT5 Expert Advisors. Seamless migration from TradingView to MetaTrader platforms with 98%+ accuracy.",
+      "longDescription": "Found a winning strategy on TradingView but want to automate it on MetaTrader? Our Pine Script to MQL4/MQL5 conversion service bridges the gap between these powerful platforms. We manually analyze and convert your Pine Script indicators and strategies into fully functional MetaTrader Expert Advisors, preserving all logic, signals, and visual elements. Unlike automated converters that often produce buggy or inaccurate code, our experienced developers ensure 98%+ accuracy by understanding both Pine Script and MQL syntax deeply. We handle all Pine Script versions (v3, v4, v5, v6), complex multi-timeframe logic, custom functions, and TradingView-specific features. The result is a professional MT4/MT5 EA that replicates your TradingView strategy perfectly, complete with proper risk management, order handling, and alert notifications. Perfect for traders who have tested strategies on TradingView and want to trade them automatically on MT4/MT5 brokers.",
+      "features": [
+        "Manual conversion ensuring 98%+ accuracy (not automated tools)",
+        "Support for all Pine Script versions (v3, v4, v5, v6)",
+        "Preserves all indicators, alerts, and visual elements",
+        "Conversion to MT4 (MQL4) or MT5 (MQL5) - your choice",
+        "Multi-timeframe and multi-indicator support",
+        "Custom alerts and notifications matching TradingView",
+        "Complete backtesting to verify accuracy"
+      ],
+      "benefits": [
+        "Trade your proven TradingView strategies on MetaTrader",
+        "Access more brokers and better spreads on MT4/MT5",
+        "Avoid TradingView's subscription costs for automation",
+        "Maintain full control with local EA installation",
+        "Combine TradingView analysis with MT4/MT5 execution"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Pine Script Analysis",
+          "description": "You share your Pine Script code and TradingView strategy performance. We analyze the logic, indicators, and signals used."
+        },
+        {
+          "step": 2,
+          "title": "Platform Selection",
+          "description": "Choose whether you want MT4 (MQL4) or MT5 (MQL5) output, or both. We discuss any platform-specific considerations."
+        },
+        {
+          "step": 3,
+          "title": "Manual Conversion",
+          "description": "Our developers manually translate Pine Script to MQL4/MQL5, preserving all logic and adding proper MT4/MT5 order handling."
+        },
+        {
+          "step": 4,
+          "title": "Accuracy Testing",
+          "description": "We compare signals between TradingView and MetaTrader across multiple timeframes and instruments to ensure 98%+ match."
+        },
+        {
+          "step": 5,
+          "title": "Delivery & Validation",
+          "description": "Receive the converted EA with source code, installation guide, and comparison report showing signal accuracy."
+        }
+      ],
+      "timeframe": "1-3 weeks",
+      "priceRange": {
+        "min": 200,
+        "max": 1200,
+        "currency": "USD",
+        "note": "Simple indicators start at $200, complex multi-indicator strategies range $600-$1200"
+      },
+      "faq": [
+        {
+          "question": "How accurate is the Pine Script to MQL conversion?",
+          "answer": "We guarantee 98%+ signal accuracy through manual conversion and comprehensive testing. Unlike automated tools that often fail, we ensure your MT4/MT5 EA produces the same signals as your TradingView strategy."
+        },
+        {
+          "question": "Can you convert any Pine Script version?",
+          "answer": "Yes, we support all Pine Script versions: v3, v4, v5, and the latest v6. We're experienced with TradingView's evolving syntax and best practices."
+        },
+        {
+          "question": "Do I get the strategy working exactly like on TradingView?",
+          "answer": "Yes! We replicate all entry/exit signals, indicator calculations, alerts, and logic. The EA will perform identically to your TradingView strategy."
+        },
+        {
+          "question": "Can I convert to both MT4 and MT5?",
+          "answer": "Absolutely! We offer dual conversion at a discounted rate. This gives you maximum flexibility to use your strategy on either platform."
+        },
+        {
+          "question": "What if my Pine Script uses premium TradingView indicators?",
+          "answer": "If you have access to the Pine Script code for all indicators, we can convert them. For proprietary indicators you don't have code for, we can create MQL equivalents with similar logic."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "custom-indicator-development",
+        "strategy-backtesting-optimization"
+      ],
+      "targetAudience": [
+        "TradingView users with profitable strategies",
+        "Traders seeking lower-cost automation than TradingView Premium",
+        "Traders preferring MT4/MT5 broker options",
+        "System developers testing on TradingView",
+        "Pine Script developers expanding to MetaTrader"
+      ],
+      "seoKeywords": [
+        "Pine Script to MQL4 conversion",
+        "Pine Script to MQL5 conversion",
+        "TradingView to MT4 converter",
+        "TradingView to MT5 migration",
+        "convert Pine Script to EA",
+        "TradingView strategy to MetaTrader"
+      ]
+    },
+    {
+      "id": "strategy-backtesting-optimization",
+      "name": "EA Strategy Backtesting & Optimization",
+      "slug": "strategy-backtesting-optimization",
+      "category": "testing",
+      "shortDescription": "Professional backtesting and optimization services for your trading strategies and Expert Advisors. Comprehensive historical testing, parameter optimization, and performance analysis with detailed reports.",
+      "longDescription": "Before risking real capital, validate your trading strategy with our professional backtesting and optimization service. We conduct rigorous historical testing using years of high-quality tick data to evaluate your EA's performance under various market conditions. Our optimization process identifies the best parameter combinations for maximum profitability while minimizing drawdown and risk. We test across multiple symbols, timeframes, and market regimes (trending, ranging, high volatility) to ensure robustness. You receive detailed reports including profit factor, Sharpe ratio, win rate, maximum drawdown, recovery factor, and equity curves. We also perform walk-forward analysis, Monte Carlo simulations, and stress testing to validate your strategy's edge. Perfect for traders who want confidence in their EA before going live or need to fine-tune existing systems for better performance.",
+      "features": [
+        "Backtesting on 5-10 years of historical data",
+        "Multi-symbol and multi-timeframe testing",
+        "Genetic algorithm optimization for parameter tuning",
+        "Walk-forward analysis to prevent over-optimization",
+        "Monte Carlo simulation for risk assessment",
+        "Performance metrics: profit factor, Sharpe ratio, drawdown",
+        "Visual equity curves and trade distribution charts"
+      ],
+      "benefits": [
+        "Validate your strategy before risking real money",
+        "Identify optimal parameter settings for maximum profit",
+        "Understand your EA's behavior in different market conditions",
+        "Detect over-optimization and curve-fitting issues",
+        "Build confidence with statistical performance data"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Strategy Review",
+          "description": "We analyze your EA or strategy, understand the trading logic, and determine testing parameters and symbols."
+        },
+        {
+          "step": 2,
+          "title": "Historical Data Preparation",
+          "description": "We prepare high-quality historical data for your selected symbols and timeframes, ensuring accuracy and completeness."
+        },
+        {
+          "step": 3,
+          "title": "Backtesting Execution",
+          "description": "Run comprehensive backtests across multiple years, market conditions, and symbols to evaluate performance."
+        },
+        {
+          "step": 4,
+          "title": "Optimization & Analysis",
+          "description": "Use genetic algorithms and walk-forward analysis to find optimal parameters and validate robustness."
+        },
+        {
+          "step": 5,
+          "title": "Detailed Reporting",
+          "description": "Receive a comprehensive PDF report with all metrics, charts, trade logs, and recommendations for improvement."
+        }
+      ],
+      "timeframe": "1-2 weeks",
+      "priceRange": {
+        "min": 150,
+        "max": 600,
+        "currency": "USD",
+        "note": "Pricing depends on number of symbols, optimization complexity, and depth of analysis required"
+      },
+      "faq": [
+        {
+          "question": "How many years of historical data do you test?",
+          "answer": "We typically backtest 5-10 years of historical data to ensure your strategy works across different market conditions, economic cycles, and volatility regimes."
+        },
+        {
+          "question": "What's the difference between backtesting and optimization?",
+          "answer": "Backtesting evaluates performance with fixed parameters. Optimization systematically tests thousands of parameter combinations to find the best settings for maximum profitability."
+        },
+        {
+          "question": "How do you prevent over-optimization?",
+          "answer": "We use walk-forward analysis, out-of-sample testing, and Monte Carlo simulations to ensure parameters work on unseen data, not just the optimization period."
+        },
+        {
+          "question": "Can you backtest strategies that aren't coded yet?",
+          "answer": "Yes! If you have clear trading rules, we can code a basic EA for backtesting purposes, then provide results and recommendations before full development."
+        },
+        {
+          "question": "What quality of data do you use for backtesting?",
+          "answer": "We use high-quality tick data from reputable providers. For MT5, we use real tick data. For MT4, we use the highest quality M1 data available with precise modeling."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "ea-modification-enhancement",
+        "forward-testing-validation"
+      ],
+      "targetAudience": [
+        "Traders with manual strategies seeking validation",
+        "EA owners wanting optimization",
+        "System developers evaluating multiple strategies",
+        "Prop traders requiring performance proof",
+        "Educators and course creators"
+      ],
+      "seoKeywords": [
+        "EA backtesting service",
+        "strategy optimization MT4",
+        "MT5 strategy testing",
+        "forex EA optimization",
+        "trading strategy validation",
+        "backtest expert advisor"
+      ]
+    },
+    {
+      "id": "ea-modification-enhancement",
+      "name": "EA Modification & Enhancement",
+      "slug": "ea-modification-enhancement",
+      "category": "modification",
+      "shortDescription": "Upgrade and improve your existing Expert Advisors with new features, bug fixes, and performance enhancements. Add indicators, improve risk management, or modernize old EAs.",
+      "longDescription": "Already have an EA but need it improved or updated? Our EA modification and enhancement service breathes new life into existing Expert Advisors. Whether you need bug fixes, new indicators added, improved risk management, or complete modernization of old code, our experienced MQL developers can help. We work with EAs written by others, protected code (when possible), legacy MT4 EAs that need MT5 conversion, and outdated systems requiring modern features. Common enhancements include adding trailing stops, breakeven logic, time filters, news avoidance, partial close functions, multi-timeframe confirmations, dashboard panels, and remote monitoring. We also optimize slow or inefficient code, fix compilation errors in outdated EAs, and add protective features against broker manipulation. Perfect for traders who have EAs that almost work but need that final touch to become truly profitable and reliable.",
+      "features": [
+        "Add new indicators or trading logic",
+        "Implement advanced risk management features",
+        "Fix bugs and compilation errors",
+        "Optimize slow or inefficient code",
+        "Add time filters and session management",
+        "Implement partial close and trailing features",
+        "Create custom dashboards and info panels"
+      ],
+      "benefits": [
+        "Improve existing EA without starting from scratch",
+        "Save money compared to new development",
+        "Maintain strategy core while adding features",
+        "Fix issues with EAs from other developers",
+        "Modernize legacy code for better performance"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "EA Analysis",
+          "description": "You provide the EA (.ex4 or .mq4) and describe desired changes. We analyze the current code and functionality."
+        },
+        {
+          "step": 2,
+          "title": "Modification Proposal",
+          "description": "We outline proposed changes, identify any limitations, estimate timeline, and provide a fixed quote."
+        },
+        {
+          "step": 3,
+          "title": "Development & Testing",
+          "description": "We implement modifications, test thoroughly on demo accounts, and ensure backward compatibility when needed."
+        },
+        {
+          "step": 4,
+          "title": "Quality Assurance",
+          "description": "Compare old vs new EA performance, verify all features work correctly, and conduct backtesting for validation."
+        },
+        {
+          "step": 5,
+          "title": "Delivery & Support",
+          "description": "Receive updated EA files with changelog documentation and 14 days of support for adjustment requests."
+        }
+      ],
+      "timeframe": "1-3 weeks",
+      "priceRange": {
+        "min": 100,
+        "max": 800,
+        "currency": "USD",
+        "note": "Simple modifications $100-300, complex enhancements $300-800 depending on scope"
+      },
+      "faq": [
+        {
+          "question": "Can you modify an EA if I only have the .ex4 file (no source code)?",
+          "answer": "In most cases, yes. We can decompile .ex4 files and modify the logic, though this takes longer. However, heavily protected EAs may be impossible to modify without source code."
+        },
+        {
+          "question": "How much does it cost to add features to an existing EA?",
+          "answer": "Simple additions (like a new indicator or time filter) start at $100-200. Complex enhancements (like rebuilding the risk management system) range $300-800."
+        },
+        {
+          "question": "My EA stopped working after a MetaTrader update. Can you fix it?",
+          "answer": "Absolutely! This is a common issue. MT4 and MT5 updates sometimes break old code. We'll modernize the code to work with current MetaTrader builds."
+        },
+        {
+          "question": "Can you make my EA work on MT5 instead of MT4?",
+          "answer": "Yes! MT4 to MT5 migration is one of our core services. We'll convert the EA to MQL5 while maintaining all functionality and adding MT5-specific improvements."
+        },
+        {
+          "question": "What if I don't know exactly what changes I need?",
+          "answer": "That's fine! During our consultation, we'll review your EA's current performance and recommend specific improvements to increase profitability and reduce risk."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "mt4-to-mt5-upgrade",
+        "strategy-backtesting-optimization"
+      ],
+      "targetAudience": [
+        "Traders with underperforming EAs",
+        "Users of purchased EAs needing customization",
+        "Traders with legacy EAs from years ago",
+        "System traders needing bug fixes",
+        "Developers maintaining old codebases"
+      ],
+      "seoKeywords": [
+        "EA modification service",
+        "Expert Advisor enhancement",
+        "MT4 EA bug fix",
+        "improve existing EA",
+        "add features to EA",
+        "upgrade expert advisor"
+      ]
+    },
+    {
+      "id": "custom-indicator-development",
+      "name": "Custom Indicator Development for MT4/MT5",
+      "slug": "custom-indicator-development",
+      "category": "custom-development",
+      "shortDescription": "Professional custom indicator development for MetaTrader platforms. Build unique technical indicators with alerts, multi-timeframe displays, and sophisticated visual elements tailored to your analysis needs.",
+      "longDescription": "Stand out from other traders with custom-built indicators designed specifically for your analysis methodology. Our custom indicator development service creates unique technical analysis tools that go beyond standard MT4/MT5 indicators. Whether you need a proprietary algorithm visualized, a combination of existing indicators with custom logic, multi-timeframe dashboard panels, or completely novel price action tools, we build it from scratch. We specialize in creating indicators with professional aesthetics, customizable colors and styles, arrow signals with alerts, histogram displays, buffer overlays, trend clouds, volatility zones, and scanner panels. All indicators include configurable alerts (popup, email, push notifications), work across all symbols and timeframes, and come with full documentation. Perfect for discretionary traders who want visual edge, system developers needing custom confirmation tools, or educators creating signature indicators for courses.",
+      "features": [
+        "100% custom indicator logic and calculations",
+        "Multi-buffer support with professional visuals",
+        "Customizable colors, styles, and display options",
+        "Alert system (popup, email, push, sound)",
+        "Multi-timeframe and multi-currency capability",
+        "Dashboard panels with real-time information",
+        "Arrow signals and visual trade markers"
+      ],
+      "benefits": [
+        "Gain unique market edge with proprietary indicators",
+        "Combine multiple standard indicators into one tool",
+        "Save screen space with multi-timeframe dashboards",
+        "Never miss signals with comprehensive alerts",
+        "Create your signature indicator for branding"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Concept Discussion",
+          "description": "Describe your indicator concept, calculation logic, desired visuals, and how you plan to use it in your trading."
+        },
+        {
+          "step": 2,
+          "title": "Design & Planning",
+          "description": "We create mockups showing visual layout, confirm calculation methodology, and plan alert triggers."
+        },
+        {
+          "step": 3,
+          "title": "MQL Development",
+          "description": "Build the indicator with optimized code, implementing all buffers, calculations, and visual elements."
+        },
+        {
+          "step": 4,
+          "title": "Testing & Refinement",
+          "description": "Test across multiple symbols and timeframes, verify calculations accuracy, and refine visual appearance."
+        },
+        {
+          "step": 5,
+          "title": "Delivery & Documentation",
+          "description": "Receive indicator files (.ex4/.ex5 and source code), installation guide, user manual, and settings explanation."
+        }
+      ],
+      "timeframe": "1-3 weeks",
+      "priceRange": {
+        "min": 150,
+        "max": 800,
+        "currency": "USD",
+        "note": "Simple indicators $150-300, complex multi-buffer indicators with dashboards $400-800"
+      },
+      "faq": [
+        {
+          "question": "Can you create an indicator based on my trading idea?",
+          "answer": "Absolutely! Many traders have unique market observations they want visualized. Describe your concept and we'll turn it into a functional indicator."
+        },
+        {
+          "question": "Can the indicator scan multiple pairs and timeframes?",
+          "answer": "Yes! We can create scanner-style indicators that monitor multiple symbols and timeframes simultaneously, displaying results in a dashboard panel."
+        },
+        {
+          "question": "Will the indicator work on both MT4 and MT5?",
+          "answer": "We develop for either platform based on your needs. If you want both, we can create parallel versions for a small additional fee."
+        },
+        {
+          "question": "Can you recreate an indicator I saw somewhere?",
+          "answer": "If you can describe how it works or show examples, we can likely recreate similar functionality. However, we won't copy proprietary code from other developers."
+        },
+        {
+          "question": "How complex can the indicator calculations be?",
+          "answer": "Very complex! We've built indicators using neural networks, machine learning algorithms, multi-timeframe correlations, and advanced statistical methods."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "pine-script-to-mql-conversion",
+        "ea-modification-enhancement"
+      ],
+      "targetAudience": [
+        "Discretionary traders needing visual tools",
+        "Prop traders with proprietary methods",
+        "Trading educators creating signature tools",
+        "System developers needing confirmation indicators",
+        "Technical analysts with unique methodologies"
+      ],
+      "seoKeywords": [
+        "custom indicator development MT4",
+        "custom indicator MT5",
+        "MQL4 indicator developer",
+        "MQL5 indicator programming",
+        "create custom indicator MetaTrader",
+        "build trading indicator"
+      ]
+    },
+    {
+      "id": "mt4-to-mt5-upgrade",
+      "name": "MT4 to MT5 EA Migration",
+      "slug": "mt4-to-mt5-upgrade",
+      "category": "conversion",
+      "shortDescription": "Seamlessly migrate your MT4 Expert Advisors to the modern MT5 platform. Professional MQL4 to MQL5 conversion with enhanced features and improved performance.",
+      "longDescription": "Future-proof your trading automation by upgrading MT4 Expert Advisors to MT5. As MetaQuotes focuses development on MT5 and more brokers adopt it as their primary platform, migrating from MT4 to MT5 ensures longevity and access to superior features. Our MT4 to MT5 upgrade service handles complete EA migration, translating MQL4 code to modern MQL5 while preserving all original functionality. We don't just convert syntax—we enhance your EA to leverage MT5's advantages: faster execution speed, more accurate backtesting with real ticks, better order management, economic calendar integration, and multi-asset support. The upgrade process includes refactoring code to use MT5's object-oriented capabilities, implementing proper error handling, adding hedge account support if needed, and optimizing performance for the MT5 environment. Your upgraded EA will be backward-tested to ensure signal accuracy matches the original MT4 version while benefiting from MT5's modern architecture.",
+      "features": [
+        "Complete MQL4 to MQL5 code conversion",
+        "Preservation of all original EA functionality",
+        "Enhancement with MT5-specific features",
+        "Object-oriented code refactoring",
+        "Hedge and netting account support",
+        "Improved order management functions",
+        "Real tick backtesting optimization"
+      ],
+      "benefits": [
+        "Access to faster execution and better fills",
+        "More accurate backtesting with real ticks",
+        "Support for stocks, futures, and options trading",
+        "Better position and order management",
+        "Future-proof solution as MT5 adoption grows"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "MT4 EA Analysis",
+          "description": "We thoroughly review your MT4 EA source code, identify all functions, indicators, and trading logic used."
+        },
+        {
+          "step": 2,
+          "title": "MT5 Architecture Planning",
+          "description": "Plan the MT5 structure, decide on netting vs hedging mode, identify MT5-specific improvements to implement."
+        },
+        {
+          "step": 3,
+          "title": "MQL5 Conversion",
+          "description": "Translate all MQL4 code to MQL5 syntax, refactor using OOP where beneficial, update order functions to MT5 standard."
+        },
+        {
+          "step": 4,
+          "title": "Accuracy Verification",
+          "description": "Backtest both MT4 and MT5 versions on identical data to verify signals match 98%+ and performance is preserved."
+        },
+        {
+          "step": 5,
+          "title": "Enhanced Delivery",
+          "description": "Receive MT5 EA with source code, comparison report showing signal accuracy, and documentation on MT5-specific features."
+        }
+      ],
+      "timeframe": "2-4 weeks",
+      "priceRange": {
+        "min": 250,
+        "max": 1000,
+        "currency": "USD",
+        "note": "Pricing depends on EA complexity and whether enhancements beyond basic conversion are desired"
+      },
+      "faq": [
+        {
+          "question": "Will my MT4 EA work exactly the same on MT5?",
+          "answer": "Yes! We ensure 98%+ signal accuracy by thorough testing. However, you may see improved performance due to MT5's better execution and order filling."
+        },
+        {
+          "question": "What's the main difference between MT4 and MT5 for EAs?",
+          "answer": "MT5 uses MQL5 (object-oriented programming), has better backtesting with real ticks, faster execution, support for more asset classes, and improved order management."
+        },
+        {
+          "question": "Can I keep using my MT4 EA while the MT5 version is being developed?",
+          "answer": "Absolutely! The migration doesn't affect your existing MT4 EA. You can continue trading with it until the MT5 version is ready and tested."
+        },
+        {
+          "question": "Do I need MT5-specific enhancements or just a basic conversion?",
+          "answer": "That's up to you! Basic conversion ensures your EA works on MT5. Enhanced conversion adds MT5-specific features like economic calendar integration, multi-threading, or improved order management."
+        },
+        {
+          "question": "Will the MT5 version work with both hedging and netting accounts?",
+          "answer": "We can configure your EA for either mode or both. MT5 supports both hedging (like MT4) and netting (one position per symbol) account types."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "ea-modification-enhancement",
+        "strategy-backtesting-optimization"
+      ],
+      "targetAudience": [
+        "MT4 EA owners wanting MT5 compatibility",
+        "Traders whose brokers are switching to MT5",
+        "System developers future-proofing their products",
+        "Prop traders needing MT5-specific features",
+        "Developers maintaining legacy MT4 code"
+      ],
+      "seoKeywords": [
+        "MT4 to MT5 conversion",
+        "MQL4 to MQL5 upgrade",
+        "migrate EA to MT5",
+        "MT4 EA to MT5",
+        "MetaTrader 4 to 5 migration",
+        "convert expert advisor MT5"
+      ]
+    },
+    {
+      "id": "trading-bot-maintenance",
+      "name": "EA Maintenance & Support Plans",
+      "slug": "trading-bot-maintenance",
+      "category": "support",
+      "shortDescription": "Ongoing maintenance, updates, and support for your Expert Advisors. Monthly plans covering bug fixes, broker changes, platform updates, and performance monitoring.",
+      "longDescription": "Keep your Expert Advisors running smoothly with our professional maintenance and support plans. Trading automation requires ongoing attention as brokers update platforms, MetaTrader releases new builds, market conditions shift, and performance optimization becomes necessary. Our maintenance service provides peace of mind with dedicated developer support, proactive monitoring for issues, regular updates to handle MT4/MT5 changes, bug fixes within 24-48 hours, monthly performance reviews, and parameter adjustment recommendations. We monitor your EA's performance, alert you to unusual behavior, keep code updated with latest MT4/MT5 standards, and provide priority support when you need help. Available in Bronze (basic support), Silver (comprehensive maintenance), and Gold (white-glove service) tiers. Perfect for serious traders who rely on EAs for income and can't afford downtime or underperformance.",
+      "features": [
+        "Priority support with 24-48 hour response",
+        "Regular MT4/MT5 compatibility updates",
+        "Bug fixes and error resolution",
+        "Monthly performance analysis reports",
+        "Parameter optimization recommendations",
+        "Broker-specific adaptations",
+        "Proactive monitoring for issues"
+      ],
+      "benefits": [
+        "Minimize EA downtime and missed trades",
+        "Stay current with MT4/MT5 platform updates",
+        "Get expert help when problems arise",
+        "Optimize performance based on market changes",
+        "Protect your trading automation investment"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Plan Selection",
+          "description": "Choose Bronze ($99/mo), Silver ($199/mo), or Gold ($399/mo) plan based on your EA portfolio size and support needs."
+        },
+        {
+          "step": 2,
+          "title": "EA Setup & Monitoring",
+          "description": "We document your EA portfolio, set up monitoring systems, and establish baseline performance metrics."
+        },
+        {
+          "step": 3,
+          "title": "Ongoing Maintenance",
+          "description": "Continuous monitoring, proactive updates for platform changes, and regular check-ins on EA performance."
+        },
+        {
+          "step": 4,
+          "title": "Monthly Reviews",
+          "description": "Receive monthly performance reports with analysis, recommendations, and any updates made during the month."
+        },
+        {
+          "step": 5,
+          "title": "Priority Support",
+          "description": "Direct developer access for questions, issues, or urgent fixes needed for your trading EAs."
+        }
+      ],
+      "timeframe": "Ongoing monthly subscription",
+      "priceRange": {
+        "min": 99,
+        "max": 399,
+        "currency": "USD",
+        "note": "Bronze $99/mo (1-2 EAs), Silver $199/mo (3-5 EAs), Gold $399/mo (unlimited EAs with white-glove service)"
+      },
+      "faq": [
+        {
+          "question": "What's included in the maintenance plans?",
+          "answer": "All plans include priority support, bug fixes, and MT4/MT5 compatibility updates. Higher tiers add monthly performance reviews, optimization recommendations, and broker-specific adaptations."
+        },
+        {
+          "question": "How quickly do you respond to issues?",
+          "answer": "Bronze: 48 hours, Silver: 24 hours, Gold: 12 hours. Critical issues affecting live trading get expedited response across all tiers."
+        },
+        {
+          "question": "Can you maintain EAs built by other developers?",
+          "answer": "Yes! We can maintain any EA as long as we have access to the source code (.mq4/.mq5). Decompiled EAs may incur additional fees."
+        },
+        {
+          "question": "Do I need a maintenance plan if my EA is working fine?",
+          "answer": "Recommended, yes. MetaTrader platforms update regularly, brokers change specifications, and market conditions shift. Proactive maintenance prevents future issues."
+        },
+        {
+          "question": "Can I cancel the maintenance plan anytime?",
+          "answer": "Yes, maintenance plans are month-to-month with no long-term commitment. Cancel anytime with 7 days notice before next billing cycle."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "ea-modification-enhancement",
+        "strategy-backtesting-optimization"
+      ],
+      "targetAudience": [
+        "Professional traders relying on EA income",
+        "Trading firms running multiple EAs",
+        "Prop traders with strict performance requirements",
+        "Investors without programming knowledge",
+        "Busy traders needing hands-off automation"
+      ],
+      "seoKeywords": [
+        "EA maintenance service",
+        "expert advisor support",
+        "MT4 EA support plan",
+        "MT5 EA maintenance",
+        "trading bot support",
+        "automated trading maintenance"
+      ]
+    },
+    {
+      "id": "multi-timeframe-systems",
+      "name": "Multi-Timeframe Trading Systems",
+      "slug": "multi-timeframe-systems",
+      "category": "custom-development",
+      "shortDescription": "Sophisticated multi-timeframe Expert Advisors that analyze multiple time periods simultaneously. Build robust trading systems using top-down analysis for higher-probability trades.",
+      "longDescription": "Implement professional top-down trading methodology with our multi-timeframe EA development service. The most profitable traders analyze multiple timeframes before entering trades—higher timeframes for trend direction, lower timeframes for precise entries. Our multi-timeframe systems codify this approach into automated EAs that analyze 2-4 timeframes simultaneously, ensuring all conditions align before opening positions. We build sophisticated MTF EAs that check higher timeframe trend on H4/D1, confirm medium timeframe setup on H1, execute entries on lower timeframe like M15/M5, and manage positions based on multi-timeframe conditions. The result is dramatically improved win rates, fewer false signals, better risk-reward ratios, and more robust performance across market conditions. We specialize in MTF indicator-based systems, price action EAs with MTF confirmation, trend-following strategies with MTF filters, and custom MTF logic unique to your methodology.",
+      "features": [
+        "Simultaneous analysis of 2-4 timeframes",
+        "Hierarchical logic: trend-confirmation-entry",
+        "MTF indicator synchronization",
+        "Configurable timeframe combinations",
+        "Visual MTF dashboard displays",
+        "MTF-based position management",
+        "Reduced false signals through confirmation"
+      ],
+      "benefits": [
+        "Higher win rate through MTF confirmation",
+        "Better trend alignment and fewer counter-trend trades",
+        "More robust performance across market conditions",
+        "Professional top-down analysis automated",
+        "Fewer trades but higher quality setups"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "MTF Strategy Design",
+          "description": "Define which timeframes to analyze, what each timeframe confirms, and how conditions must align for trade entry."
+        },
+        {
+          "step": 2,
+          "title": "Logic Architecture",
+          "description": "Design the hierarchical decision tree: higher TF trend filter, medium TF setup confirmation, lower TF entry trigger."
+        },
+        {
+          "step": 3,
+          "title": "MTF Development",
+          "description": "Build the EA with proper MTF data handling, ensuring accurate cross-timeframe analysis without look-ahead bias."
+        },
+        {
+          "step": 4,
+          "title": "Comprehensive Testing",
+          "description": "Test across various timeframe combinations and market conditions to validate MTF logic reduces false signals."
+        },
+        {
+          "step": 5,
+          "title": "Optimization & Delivery",
+          "description": "Optimize timeframe combinations and thresholds, deliver EA with MTF configuration guide and best practice recommendations."
+        }
+      ],
+      "timeframe": "3-6 weeks",
+      "priceRange": {
+        "min": 500,
+        "max": 2000,
+        "currency": "USD",
+        "note": "MTF systems require advanced programming and testing, pricing reflects complexity and development time"
+      },
+      "faq": [
+        {
+          "question": "What timeframe combinations work best for MTF systems?",
+          "answer": "Popular combinations: D1/H4/H1 for swing trading, H4/H1/M15 for day trading, H1/M15/M5 for scalping. The key is maintaining 3-4x ratio between timeframes."
+        },
+        {
+          "question": "Do MTF EAs trade less frequently?",
+          "answer": "Yes, typically 30-50% fewer trades than single-timeframe EAs, but with significantly higher win rates and better risk-reward due to better filtering."
+        },
+        {
+          "question": "Can I combine different indicators across timeframes?",
+          "answer": "Absolutely! For example: MA crossover on D1 for trend, RSI divergence on H1 for setup, price action on M15 for entry. This is very effective."
+        },
+        {
+          "question": "How do you prevent look-ahead bias in MTF analysis?",
+          "answer": "We use proper MQL functions (iCustom, CopyBuffer) with correct shift parameters to ensure MTF data is synchronized and represents what would be known at each bar."
+        },
+        {
+          "question": "Are MTF systems better than single-timeframe EAs?",
+          "answer": "Generally yes, for discretionary-style trading. MTF systems align with how professional traders think (top-down analysis) and produce higher quality, more consistent results."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "strategy-backtesting-optimization",
+        "custom-indicator-development"
+      ],
+      "targetAudience": [
+        "Experienced traders using top-down analysis",
+        "System developers seeking robust algorithms",
+        "Prop traders with strict consistency requirements",
+        "Swing and position traders",
+        "Traders frustrated with false signals"
+      ],
+      "seoKeywords": [
+        "multi-timeframe EA development",
+        "MTF expert advisor",
+        "top-down analysis EA",
+        "multi timeframe trading bot",
+        "MTF trading system MT4",
+        "cross timeframe EA MT5"
+      ]
+    },
+    {
+      "id": "risk-management-integration",
+      "name": "Advanced Risk Management Systems",
+      "slug": "risk-management-integration",
+      "category": "custom-development",
+      "shortDescription": "Professional risk management modules for Expert Advisors. Implement sophisticated position sizing, portfolio-level risk controls, drawdown limits, and protective mechanisms.",
+      "longDescription": "Protect your capital with professional-grade risk management integrated into your Expert Advisors. Most trading failures result from poor risk management, not bad strategies. Our advanced risk management development service implements institutional-level controls including dynamic position sizing based on account equity, maximum daily/weekly/monthly loss limits, maximum concurrent trades across symbols, correlation-based position limits, drawdown protection mechanisms, time-based risk reduction, volatility-adjusted position sizing, and emergency stop functionality. We build comprehensive risk frameworks that protect against account blowups, preserve capital during drawdown periods, optimize position sizes for account growth, and maintain consistency across varying market conditions. Perfect for serious traders, prop firm accounts with strict rules, portfolio managers running multiple strategies, and anyone who understands that risk management is the difference between long-term success and eventual failure.",
+      "features": [
+        "Dynamic position sizing (Kelly, fixed fractional, etc.)",
+        "Daily/weekly/monthly loss limits with auto-shutdown",
+        "Maximum concurrent positions across symbols",
+        "Correlation-based exposure management",
+        "Trailing drawdown protection",
+        "Volatility-adjusted lot sizing",
+        "Emergency kill switch functionality"
+      ],
+      "benefits": [
+        "Prevent account blowups with hard limits",
+        "Optimize position size for consistent growth",
+        "Meet prop firm risk requirements automatically",
+        "Protect profits during drawdown periods",
+        "Scale position size as account grows"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "Risk Profile Assessment",
+          "description": "Discuss your risk tolerance, account size, drawdown limits, prop firm rules (if applicable), and risk management goals."
+        },
+        {
+          "step": 2,
+          "title": "Risk Framework Design",
+          "description": "Design comprehensive risk rules including position sizing algorithms, loss limits, exposure controls, and protective mechanisms."
+        },
+        {
+          "step": 3,
+          "title": "Implementation",
+          "description": "Develop risk management module as standalone utility or integrate directly into your EA with proper override controls."
+        },
+        {
+          "step": 4,
+          "title": "Stress Testing",
+          "description": "Test risk controls under extreme conditions: high volatility, consecutive losses, correlated positions, to ensure protections work."
+        },
+        {
+          "step": 5,
+          "title": "Documentation & Training",
+          "description": "Receive detailed documentation explaining all risk parameters, how to configure for different account sizes, and best practices."
+        }
+      ],
+      "timeframe": "2-4 weeks",
+      "priceRange": {
+        "min": 300,
+        "max": 1200,
+        "currency": "USD",
+        "note": "Standalone risk manager $300-600, full EA integration with advanced features $600-1200"
+      },
+      "faq": [
+        {
+          "question": "What's the difference between basic and advanced risk management?",
+          "answer": "Basic: fixed lot size and stop loss. Advanced: dynamic position sizing, portfolio-level limits, drawdown protection, volatility adjustment, correlation controls."
+        },
+        {
+          "question": "Can you add risk management to my existing EA?",
+          "answer": "Yes! We can integrate advanced risk management into any EA, whether it was built by us or another developer (source code required)."
+        },
+        {
+          "question": "How does dynamic position sizing work?",
+          "answer": "Position size adjusts based on factors like account equity, recent win/loss streak, current drawdown level, and market volatility. Increases during good times, decreases during drawdown."
+        },
+        {
+          "question": "Can the risk manager work across multiple EAs?",
+          "answer": "Absolutely! We can build a portfolio-level risk manager that monitors all EAs on an account and enforces global limits like max daily loss or max concurrent trades."
+        },
+        {
+          "question": "Is this necessary for prop firm trading?",
+          "answer": "Highly recommended! Prop firms have strict rules (max daily loss, max total loss, consistency requirements). Our risk manager ensures automatic compliance with these rules."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "trading-bot-maintenance",
+        "multi-timeframe-systems"
+      ],
+      "targetAudience": [
+        "Prop firm traders with strict risk rules",
+        "Portfolio managers running multiple strategies",
+        "Conservative traders prioritizing capital preservation",
+        "Traders recovering from account blowups",
+        "Professional traders seeking institutional-grade controls"
+      ],
+      "seoKeywords": [
+        "EA risk management",
+        "position sizing EA",
+        "trading bot risk controls",
+        "MetaTrader risk manager",
+        "portfolio risk management MT4",
+        "dynamic lot sizing EA"
+      ]
+    },
+    {
+      "id": "signal-provider-systems",
+      "name": "Signal Provider & Copy Trading Systems",
+      "slug": "signal-provider-systems",
+      "category": "custom-development",
+      "shortDescription": "Build professional signal distribution and trade copying systems. Develop MQL-based solutions for providing signals to subscribers or copying trades across multiple accounts.",
+      "longDescription": "Monetize your trading expertise or scale your strategy across multiple accounts with our signal provider and copy trading system development. We build complete MQL-based solutions for distributing trading signals to subscribers, copying trades from master to slave accounts, managing subscriber portfolios, and creating white-label signal services. Our systems include master account signal generation with quality filtering, subscriber management with individual settings, local and remote copy trading functionality, signal quality scoring and analytics, subscriber dashboard and reporting, payment integration for subscription fees, and risk management per subscriber account. Perfect for successful traders wanting to share signals for monthly fees, prop traders scaling across multiple accounts, fund managers needing trade distribution, and entrepreneurs building signal service businesses. All solutions include subscriber management, performance tracking, and professional branding options.",
+      "features": [
+        "Master account signal generation and filtering",
+        "Multi-account trade copying (local and remote)",
+        "Individual subscriber risk settings",
+        "Signal quality analytics and reporting",
+        "Subscriber dashboard with performance metrics",
+        "Payment integration for subscription management",
+        "Lot size multipliers and risk adjustments"
+      ],
+      "benefits": [
+        "Monetize your trading skills with subscription revenue",
+        "Scale your strategy across unlimited accounts",
+        "Provide professional signal service to clients",
+        "Build recurring income from signal subscribers",
+        "Maintain control over signal quality and distribution"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "System Architecture Planning",
+          "description": "Define signal generation rules, copying method (local vs MT4/MT5 signals), subscriber management needs, and monetization model."
+        },
+        {
+          "step": 2,
+          "title": "Master Account Setup",
+          "description": "Develop master account EA that generates signals, applies quality filters, and manages signal distribution to subscribers."
+        },
+        {
+          "step": 3,
+          "title": "Copy Logic Development",
+          "description": "Build subscriber-side EAs that receive and execute signals with individual risk management, lot multipliers, and filters."
+        },
+        {
+          "step": 4,
+          "title": "Management Dashboard",
+          "description": "Create subscriber management system with performance tracking, billing integration, and analytics for both provider and subscribers."
+        },
+        {
+          "step": 5,
+          "title": "Launch & Support",
+          "description": "Complete testing with test subscribers, provide documentation for onboarding, and offer ongoing support for system operation."
+        }
+      ],
+      "timeframe": "4-8 weeks",
+      "priceRange": {
+        "min": 800,
+        "max": 3000,
+        "currency": "USD",
+        "note": "Basic local copier $800-1200, full signal service with management dashboard $1500-3000"
+      },
+      "faq": [
+        {
+          "question": "What's the difference between local and remote copy trading?",
+          "answer": "Local: copies trades on same PC/VPS instantly. Remote: uses MT4/MT5 signals service or custom server to copy trades across different locations with slight delay."
+        },
+        {
+          "question": "Can subscribers have different risk settings?",
+          "answer": "Yes! Each subscriber can have individual lot multipliers, maximum risk per trade, symbols to include/exclude, and trading hours settings."
+        },
+        {
+          "question": "How do I charge subscribers for signals?",
+          "answer": "We can integrate payment systems (Stripe, PayPal), implement license key verification, or connect to MQL5 signals marketplace depending on your business model."
+        },
+        {
+          "question": "Can I filter which trades get copied to subscribers?",
+          "answer": "Absolutely! You can implement quality filters: only copy trades with X pips profit, exclude trades during news, filter by win rate, etc."
+        },
+        {
+          "question": "How many subscribers can one master account support?",
+          "answer": "Hundreds or thousands depending on implementation. Local copying limited by VPS, remote/server-based systems scale to unlimited subscribers."
+        }
+      ],
+      "relatedServices": [
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "risk-management-integration",
+        "trading-bot-maintenance"
+      ],
+      "targetAudience": [
+        "Successful traders wanting signal revenue",
+        "Prop traders scaling across accounts",
+        "Fund managers needing trade distribution",
+        "Trading educators monetizing expertise",
+        "Entrepreneurs building signal businesses"
+      ],
+      "seoKeywords": [
+        "signal provider system MT4",
+        "trade copy software development",
+        "MT4 copy trading EA",
+        "signal distribution system",
+        "forex signal provider software",
+        "MQL signal service development"
+      ]
+    },
+    {
+      "id": "forward-testing-validation",
+      "name": "Forward Testing & Live Validation",
+      "slug": "forward-testing-validation",
+      "category": "testing",
+      "shortDescription": "Professional forward testing and live validation services for Expert Advisors. Test your EA on live demo accounts with real market conditions and receive detailed performance analysis.",
+      "longDescription": "Backtesting shows what could have happened. Forward testing reveals what actually happens in live market conditions. Our forward testing and live validation service runs your Expert Advisor on monitored demo accounts with real-time spreads, slippage, and execution conditions for 30-90 days before you risk real capital. We handle complete forward testing infrastructure including multiple broker demo accounts, 24/7 VPS monitoring, daily performance tracking, weekly progress reports, comparison of live vs backtest results, and identification of execution issues. You receive comprehensive validation reports showing actual win rate, real slippage impact, broker execution quality, performance across news events, and honest assessment of whether the EA is ready for live trading. This crucial step prevents costly mistakes and builds confidence before going live. Perfect for traders who have backtested EAs and want real-world validation, developers wanting objective third-party testing, and prop traders needing proven track records.",
+      "features": [
+        "30-90 day forward testing on live demo accounts",
+        "Multiple broker testing for comparison",
+        "24/7 VPS monitoring and data collection",
+        "Real spread, slippage, and execution conditions",
+        "Daily tracking with weekly progress reports",
+        "Backtest vs forward test comparison analysis",
+        "Comprehensive final validation report"
+      ],
+      "benefits": [
+        "Validate EA performs in real market conditions",
+        "Identify execution issues before live trading",
+        "Build confidence with actual forward test results",
+        "Compare multiple brokers objectively",
+        "Receive unbiased third-party performance data"
+      ],
+      "process": [
+        {
+          "step": 1,
+          "title": "EA Setup & Configuration",
+          "description": "Provide your EA and optimal settings from backtesting. We set up demo accounts on your chosen brokers."
+        },
+        {
+          "step": 2,
+          "title": "Forward Testing Launch",
+          "description": "Deploy EA on monitored VPS with multiple demo accounts, begin 24/7 data collection and performance tracking."
+        },
+        {
+          "step": 3,
+          "title": "Ongoing Monitoring",
+          "description": "Daily review of trades and performance. Weekly reports sent with current stats, notable trades, and preliminary observations."
+        },
+        {
+          "step": 4,
+          "title": "Comparative Analysis",
+          "description": "Compare forward test results with backtesting: win rate, profit factor, drawdown, signal accuracy, execution quality."
+        },
+        {
+          "step": 5,
+          "title": "Final Validation Report",
+          "description": "Receive comprehensive PDF report with all statistics, trade logs, broker comparisons, and go-live recommendation."
+        }
+      ],
+      "timeframe": "30-90 days",
+      "priceRange": {
+        "min": 200,
+        "max": 800,
+        "currency": "USD",
+        "note": "30-day test $200-300, 60-day $400-500, 90-day comprehensive validation $600-800"
+      },
+      "faq": [
+        {
+          "question": "Why is forward testing necessary if I've backtested?",
+          "answer": "Backtesting uses historical data without real spreads, slippage, or execution delays. Forward testing reveals how the EA actually performs with these real-world factors."
+        },
+        {
+          "question": "How long should forward testing run?",
+          "answer": "Minimum 30 days to capture various market conditions, ideally 60-90 days to include different volatility regimes and see consistency."
+        },
+        {
+          "question": "Can you test on specific brokers?",
+          "answer": "Yes! We can set up demo accounts with any broker you specify, or test across multiple brokers to compare execution quality and performance."
+        },
+        {
+          "question": "What if the EA performs poorly during forward testing?",
+          "answer": "This is valuable information! It means the EA needs optimization or isn't ready for live trading. Better to discover this on demo than real money."
+        },
+        {
+          "question": "Do you provide MyFxBook or FX Blue tracking links?",
+          "answer": "Yes! We can set up public tracking on MyFxBook, FX Blue, or similar platforms so you can monitor forward testing progress in real-time."
+        }
+      ],
+      "relatedServices": [
+        "strategy-backtesting-optimization",
+        "mt4-expert-advisor-development",
+        "mt5-expert-advisor-development",
+        "ea-modification-enhancement"
+      ],
+      "targetAudience": [
+        "Traders validating new EAs before live trading",
+        "EA developers needing third-party validation",
+        "Prop traders requiring proven track records",
+        "Signal providers needing verified results",
+        "Conservative traders prioritizing due diligence"
+      ],
+      "seoKeywords": [
+        "EA forward testing service",
+        "live EA validation",
+        "demo account EA testing",
+        "forward test expert advisor",
+        "EA performance validation",
+        "real-time EA testing"
+      ]
+    }
+  ],
+
+  "schemaTemplate": {
+    "id": "string (service-slug)",
+    "name": "string (Service Name)",
+    "slug": "string (URL-friendly)",
+    "category": "string (custom-development|conversion|testing|modification|support)",
+    "shortDescription": "string (50-100 words)",
+    "longDescription": "string (150-250 words)",
+    "features": ["array of 5-7 key features"],
+    "benefits": ["array of 4-5 main benefits"],
+    "process": [
+      {
+        "step": "number",
+        "title": "string",
+        "description": "string"
+      }
+    ],
+    "timeframe": "string (e.g., '2-4 weeks')",
+    "priceRange": {
+      "min": "number",
+      "max": "number",
+      "currency": "string",
+      "note": "string (optional pricing context)"
+    },
+    "faq": [
+      {
+        "question": "string",
+        "answer": "string"
+      }
+    ],
+    "relatedServices": ["array of related service IDs"],
+    "targetAudience": ["array of 4-5 ideal customer types"],
+    "seoKeywords": ["array of 5-8 SEO keywords"]
+  },
+
+  "platformIntegration": {
+    "existingPlatform": "TradeMetrics Pro (trademetricspro.com)",
+    "existingFeatures": [
+      "MT4/MT5 broker integration",
+      "AI psychology coaching for traders",
+      "Trade analytics and performance tracking",
+      "Real-time market data",
+      "Trading journal functionality"
+    ],
+    "subdomainStrategy": "ea.trademetricspro.com for EA development services",
+    "crossSellOpportunities": [
+      "Traders using TradeMetrics for manual trading can automate with EAs",
+      "EA users can leverage AI psychology coaching to improve strategy discipline",
+      "Trade analytics can analyze EA performance alongside manual trades",
+      "Existing user base provides immediate customer pool for EA services"
+    ]
+  },
+
+  "competitiveAnalysis": {
+    "marketInsights": [
+      "MT4 EA development ranges $300-1500 based on complexity",
+      "MT5 development costs 20-30% more due to advanced features",
+      "Pine Script conversion is highly demanded service ($200-1200)",
+      "Backtesting/optimization services range $150-600",
+      "Monthly maintenance plans common at $99-399/month",
+      "Custom indicator development $150-800 depending on complexity",
+      "Multi-timeframe systems command premium pricing $500-2000",
+      "Signal provider systems most expensive $800-3000"
+    ],
+    "averageDeliveryTimes": {
+      "simple_ea": "1-2 weeks",
+      "complex_ea": "3-6 weeks",
+      "pine_conversion": "1-3 weeks",
+      "backtesting": "1-2 weeks",
+      "modifications": "1-3 weeks",
+      "custom_indicators": "1-3 weeks",
+      "mt4_to_mt5": "2-4 weeks"
+    },
+    "keyCompetitors": [
+      "Fiverr freelancers (lower quality, lower prices)",
+      "MQL5 Freelance marketplace (variable quality)",
+      "Guru.com EA developers (mid-tier)",
+      "Specialized EA development firms (premium tier)",
+      "Automated conversion tools like Strategy Converter (limited accuracy)"
+    ]
+  },
+
+  "pricingStrategy": {
+    "positioning": "Mid-to-premium tier with emphasis on quality and support",
+    "valuePropositions": [
+      "Integration with TradeMetrics Pro platform for seamless experience",
+      "AI-powered analysis recommendations for EA optimization",
+      "Ongoing support through TradeMetrics ecosystem",
+      "Trade analytics integration for EA performance tracking",
+      "Psychology coaching to help traders stick to EA signals"
+    ],
+    "bundleOpportunities": [
+      "EA Development + 3 months maintenance",
+      "Pine Script Conversion + Backtesting + Forward Testing bundle",
+      "MT4 EA + MT5 Upgrade package",
+      "Custom EA + Custom Indicator combo"
+    ]
+  }
+}

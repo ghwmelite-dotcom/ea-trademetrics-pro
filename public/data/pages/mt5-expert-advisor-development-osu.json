@@ -1,0 +1,42 @@
+{
+  "serviceId": "mt5-expert-advisor-development",
+  "serviceName": "MT5 Expert Advisor Development",
+  "locationId": "osu",
+  "locationName": "Osu",
+  "slug": "mt5-expert-advisor-development-osu",
+  "pageTitle": "MT5 Expert Advisor Development in Osu - Oxford Street Trading Solutions | Start Now",
+  "metaDescription": "Expert MT5 EA development in Osu, Accra. Custom automated trading bots for forex traders on Oxford Street. Professional MQL5 programming with local support!",
+  "heroHeadline": "MT5 Expert Advisor Development Services in Osu",
+  "heroSubheadline": "Bring your trading strategy to life with professional MQL5 development on Oxford Street",
+  "localizedContent": {
+    "intro": "TradeMetrics Pro brings cutting-edge MT5 Expert Advisor development to Osu, one of Accra's most vibrant commercial and entertainment districts. Serving forex traders, tech entrepreneurs, and trading communities along Oxford Street and surrounding areas, we deliver sophisticated automated trading solutions powered by MetaTrader 5's advanced architecture. Our Osu-based clients benefit from proximity to Ghana's tech scene, making it easy to collaborate on complex EA projects that require multiple consultations. From simple trend-following robots to complex multi-strategy portfolio managers, we create EAs that leverage MT5's object-oriented programming, faster execution speeds, and superior backtesting capabilities to give Osu traders a competitive edge in global markets.",
+    "whyChooseUs": "As Osu continues to establish itself as a hub for Ghana's young professionals and tech-savvy entrepreneurs, TradeMetrics Pro provides the algorithmic trading expertise this dynamic community needs. We understand that Osu traders value innovation, modern technology, and reliable performance—exactly what MT5 EAs deliver. Our development process includes thorough requirements gathering sessions (available in-person at Oxford Street locations or via video call), professional MQL5 coding following industry best practices, comprehensive testing with multiple years of tick data, and detailed training on EA operation and optimization. We've helped numerous Osu-based traders automate strategies ranging from scalping to swing trading, each customized to their risk tolerance and market preferences.",
+    "localBenefits": [
+      "Convenient location for traders in Osu and nearby Labone, Cantonments areas",
+      "Understanding of Osu's tech-forward trading community and modern approaches",
+      "Flexible meeting schedules aligned with Oxford Street business environment",
+      "Experience with local internet connectivity considerations for EA reliability",
+      "Support for both MT5 demo and live accounts with Ghanaian brokers",
+      "Training sessions available at collaborative workspaces in Osu",
+      "Quick response times during peak Accra trading hours",
+      "Network of Osu traders using our EAs for peer insights"
+    ]
+  },
+  "images": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1620266757065-5814239881fd?ixlib=rb-4.0.3&w=1920&q=80",
+      "alt": "Forex trading analysis on laptop in modern Osu workspace",
+      "caption": "Professional MT5 development for Osu traders",
+      "credit": {"photographer": "Kanchanara", "unsplashUrl": "https://unsplash.com/photos/5hcV51EeeWc"}
+    },
+    "gallery": [
+      {"url": "https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Mobile MT5 trading", "caption": "Trade on the go across Osu", "credit": {"photographer": "Marga Santoso", "unsplashUrl": "https://unsplash.com/photos/OmPqCwX422Y"}},
+      {"url": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Trading charts analysis", "caption": "Data-driven strategy development", "credit": {"photographer": "Tech Daily", "unsplashUrl": "https://unsplash.com/photos/ztYmIQecyH4"}},
+      {"url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Algorithm visualization", "caption": "Advanced algorithmic strategies", "credit": {"photographer": "Maxim Hopman", "unsplashUrl": "https://unsplash.com/photos/fiXLQXAhCfk"}},
+      {"url": "https://images.unsplash.com/photo-1737301214226-3f959016436f?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Financial workspace", "caption": "Professional development environment", "credit": {"photographer": "Jakub Żerdzicki", "unsplashUrl": "https://unsplash.com/photos/wX062bi-T50"}}
+    ]
+  },
+  "cta": {"primary": "Request Free Consultation", "secondary": "View MT5 EA Portfolio", "phone": "+233 (0) 24 XXX XXXX", "whatsapp": "+233 24 XXX XXXX", "email": "ea@trademetricspro.com"},
+  "serviceArea": "Osu, Oxford Street, and neighboring districts",
+  "lastUpdated": "2025-11-26"
+}

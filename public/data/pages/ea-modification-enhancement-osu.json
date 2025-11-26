@@ -1,0 +1,199 @@
+{
+  "id": "ea-modification-enhancement-osu",
+  "service": "EA Modification & Enhancement",
+  "serviceSlug": "ea-modification-enhancement",
+  "location": "Osu",
+  "locationSlug": "osu",
+  "serviceNiche": "Expert Advisor Development",
+
+  "pageTitle": "EA Modification Osu - Expert MQL Developers on Oxford Street | TradeMetrics Pro",
+  "metaDescription": "Professional EA modification services in Osu. Upgrade MT4/MT5 Expert Advisors, add features, fix bugs. Located near Oxford Street, serving traders in vibrant Osu.",
+
+  "heroHeadline": "Expert Advisor Modification & Enhancement in Osu",
+  "heroSubheadline": "Professional MQL Development Services on Oxford Street - Transform Your Trading Bots",
+
+  "description": "TradeMetrics Pro brings world-class Expert Advisor modification and enhancement services to Osu, one of Accra's most vibrant commercial and tech districts. Located near Oxford Street's bustling business corridor, we serve the growing community of forex traders, fintech professionals, and trading enthusiasts in Osu and surrounding areas. Our MQL4/MQL5 developers specialize in breathing new life into underperforming or outdated Expert Advisors through targeted enhancements, bug fixes, and feature additions. Whether your EA needs improved risk management, trailing stop functionality, time filters, news event avoidance, multi-timeframe confirmations, or complete code modernization, our team delivers professional results. We understand the unique needs of Osu's tech-savvy trading community, offering fast turnaround times and responsive communication. Our EA enhancement services include adding custom indicators, implementing dashboard displays, optimizing slow code, fixing compilation errors after MT4/MT5 updates, converting MT4 EAs to MT5, and adding remote monitoring capabilities. From simple tweaks to comprehensive overhauls, we maintain your EA's profitable core while dramatically improving performance, reliability, and functionality. Serving Osu traders with the same professional standards we apply to international clients worldwide.",
+
+  "shortDescription": "Expert EA modification and enhancement services in Osu. Professional MQL developers upgrade MT4/MT5 trading bots with new features, bug fixes, and performance optimization near Oxford Street.",
+
+  "benefits": [
+    "Cost-effective alternative to building new EAs from scratch",
+    "Fast turnaround serving Osu's dynamic business community",
+    "Expert MQL4/MQL5 developers with proven track record",
+    "Add advanced features: trailing stops, dashboards, filters",
+    "Modernize legacy EAs for current platform versions",
+    "Optimize code for faster execution and lower CPU usage",
+    "MT4 to MT5 conversion with platform-specific enhancements",
+    "14-day support period included with all modifications"
+  ],
+
+  "process": [
+    {
+      "step": 1,
+      "title": "EA Analysis & Requirements",
+      "description": "Share your Expert Advisor file and describe desired modifications. We analyze the code structure, identify technical constraints, and discuss enhancement possibilities tailored to your trading strategy in Osu's market."
+    },
+    {
+      "step": 2,
+      "title": "Technical Proposal & Pricing",
+      "description": "Receive detailed proposal outlining technical approach, modification scope, realistic timeline, and transparent fixed-price quote. We ensure you understand exactly what will be delivered before work begins."
+    },
+    {
+      "step": 3,
+      "title": "Development & Implementation",
+      "description": "Our MQL developers implement requested modifications using industry best practices, maintain code readability, and test extensively on demo accounts to ensure reliability before delivery."
+    },
+    {
+      "step": 4,
+      "title": "Testing & Verification",
+      "description": "Comprehensive quality assurance including backtesting comparison, feature verification, performance benchmarking, and edge-case testing to ensure all enhancements work as intended."
+    },
+    {
+      "step": 5,
+      "title": "Delivery & Post-Support",
+      "description": "Receive modified EA files, detailed changelog documentation, installation guide, and benefit from 14 days of free support for refinements and technical questions."
+    }
+  ],
+
+  "pricingInfo": "EA modification pricing in Osu: Simple enhancements (indicator addition, basic filter) $100-200. Medium complexity (risk management overhaul, dashboard creation) $200-400. Complex modifications (major feature additions, architecture changes) $500-800. All quotes are fixed-price based on initial analysis. Contact us for free EA assessment.",
+
+  "serviceArea": "Osu, Oxford Street, Labone, Cantonments, and Greater Accra within 40km radius",
+  "availability": "Monday-Saturday 9AM-7PM GMT, Flexible hours for Osu business district",
+
+  "qualifications": [
+    "10+ years MQL4/MQL5 development experience",
+    "Professional software engineering background",
+    "Deep expertise in MetaTrader platform architecture",
+    "500+ successful EA modification projects completed",
+    "Active MQL5 community contributor"
+  ],
+  "yearsExperience": "10+ years",
+  "guarantees": [
+    "14-day post-delivery support included",
+    "Clean, maintainable, well-documented code",
+    "Preservation of original EA logic and profitability",
+    "Fixed pricing - no surprise charges",
+    "Complete confidentiality and IP protection"
+  ],
+  "emergencyAvailable": true,
+
+  "images": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&w=1920&q=80",
+      "alt": "Professional MQL code development for EA enhancement in Osu",
+      "caption": "Expert EA Modification Services in Osu, Oxford Street",
+      "credit": {
+        "photographer": "Florian Olivo",
+        "unsplashUrl": "https://unsplash.com/photos/4hbJ-eymZ1o"
+      }
+    },
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Trading bot code optimization and enhancement",
+        "caption": "Upgrading EA performance and functionality",
+        "credit": {
+          "photographer": "Chris Ried",
+          "unsplashUrl": "https://unsplash.com/photos/ieic5Tq8YMk"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "MQL programming workspace in Osu tech district",
+        "caption": "Professional development environment for EA modification",
+        "credit": {
+          "photographer": "Juanjo Jaramillo",
+          "unsplashUrl": "https://unsplash.com/photos/mZnx9429i94"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Expert Advisor enhancement development process",
+        "caption": "Adding advanced features to trading bots",
+        "credit": {
+          "photographer": "James Harrison",
+          "unsplashUrl": "https://unsplash.com/photos/vpOeXr5wmR4"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "MetaTrader EA programming on MacBook",
+        "caption": "Modern EA development for Osu traders",
+        "credit": {
+          "photographer": "Emile Perron",
+          "unsplashUrl": "https://unsplash.com/photos/xrVDYZRGdw4"
+        }
+      }
+    ]
+  },
+
+  "h2Headings": [
+    "Why Osu Traders Choose TradeMetrics Pro for EA Modification",
+    "Popular EA Enhancement Services in Osu",
+    "Our EA Modification Process",
+    "Transparent Pricing for EA Upgrades",
+    "Frequently Asked Questions About EA Modification",
+    "Get Started with EA Enhancement in Osu"
+  ],
+
+  "faq": [
+    {
+      "question": "Can you modify EAs without source code (.mq4 file)?",
+      "answer": "Yes, in most cases we can decompile .ex4 files and implement modifications. The process takes longer than working with source code, and heavily obfuscated or protected EAs may present challenges. We'll assess your specific EA and advise on feasibility during the free consultation."
+    },
+    {
+      "question": "What types of EA modifications do you handle in Osu?",
+      "answer": "We handle all EA modifications: adding indicators, implementing trailing stops, creating dashboards, adding news filters, improving risk management, optimizing slow code, fixing bugs, updating for new MT4/MT5 versions, converting MT4 to MT5, and comprehensive feature additions."
+    },
+    {
+      "question": "How quickly can you complete EA modifications?",
+      "answer": "Simple modifications: 1-3 days. Medium complexity: 5-7 days. Complex enhancements: 1-3 weeks. We prioritize fast turnaround for Osu's active trading community while maintaining quality standards. Rush service available for urgent needs."
+    },
+    {
+      "question": "Will modifications break my EA's existing functionality?",
+      "answer": "No. We maintain backward compatibility and preserve all existing profitable logic. Modifications are tested thoroughly to ensure they enhance rather than disrupt your EA's performance. You can always revert to the original if needed."
+    },
+    {
+      "question": "Do you work with EAs from other developers?",
+      "answer": "Absolutely! We regularly enhance EAs purchased from MQL5 marketplace, developed by freelancers, or coded by other companies. As long as we can access the code (source or decompiled), we can modify and improve it."
+    },
+    {
+      "question": "What's included in the 14-day support period?",
+      "answer": "Post-delivery support includes bug fixes related to modifications, minor adjustments to settings or behavior, technical assistance with installation, and clarification on how new features work. Major feature additions beyond original scope are quoted separately."
+    },
+    {
+      "question": "Can you optimize my EA for better performance?",
+      "answer": "Yes! We specialize in code optimization: reducing CPU usage, improving execution speed, eliminating memory leaks, optimizing indicator calculations, and implementing efficient data structures. Many Osu traders see 30-50% performance improvements."
+    },
+    {
+      "question": "How do I start the EA modification process?",
+      "answer": "Contact us via phone, WhatsApp, or email. Share your EA file (include source code if available), describe desired modifications, and we'll provide free technical analysis and fixed-price quote within 24 hours. Located in Osu for convenient consultations."
+    }
+  ],
+
+  "keywords": [
+    "EA modification",
+    "Expert Advisor enhancement",
+    "MQL programming",
+    "trading bot upgrade",
+    "MT4 EA optimization",
+    "MT5 EA improvement",
+    "fix Expert Advisor",
+    "add EA features"
+  ],
+  "localKeywords": [
+    "EA modification Osu",
+    "Expert Advisor developer Oxford Street",
+    "MQL programmer Osu Accra",
+    "trading bot enhancement Osu",
+    "MT4 developer Osu",
+    "EA optimization Osu Ghana",
+    "Expert Advisor upgrade Osu"
+  ],
+
+  "ctaPhone": "+233 XX XXX XXXX",
+  "ctaEmail": "ea-dev@trademetricspro.com",
+  "ctaWhatsApp": "+233 XX XXX XXXX",
+  "ctaText": "Upgrade Your EA Today - Free Consultation in Osu",
+  "ctaSecondary": "Request Technical Analysis & Quote"
+}

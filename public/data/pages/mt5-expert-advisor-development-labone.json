@@ -1,0 +1,42 @@
+{
+  "serviceId": "mt5-expert-advisor-development",
+  "serviceName": "MT5 Expert Advisor Development",
+  "locationId": "labone",
+  "locationName": "Labone",
+  "slug": "mt5-expert-advisor-development-labone",
+  "pageTitle": "MT5 Expert Advisor Development in Labone - Boutique Trading Solutions | Premium Service",
+  "metaDescription": "Professional MT5 EA development in Labone, Accra. Custom MQL5 programming for boutique traders. Cafes, cultural centers, peaceful residential trading community.",
+  "heroHeadline": "MT5 Expert Advisor Development in Labone",
+  "heroSubheadline": "Boutique trading automation solutions for Labone's discerning community",
+  "localizedContent": {
+    "intro": "TradeMetrics Pro delivers professional MT5 Expert Advisor development services to Labone, the boutique residential area nestled between Osu and Cantonments known for its cafes, cultural centers, and peaceful atmosphere. Our MQL5 development team creates sophisticated Expert Advisors that leverage MetaTrader 5's advanced capabilities including object-oriented programming, multi-asset trading support, faster execution speeds than MT4, and tick-level backtesting precision. Whether you're a forex trader in Labone looking to automate your proven strategy, a professional seeking portfolio automation, or an investor requiring algorithmic solutions, we deliver MT5 EAs built to institutional standards with local support.",
+    "whyChooseUs": "Serving Labone traders means understanding both global forex markets and local trading realities. TradeMetrics Pro combines world-class MQL5 development expertise with deep knowledge of challenges facing Ghanaian traders: internet connectivity considerations, broker selection for West African clients, currency pair preferences, and timezone-aware strategies. Our development process includes detailed strategy consultations, professional MQL5 coding following best practices, comprehensive backtesting with years of historical data, forward testing validation, and thorough training on EA operation. Each Expert Advisor we deliver includes full source code, detailed documentation, and ongoing support.",
+    "localBenefits": [
+      "Serving Labone and neighboring Osu, Cantonments communities",
+      "Understanding of Ghanaian forex trading environment",
+      "Support during Ghana business hours (GMT timezone)",
+      "Experience with brokers popular among West African traders",
+      "VPS recommendations optimized for Ghana connectivity",
+      "Training and documentation in clear English",
+      "Mobile money and local payment options",
+      "Community of successful Ghanaian traders using our EAs"
+    ]
+  },
+  "images": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1620266757065-5814239881fd?ixlib=rb-4.0.3&w=1920&q=80",
+      "alt": "Professional MT5 trading analysis in Labone",
+      "caption": "MT5 Expert Advisor development for Labone traders",
+      "credit": {"photographer": "Kanchanara", "unsplashUrl": "https://unsplash.com/photos/5hcV51EeeWc"}
+    },
+    "gallery": [
+      {"url": "https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Mobile MT5 platform", "caption": "Trade from anywhere in Labone", "credit": {"photographer": "Marga Santoso", "unsplashUrl": "https://unsplash.com/photos/OmPqCwX422Y"}},
+      {"url": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Trading charts analysis", "caption": "Professional backtesting and optimization", "credit": {"photographer": "Tech Daily", "unsplashUrl": "https://unsplash.com/photos/ztYmIQecyH4"}},
+      {"url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Algorithmic trading", "caption": "Advanced automated strategies", "credit": {"photographer": "Maxim Hopman", "unsplashUrl": "https://unsplash.com/photos/fiXLQXAhCfk"}},
+      {"url": "https://images.unsplash.com/photo-1737301214226-3f959016436f?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Trading workspace", "caption": "Comprehensive EA development", "credit": {"photographer": "Jakub Żerdzicki", "unsplashUrl": "https://unsplash.com/photos/wX062bi-T50"}}
+    ]
+  },
+  "cta": {"primary": "Request Free Consultation", "secondary": "View EA Portfolio", "phone": "+233 (0) 24 XXX XXXX", "whatsapp": "+233 24 XXX XXXX", "email": "ea@trademetricspro.com"},
+  "serviceArea": "Labone and surrounding Greater Accra areas",
+  "lastUpdated": "2025-11-26"
+}

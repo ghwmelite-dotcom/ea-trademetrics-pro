@@ -1,0 +1,181 @@
+{
+  "id": "ea-modification-enhancement-east-ridge",
+  "service": "EA Modification & Enhancement",
+  "serviceSlug": "ea-modification-enhancement",
+  "location": "East Ridge",
+  "locationSlug": "east-ridge",
+  "serviceNiche": "Expert Advisor Development",
+  "pageTitle": "EA Modification East Ridge - Expert MQL Developers | TradeMetrics Pro",
+  "metaDescription": "Professional EA modification in East Ridge. Upgrade MT4/MT5 Expert Advisors, add features, fix bugs. Fast turnaround serving East Ridge traders.",
+  "heroHeadline": "Expert Advisor Modification & Enhancement in East Ridge",
+  "heroSubheadline": "Professional MQL Development Services - Transform Your Trading Bots in East Ridge",
+  "description": "TradeMetrics Pro delivers professional Expert Advisor modification and enhancement services to traders in East Ridge, 3km from Accra's CBD. Central district with government offices and commercial activity. Our experienced MQL4/MQL5 developers specialize in upgrading existing EAs with new features, fixing bugs, optimizing performance, and modernizing legacy code. Whether you need improved risk management, trailing stops, time filters, dashboard displays, or complete code refactoring, we provide expert solutions tailored to traders in East Ridge. We serve the growing forex trading community across Greater Accra with fast turnaround times and professional quality. Our modification services include adding custom indicators, implementing multi-timeframe confirmations, fixing compilation errors after platform updates, converting MT4 EAs to MT5, and adding remote monitoring capabilities. We understand that East Ridge traders need reliable, high-performance automation tools. From simple feature additions to comprehensive EA overhauls, we maintain your trading bot's profitable core while dramatically improving functionality, speed, and reliability. Professional service with global development standards.",
+  "shortDescription": "Expert EA modification services in East Ridge. Professional MQL developers upgrade MT4/MT5 Expert Advisors with new features, bug fixes, and performance optimization.",
+  "benefits": [
+    "Save money vs new EA development",
+    "Fast turnaround serving East Ridge traders",
+    "10+ years MQL4/MQL5 expertise",
+    "Add advanced features: trailing stops, dashboards",
+    "Modernize legacy code for current MT4/MT5",
+    "Optimize for peak performance",
+    "MT4 to MT5 conversion with enhancements",
+    "14-day post-delivery support"
+  ],
+  "process": [
+    {
+      "step": 1,
+      "title": "EA Analysis & Consultation",
+      "description": "Share your EA file and modification requirements. We analyze code and discuss enhancements for East Ridge traders."
+    },
+    {
+      "step": 2,
+      "title": "Technical Proposal & Quote",
+      "description": "Detailed proposal with technical approach, timeline, and transparent fixed-price quote."
+    },
+    {
+      "step": 3,
+      "title": "Development & Testing",
+      "description": "Expert MQL developers implement modifications using best practices with thorough testing."
+    },
+    {
+      "step": 4,
+      "title": "Quality Assurance",
+      "description": "Comprehensive testing including backtesting, feature verification, and performance benchmarking."
+    },
+    {
+      "step": 5,
+      "title": "Delivery & Support",
+      "description": "Modified EA files, changelog, installation guide, and 14 days of free support."
+    }
+  ],
+  "pricingInfo": "EA modification in East Ridge: Simple enhancements $100-200. Medium complexity $200-400. Complex modifications $500-800. Fixed-price quotes. Contact for free consultation.",
+  "serviceArea": "East Ridge and Greater Accra Region within 40km",
+  "availability": "Monday-Saturday 9AM-7PM GMT, Flexible scheduling",
+  "qualifications": [
+    "10+ years MQL4/MQL5 expertise",
+    "Professional software development background",
+    "Deep MetaTrader platform knowledge",
+    "500+ EA modification projects",
+    "MQL5 community contributor"
+  ],
+  "yearsExperience": "10+ years",
+  "guarantees": [
+    "14-day post-delivery support",
+    "Clean, documented code",
+    "Backward compatibility maintained",
+    "Fixed-price quotes",
+    "Complete confidentiality"
+  ],
+  "emergencyAvailable": true,
+  "images": {
+    "heroImage": {
+      "url": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&w=1920&q=80",
+      "alt": "Professional MQL code development for EA modification in East Ridge",
+      "caption": "Expert EA Modification Services in East Ridge",
+      "credit": {
+        "photographer": "Florian Olivo",
+        "unsplashUrl": "https://unsplash.com/photos/4hbJ-eymZ1o"
+      }
+    },
+    "gallery": [
+      {
+        "url": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Trading bot code optimization",
+        "caption": "Upgrading EA performance",
+        "credit": {
+          "photographer": "Chris Ried",
+          "unsplashUrl": "https://unsplash.com/photos/ieic5Tq8YMk"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "MQL programming workspace",
+        "caption": "Professional development environment",
+        "credit": {
+          "photographer": "Juanjo Jaramillo",
+          "unsplashUrl": "https://unsplash.com/photos/mZnx9429i94"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "Expert Advisor enhancement",
+        "caption": "Adding advanced trading features",
+        "credit": {
+          "photographer": "James Harrison",
+          "unsplashUrl": "https://unsplash.com/photos/vpOeXr5wmR4"
+        }
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-4.0.3&w=1200&q=80",
+        "alt": "MetaTrader EA programming",
+        "caption": "Modern EA development for East Ridge",
+        "credit": {
+          "photographer": "Emile Perron",
+          "unsplashUrl": "https://unsplash.com/photos/xrVDYZRGdw4"
+        }
+      }
+    ]
+  },
+  "h2Headings": [
+    "Why Choose EA Modification in East Ridge",
+    "Popular EA Enhancement Services",
+    "Professional Modification Process",
+    "Transparent Pricing",
+    "Frequently Asked Questions",
+    "Contact Our East Ridge Team"
+  ],
+  "faq": [
+    {
+      "question": "Can you modify EAs without source code?",
+      "answer": "Yes, we can decompile .ex4 files in most cases. Process takes longer than with source code. Contact us for EA assessment."
+    },
+    {
+      "question": "How much does EA modification cost?",
+      "answer": "Simple modifications: $100-200. Medium: $200-400. Complex: $500-800. All quotes fixed-price after analysis."
+    },
+    {
+      "question": "How long does modification take?",
+      "answer": "Simple: 1-3 days. Medium: 5-7 days. Complex: 1-3 weeks. Fast turnaround with quality maintained."
+    },
+    {
+      "question": "Will existing features still work?",
+      "answer": "Yes! We maintain backward compatibility and preserve profitable core logic. Thorough testing before delivery."
+    },
+    {
+      "question": "Can you upgrade MT4 EA to MT5?",
+      "answer": "Absolutely! MT4 to MT5 migration is a core service. We convert while maintaining functionality and adding MT5 improvements."
+    },
+    {
+      "question": "What support after delivery?",
+      "answer": "14 days of free support: bug fixes, minor adjustments, installation help, technical assistance. Extended support available."
+    },
+    {
+      "question": "Can you optimize EA performance?",
+      "answer": "Yes! We specialize in optimization: reducing CPU usage, improving speed, efficient algorithms. Most see 30-50% improvement."
+    },
+    {
+      "question": "How to get started?",
+      "answer": "Contact via phone, WhatsApp, or email. Share EA file and requirements. Free technical analysis and quote within 24 hours."
+    }
+  ],
+  "keywords": [
+    "EA modification",
+    "Expert Advisor enhancement",
+    "MQL programming",
+    "trading bot upgrade",
+    "MT4 EA optimization",
+    "MT5 EA improvement"
+  ],
+  "localKeywords": [
+    "EA modification East Ridge",
+    "Expert Advisor developer East Ridge",
+    "MQL programmer East Ridge",
+    "trading bot East Ridge",
+    "EA optimization East Ridge Ghana"
+  ],
+  "ctaPhone": "+233 XX XXX XXXX",
+  "ctaEmail": "ea-dev@trademetricspro.com",
+  "ctaWhatsApp": "+233 XX XXX XXXX",
+  "ctaText": "Upgrade Your EA Today - Free Consultation",
+  "ctaSecondary": "Request Technical Analysis"
+}

@@ -1,0 +1,37 @@
+{
+  "serviceId": "mt5-expert-advisor-development",
+  "serviceName": "MT5 Expert Advisor Development",
+  "locationId": "tema",
+  "locationName": "Tema",
+  "slug": "mt5-expert-advisor-development-tema",
+  "pageTitle": "MT5 EA Development Tema - Port City Trading Solutions | Industrial Hub Automation",
+  "metaDescription": "MT5 Expert Advisor development in Tema port city. MQL5 programming for industrial traders. Automated trading for Ghana's seaport and manufacturing hub.",
+  "heroHeadline": "MT5 Expert Advisor Development in Tema",
+  "heroSubheadline": "Industrial-grade trading automation for Ghana's port city",
+  "localizedContent": {
+    "intro": "TradeMetrics Pro serves Tema, Ghana's major port city and industrial hub, with professional MT5 Expert Advisor development. Our MQL5 solutions cater to Tema's unique trader profile including manufacturing executives, port professionals, and industrial business owners seeking robust automated trading systems.",
+    "whyChooseUs": "Tema's industrial mindset demands reliable, production-ready solutions. We deliver MT5 EAs with institutional robustness, comprehensive testing, and 24/7 operation capabilities. Our development includes full backtesting, forward validation, and training for Tema's professional community.",
+    "localBenefits": [
+      "Serving Tema port and industrial district",
+      "Understanding of industrial professionals' trading needs",
+      "Robust EAs built for 24/7 reliability",
+      "Support for Tema and Spintex corridor traders",
+      "VPS recommendations for Tema connectivity",
+      "Experience with brokers serving Ghana",
+      "Mobile money payment options",
+      "Local Ghana business hours support"
+    ]
+  },
+  "images": {
+    "heroImage": {"url": "https://images.unsplash.com/photo-1620266757065-5814239881fd?ixlib=rb-4.0.3&w=1920&q=80", "alt": "MT5 trading in Tema", "caption": "Industrial-grade EA development", "credit": {"photographer": "Kanchanara", "unsplashUrl": "https://unsplash.com/photos/5hcV51EeeWc"}},
+    "gallery": [
+      {"url": "https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Mobile platform", "caption": "Trade from Tema", "credit": {"photographer": "Marga Santoso", "unsplashUrl": "https://unsplash.com/photos/OmPqCwX422Y"}},
+      {"url": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Analysis", "caption": "Professional testing", "credit": {"photographer": "Tech Daily", "unsplashUrl": "https://unsplash.com/photos/ztYmIQecyH4"}},
+      {"url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Algorithm", "caption": "Advanced automation", "credit": {"photographer": "Maxim Hopman", "unsplashUrl": "https://unsplash.com/photos/fiXLQXAhCfk"}},
+      {"url": "https://images.unsplash.com/photo-1737301214226-3f959016436f?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Development", "caption": "Robust EA solutions", "credit": {"photographer": "Jakub Żerdzicki", "unsplashUrl": "https://unsplash.com/photos/wX062bi-T50"}}
+    ]
+  },
+  "cta": {"primary": "Request Free Consultation", "secondary": "View EA Portfolio", "phone": "+233 (0) 24 XXX XXXX", "whatsapp": "+233 24 XXX XXXX", "email": "ea@trademetricspro.com"},
+  "serviceArea": "Tema, Spintex corridor, and Greater Accra Region",
+  "lastUpdated": "2025-11-26"
+}

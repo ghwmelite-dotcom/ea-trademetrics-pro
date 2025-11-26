@@ -1,0 +1,53 @@
+{
+  "id": "risk-management-integration-roman-ridge",
+  "service": "Advanced Risk Management Systems",
+  "serviceSlug": "risk-management-integration",
+  "location": "RomanRidge",
+  "locationSlug": "roman-ridge",
+  "serviceNiche": "Expert Advisor Development",
+  "pageTitle": "Advanced Risk Management Systems RomanRidge - Professional Trading Protection | Secure Capital Now",
+  "metaDescription": "Expert risk management for RomanRidge traders. Dynamic sizing, loss limits, prop firm compliance. 5km from Accra!",
+  "heroHeadline": "Professional Risk Management for RomanRidge Traders",
+  "heroSubheadline": "Protect Capital • Automated Controls • Scale Safely",
+  "description": "Trading from RomanRidge, 5km from Accra CBD? Protect capital with institutional risk management. Dynamic position sizing, automated loss limits, correlation management, volatility-adjusted sizing. We've helped RomanRidge traders pass FTMO, scale accounts from $1k to $100k+.",
+  "shortDescription": "Professional risk management for RomanRidge. Dynamic sizing, automated limits, prop firm compliance.",
+  "benefits": ["Prevent blowups in RomanRidge", "Dynamic sizing scales with account", "Pass FTMO automatically", "Correlation controls", "Volatility protection", "Portfolio risk manager", "Emergency kill switch", "Drawdown protection"],
+  "process": [
+    {"step": 1, "title": "Consultation", "description": "Discuss RomanRidge trading goals and risk needs."},
+    {"step": 2, "title": "Design", "description": "Custom risk architecture."},
+    {"step": 3, "title": "Development", "description": "MQL coding and integration."},
+    {"step": 4, "title": "Testing", "description": "Stress testing."},
+    {"step": 5, "title": "Deployment", "description": "Documentation and support."}
+  ],
+  "pricingInfo": "Standalone: $300-600. Full: $600-1200.",
+  "serviceArea": "RomanRidge and Accra areas",
+  "availability": "Monday-Saturday, 8 AM-8 PM GMT",
+  "qualifications": ["15+ years MQL", "200+ projects", "Prop firm expertise", "Institutional background", "Accra support"],
+  "yearsExperience": "15+ years",
+  "guarantees": ["Works or refund", "30 days support", "Source code ownership", "Fixed pricing"],
+  "emergencyAvailable": true,
+  "images": {
+    "heroImage": {"url": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&w=1920&q=80", "alt": "Risk management RomanRidge", "caption": "Risk Management RomanRidge", "credit": {"photographer": "Scott Graham", "unsplashUrl": "https://unsplash.com/photos/5fNmWej4tAA"}},
+    "gallery": [
+      {"url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Analytics", "caption": "Position sizing", "credit": {"photographer": "Luke Chesser", "unsplashUrl": "https://unsplash.com/photos/JKUTrJ4vK00"}},
+      {"url": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Planning", "caption": "Risk frameworks", "credit": {"photographer": "Carlos Muza", "unsplashUrl": "https://unsplash.com/photos/hpjSkU2UYSU"}},
+      {"url": "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Portfolio", "caption": "Drawdown protection", "credit": {"photographer": "Tech Daily", "unsplashUrl": "https://unsplash.com/photos/YItFRzBG_kI"}},
+      {"url": "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Controls", "caption": "Risk systems", "credit": {"photographer": "Isaac Smith", "unsplashUrl": "https://unsplash.com/photos/AT77Q0Njnt0"}}
+    ]
+  },
+  "h2Headings": ["Why RomanRidge Needs Risk Management", "Dynamic Sizing", "Prop Compliance", "Portfolio Protection", "Process", "FAQ"],
+  "faq": [
+    {"question": "Advanced vs basic in RomanRidge?", "answer": "Dynamic sizing, portfolio limits, correlation controls vs. basic stops."},
+    {"question": "Integrate into EA?", "answer": "Yes! Any EA with source code."},
+    {"question": "How sizing helps?", "answer": "Auto-scales. $1k = 0.01, $10k = 0.10 lots."},
+    {"question": "Pass FTMO?", "answer": "Yes! Auto-enforces 5% daily, 10% total loss."},
+    {"question": "Multiple EAs?", "answer": "Yes! Portfolio managers enforce global limits."},
+    {"question": "Kill switch?", "answer": "Instantly closes all positions."},
+    {"question": "Cost?", "answer": "$300-600 standalone, $600-1200 full."}
+  ],
+  "keywords": ["EA risk", "position sizing", "prop EA", "drawdown protection", "portfolio manager", "loss limits"],
+  "localKeywords": ["risk RomanRidge", "EA RomanRidge", "prop RomanRidge", "trading Ghana", "forex RomanRidge", "algo RomanRidge"],
+  "ctaPhone": "+233-XX-XXX-XXXX",
+  "ctaText": "Get Risk Management RomanRidge",
+  "ctaSecondary": "Free Assessment"
+}

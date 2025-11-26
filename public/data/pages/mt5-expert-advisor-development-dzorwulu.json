@@ -1,0 +1,37 @@
+{
+  "serviceId": "mt5-expert-advisor-development",
+  "serviceName": "MT5 Expert Advisor Development",
+  "locationId": "dzorwulu",
+  "locationName": "Dzorwulu",
+  "slug": "mt5-expert-advisor-development-dzorwulu",
+  "pageTitle": "MT5 EA Development Dzorwulu - Business District Trading Automation | Accra Mall Area",
+  "metaDescription": "MT5 Expert Advisor development in Dzorwulu business district. Professional MQL5 programming near Accra Mall. Automated trading solutions for Dzorwulu traders.",
+  "heroHeadline": "MT5 Expert Advisor Development in Dzorwulu",
+  "heroSubheadline": "Professional trading automation for Dzorwulu's business community",
+  "localizedContent": {
+    "intro": "TradeMetrics Pro provides professional MT5 Expert Advisor development to Dzorwulu, centrally located with excellent transportation access and home to business centers and Accra Mall. Our MQL5 expertise creates advanced EAs leveraging MetaTrader 5's object-oriented programming, multi-asset support, and tick-level backtesting for Dzorwulu's professional trading community.",
+    "whyChooseUs": "We understand Dzorwulu's business-focused environment and deliver MT5 EAs that match this professional mindset. Our development includes detailed consultations, expert MQL5 coding, comprehensive testing, and full training. Each EA comes with source code, documentation, and local support during Ghana business hours.",
+    "localBenefits": [
+      "Convenient for Dzorwulu and Accra Mall area traders",
+      "Business-hour support aligned with Dzorwulu commercial activity",
+      "Understanding of Ghana trading environment and regulations",
+      "Experience with West African broker platforms",
+      "VPS setup optimized for Ghana connectivity",
+      "Local payment options including mobile money",
+      "Integration with TradeMetrics Pro analytics",
+      "Community of Ghanaian EA traders"
+    ]
+  },
+  "images": {
+    "heroImage": {"url": "https://images.unsplash.com/photo-1620266757065-5814239881fd?ixlib=rb-4.0.3&w=1920&q=80", "alt": "MT5 trading in Dzorwulu", "caption": "Professional EA development for Dzorwulu", "credit": {"photographer": "Kanchanara", "unsplashUrl": "https://unsplash.com/photos/5hcV51EeeWc"}},
+    "gallery": [
+      {"url": "https://images.unsplash.com/photo-1612178991541-b48cc8e92a4d?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Mobile trading", "caption": "Trade from Dzorwulu", "credit": {"photographer": "Marga Santoso", "unsplashUrl": "https://unsplash.com/photos/OmPqCwX422Y"}},
+      {"url": "https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Chart analysis", "caption": "Professional backtesting", "credit": {"photographer": "Tech Daily", "unsplashUrl": "https://unsplash.com/photos/ztYmIQecyH4"}},
+      {"url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Algorithm tech", "caption": "Advanced automation", "credit": {"photographer": "Maxim Hopman", "unsplashUrl": "https://unsplash.com/photos/fiXLQXAhCfk"}},
+      {"url": "https://images.unsplash.com/photo-1737301214226-3f959016436f?ixlib=rb-4.0.3&w=1200&q=80", "alt": "Workspace", "caption": "EA development", "credit": {"photographer": "Jakub Żerdzicki", "unsplashUrl": "https://unsplash.com/photos/wX062bi-T50"}}
+    ]
+  },
+  "cta": {"primary": "Request Free Consultation", "secondary": "View EA Portfolio", "phone": "+233 (0) 24 XXX XXXX", "whatsapp": "+233 24 XXX XXXX", "email": "ea@trademetricspro.com"},
+  "serviceArea": "Dzorwulu, Accra Mall area, and Greater Accra",
+  "lastUpdated": "2025-11-26"
+}
