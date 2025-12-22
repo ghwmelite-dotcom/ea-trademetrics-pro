@@ -39,3 +39,26 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+Thumbs.db
+._*
+
+# Logs
+*.log
+
+# ESLint/Stylelint cache
+.eslintcache
+.stylelintcache
+
+# Turbo
+.turbo
+
+# Claude Code
+.claude/
