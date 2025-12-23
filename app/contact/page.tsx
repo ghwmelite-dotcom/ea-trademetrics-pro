@@ -121,6 +121,7 @@ export default function ContactPage() {
       href: `https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, '')}`,
       color: 'bg-[#25D366]',
       hoverColor: 'hover:bg-[#20BA5C]',
+      descriptionColor: 'text-white/80',
     },
     {
       icon: (
@@ -129,10 +130,11 @@ export default function ContactPage() {
         </svg>
       ),
       label: 'Phone',
-      description: siteConfig.contact.phone,
-      href: `tel:${siteConfig.contact.phone}`,
+      description: '+233 505 982 361',
+      href: 'tel:+233505982361',
       color: 'bg-[#00d4ff]/20',
       hoverColor: 'hover:bg-[#00d4ff]/30',
+      descriptionColor: 'text-gray-400',
     },
     {
       icon: (
@@ -141,10 +143,11 @@ export default function ContactPage() {
         </svg>
       ),
       label: 'Email',
-      description: siteConfig.contact.email,
-      href: `mailto:${siteConfig.contact.email}`,
+      description: 'contact@trademetricspro.com',
+      href: 'mailto:contact@trademetricspro.com',
       color: 'bg-[#00d4ff]/20',
       hoverColor: 'hover:bg-[#00d4ff]/30',
+      descriptionColor: 'text-gray-400',
     },
     {
       icon: (
@@ -157,6 +160,7 @@ export default function ContactPage() {
       href: `https://t.me/${siteConfig.contact.telegram}`,
       color: 'bg-[#0088cc]/20',
       hoverColor: 'hover:bg-[#0088cc]/30',
+      descriptionColor: 'text-gray-400',
     },
   ];
 
@@ -478,7 +482,7 @@ export default function ContactPage() {
                       </div>
                       <div>
                         <div className="font-semibold text-white">{method.label}</div>
-                        <div className="text-gray-400 text-sm">{method.description}</div>
+                        <div className={`${method.descriptionColor} text-sm`}>{method.description}</div>
                       </div>
                       <svg
                         className="w-5 h-5 text-gray-400 ml-auto group-hover:translate-x-1 transition-transform"
