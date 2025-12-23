@@ -3,7 +3,6 @@ import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import TelegramChat from "@/components/ui/TelegramChat";
 import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/components/StructuredData";
 import { AnalyticsProvider } from "@/components/Analytics";
 import { siteConfig } from "@/lib/config";
@@ -154,11 +153,6 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
-
-        {/* Telegram Chat Widget */}
-        {siteConfig.features.chatWidget && (
-          <TelegramChat username={siteConfig.contact.telegram} />
-        )}
 
         {/* Analytics */}
         <AnalyticsProvider />
