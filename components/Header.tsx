@@ -26,6 +26,9 @@ export default function Header() {
   ];
 
   const toolsItems = [
+    { href: '/tools/demo', label: 'EA Backtest Simulator', icon: '🎮', description: 'Test strategies live' },
+    { href: '/tools/performance', label: 'Performance Dashboard', icon: '📈', description: 'Live EA results' },
+    { href: '/tools/tracker', label: 'Project Tracker', icon: '📍', description: 'Track your project' },
     { href: '/tools/calculator', label: 'Profitability Calculator', icon: '📊', description: 'Monte Carlo simulation' },
     { href: '/tools/estimator', label: 'Cost Estimator', icon: '💰', description: 'Get instant quote' },
     { href: '/tools/audit', label: 'Strategy Audit', icon: '🔍', description: 'Analyze Pine Script' },
