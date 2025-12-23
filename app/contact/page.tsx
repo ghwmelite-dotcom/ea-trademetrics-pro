@@ -57,28 +57,45 @@ export default function ContactPage() {
     setStatus('sending');
 
     try {
-      // Submit to Formspree or custom endpoint
-      // For static export, we use a third-party form service
-      const response = await fetch('https://formspree.io/f/your-form-id', {
+      // Submit to Web3Forms
+      // Get your free access key at https://web3forms.com/
+      const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '';
+
+      if (!WEB3FORMS_KEY) {
+        throw new Error('Web3Forms key not configured');
+      }
+
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Accept': 'application/json',
         },
         body: JSON.stringify({
-          ...validation.data,
-          _subject: `New EA Development Inquiry from ${validation.data.name}`,
-          _replyto: validation.data.email,
+          access_key: WEB3FORMS_KEY,
+          subject: `New EA Development Inquiry from ${validation.data.name}`,
+          from_name: 'TradeMetrics Pro EA',
+          name: validation.data.name,
+          email: validation.data.email,
+          phone: validation.data.phone || 'Not provided',
+          service: validation.data.service || 'Not specified',
+          message: validation.data.message,
+          // Redirect is disabled for AJAX submissions
+          redirect: false,
         }),
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (result.success) {
         setStatus('sent');
         setFormData({ name: '', email: '', phone: '', service: '', message: '', honeypot: '' });
       } else {
-        throw new Error('Failed to send message');
+        throw new Error(result.message || 'Failed to send message');
       }
-    } catch {
+    } catch (error) {
+      console.error('Form submission error:', error);
+
       // Fallback: Open mailto link
       const mailtoLink = `mailto:${siteConfig.contact.email}?subject=${encodeURIComponent(
         `EA Development Inquiry from ${formData.name}`
