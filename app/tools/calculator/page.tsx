@@ -74,11 +74,14 @@ export default function CalculatorPage() {
     ? Math.max(...simulationResults.percentiles.p95.map(p => p.balance))
     : formData.startingCapital * 2;
 
-  // Prefetch reduced motion preference
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
+  // Prefetch reduced motion preference - using lazy initializer and sync subscription
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(() => {
+    if (typeof window === 'undefined') return false;
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  });
+
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
     const handler = (e: MediaQueryListEvent) => setPrefersReducedMotion(e.matches);
     mediaQuery.addEventListener('change', handler);
     return () => mediaQuery.removeEventListener('change', handler);

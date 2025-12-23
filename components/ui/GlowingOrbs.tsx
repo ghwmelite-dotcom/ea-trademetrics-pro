@@ -1,5 +1,6 @@
 'use client';
 
+import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 
 interface GlowingOrbsProps {
@@ -51,16 +52,24 @@ export default function GlowingOrbs({ className = '', variant = 'hero' }: Glowin
   );
 }
 
+// Seeded random number generator for stable particle positions
+function seededRandom(seed: number): number {
+  const x = Math.sin(seed) * 10000;
+  return x - Math.floor(x);
+}
+
 // Floating particles effect
 export function FloatingParticles({ count = 20, className = '' }: { count?: number; className?: string }) {
-  const particles = Array.from({ length: count }, (_, i) => ({
-    id: i,
-    size: Math.random() * 4 + 2,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    duration: Math.random() * 10 + 10,
-    delay: Math.random() * 5,
-  }));
+  // Use useMemo with stable seed-based random to avoid hydration mismatches
+  const particles = useMemo(() =>
+    Array.from({ length: count }, (_, i) => ({
+      id: i,
+      size: seededRandom(i * 1.1) * 4 + 2,
+      x: seededRandom(i * 2.2) * 100,
+      y: seededRandom(i * 3.3) * 100,
+      duration: seededRandom(i * 4.4) * 10 + 10,
+      delay: seededRandom(i * 5.5) * 5,
+    })), [count]);
 
   return (
     <div className={`absolute inset-0 overflow-hidden pointer-events-none ${className}`}>

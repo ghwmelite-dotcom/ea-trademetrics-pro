@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { AnimatedSection, AnimatedCard, GlowingOrbs, GridBackground } from '@/components/ui';
+import { AnimatedSection, GlowingOrbs, GridBackground } from '@/components/ui';
 
 interface BlogPost {
   slug: string;

@@ -29,7 +29,9 @@ export default async function LocationPage({ params }: Props) {
   if (!location) notFound();
 
   const services = await getAllServices();
-  const locationPages = await getServicePagesByLocationId(location.id);
+  // Service pages for this location (available for future use)
+  const _locationPages = await getServicePagesByLocationId(location.id);
+  void _locationPages; // Suppress unused warning
 
   return (
     <div className="min-h-screen py-16 px-4">

@@ -512,7 +512,7 @@ Telegram:   @my_ea_hub
                 className="glass-card rounded-2xl p-8"
               >
                 <h2 className="text-2xl font-bold text-white mb-2 font-display">Additional Features</h2>
-                <p className="text-gray-400 mb-6">Select any extra features you'd like included.</p>
+                <p className="text-gray-400 mb-6">Select any extra features you&apos;d like included.</p>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   {additionalFeatures.map((feature) => (

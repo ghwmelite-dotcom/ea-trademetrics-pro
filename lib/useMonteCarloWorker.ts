@@ -61,12 +61,16 @@ export function useMonteCarloWorker(): UseMonteCarloWorkerReturn {
   const [isRunning, setIsRunning] = useState(false);
   const [progress, setProgress] = useState<{ completed: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [isSupported, setIsSupported] = useState(true);
+  // Use lazy initializer to check worker support
+  const [isSupported] = useState(() => {
+    if (typeof window === 'undefined') return true; // Assume supported on server, check on client
+    return typeof window.Worker !== 'undefined';
+  });
 
   // Initialize worker
   useEffect(() => {
+    // Skip if window or Worker not available (already handled by lazy initializer)
     if (typeof window === 'undefined' || !window.Worker) {
-      setIsSupported(false);
       return;
     }
 
@@ -107,7 +111,8 @@ export function useMonteCarloWorker(): UseMonteCarloWorkerReturn {
       workerRef.current.postMessage({ type: 'PING' });
     } catch (err) {
       console.error('Failed to create worker:', err);
-      setIsSupported(false);
+      // Worker creation failed - will use fallback in runSimulation
+      workerRef.current = null;
     }
 
     return () => {

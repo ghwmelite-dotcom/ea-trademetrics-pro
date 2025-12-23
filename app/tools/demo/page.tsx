@@ -4,6 +4,49 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AnimatedSection, GlowingOrbs, GridBackground } from '@/components/ui';
 
+// TypeScript interfaces for type safety
+interface OHLCData {
+  date: string;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+}
+
+interface Trade {
+  type: 'long' | 'short';
+  entry: number;
+  exit: number;
+  pips: number;
+  entryDate: string;
+  exitDate: string;
+}
+
+interface StrategyParams {
+  [key: string]: number;
+}
+
+interface EquityPoint {
+  date: string;
+  equity: number;
+}
+
+interface BacktestResults {
+  trades: Trade[];
+  totalTrades: number;
+  winningTrades: number;
+  losingTrades: number;
+  winRate: number;
+  totalPips: number;
+  avgWin: number;
+  avgLoss: number;
+  profitFactor: number;
+  equityCurve: EquityPoint[];
+  finalEquity: number;
+  returnPercent: number;
+  maxDrawdown: number;
+}
+
 // Sample historical data (simplified OHLC for demo)
 const generateHistoricalData = (days: number, volatility: number = 0.02) => {
   const data = [];
@@ -44,9 +87,9 @@ const strategies = {
       { id: 'fastPeriod', label: 'Fast MA Period', default: 10, min: 5, max: 50 },
       { id: 'slowPeriod', label: 'Slow MA Period', default: 20, min: 10, max: 100 },
     ],
-    execute: (data: any[], params: any) => {
+    execute: (data: OHLCData[], params: StrategyParams): Trade[] => {
       const { fastPeriod, slowPeriod } = params;
-      const trades: any[] = [];
+      const trades: Trade[] = [];
       let position: 'long' | 'short' | null = null;
       let entryPrice = 0;
       let entryDate = '';
@@ -102,9 +145,9 @@ const strategies = {
       { id: 'oversold', label: 'Oversold Level', default: 30, min: 10, max: 40 },
       { id: 'overbought', label: 'Overbought Level', default: 70, min: 60, max: 90 },
     ],
-    execute: (data: any[], params: any) => {
+    execute: (data: OHLCData[], params: StrategyParams): Trade[] => {
       const { rsiPeriod, oversold, overbought } = params;
-      const trades: any[] = [];
+      const trades: Trade[] = [];
       let position: 'long' | 'short' | null = null;
       let entryPrice = 0;
       let entryDate = '';
@@ -162,9 +205,9 @@ const strategies = {
     params: [
       { id: 'channelPeriod', label: 'Channel Period', default: 20, min: 10, max: 50 },
     ],
-    execute: (data: any[], params: any) => {
+    execute: (data: OHLCData[], params: StrategyParams): Trade[] => {
       const { channelPeriod } = params;
-      const trades: any[] = [];
+      const trades: Trade[] = [];
       let position: 'long' | 'short' | null = null;
       let entryPrice = 0;
       let entryDate = '';
@@ -209,7 +252,7 @@ export default function DemoPage() {
   const [selectedStrategy, setSelectedStrategy] = useState<StrategyKey>('ma-crossover');
   const [params, setParams] = useState<Record<string, number>>({});
   const [isRunning, setIsRunning] = useState(false);
-  const [results, setResults] = useState<any>(null);
+  const [results, setResults] = useState<BacktestResults | null>(null);
   const [historicalData] = useState(() => generateHistoricalData(365, 0.015));
 
   const strategy = strategies[selectedStrategy];
@@ -221,7 +264,7 @@ export default function DemoPage() {
       defaults[p.id] = params[p.id] ?? p.default;
     });
     return defaults;
-  }, [selectedStrategy, params, strategy.params]);
+  }, [params, strategy.params]);
 
   const runBacktest = async () => {
     setIsRunning(true);
@@ -489,11 +532,11 @@ export default function DemoPage() {
                         {/* Equity line */}
                         <path
                           d={(() => {
-                            const minEquity = Math.min(...results.equityCurve.map((p: any) => p.equity));
-                            const maxEquity = Math.max(...results.equityCurve.map((p: any) => p.equity));
+                            const minEquity = Math.min(...results.equityCurve.map((p: EquityPoint) => p.equity));
+                            const maxEquity = Math.max(...results.equityCurve.map((p: EquityPoint) => p.equity));
                             const range = maxEquity - minEquity || 1;
 
-                            return results.equityCurve.map((point: any, i: number) => {
+                            return results.equityCurve.map((point: EquityPoint, i: number) => {
                               const x = (i / (results.equityCurve.length - 1)) * 800;
                               const y = 200 - ((point.equity - minEquity) / range) * 180 - 10;
                               return `${i === 0 ? 'M' : 'L'} ${x} ${y}`;
@@ -517,8 +560,8 @@ export default function DemoPage() {
 
                       {/* Y-axis labels */}
                       <div className="absolute left-0 top-0 h-full flex flex-col justify-between text-xs text-gray-500 py-2">
-                        <span>${Math.max(...results.equityCurve.map((p: any) => p.equity)).toLocaleString()}</span>
-                        <span>${Math.min(...results.equityCurve.map((p: any) => p.equity)).toLocaleString()}</span>
+                        <span>${Math.max(...results.equityCurve.map((p: EquityPoint) => p.equity)).toLocaleString()}</span>
+                        <span>${Math.min(...results.equityCurve.map((p: EquityPoint) => p.equity)).toLocaleString()}</span>
                       </div>
                     </div>
                     <div className="flex justify-between text-xs text-gray-500 mt-2">

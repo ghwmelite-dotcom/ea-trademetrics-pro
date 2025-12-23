@@ -299,7 +299,7 @@ strategy.exit("Exit Short", "Short", profit=200, loss=100)`;
                     className="flex flex-col items-center justify-center h-[400px] text-center"
                   >
                     <div className="text-6xl mb-4">🔬</div>
-                    <p className="text-gray-400">Paste your Pine Script code and click "Analyze Strategy" to get started.</p>
+                    <p className="text-gray-400">Paste your Pine Script code and click &quot;Analyze Strategy&quot; to get started.</p>
                   </motion.div>
                 ) : (
                   <motion.div
@@ -456,7 +456,7 @@ strategy.exit("Exit Short", "Short", profit=200, loss=100)`;
               Ready for Professional Conversion?
             </h3>
             <p className="text-gray-400 mb-6">
-              Book a free 15-minute strategy review call with our team. We'll discuss your specific needs and provide a custom quote.
+              Book a free 15-minute strategy review call with our team. We&apos;ll discuss your specific needs and provide a custom quote.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <AnimatedButton href="/contact" variant="glow">

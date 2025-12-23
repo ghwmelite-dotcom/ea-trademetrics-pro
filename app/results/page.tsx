@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import { AnimatedSection, AnimatedButton, AnimatedCard, GlowingOrbs, GridBackground } from '@/components/ui';
 
 interface EAResult {
@@ -150,7 +149,7 @@ export default function ResultsPage() {
             Our <span className="text-gradient">Track Record</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Real results from Expert Advisors we've built for clients. All accounts verified through third-party tracking.
+            Real results from Expert Advisors we&apos;ve built for clients. All accounts verified through third-party tracking.
           </p>
         </AnimatedSection>
 

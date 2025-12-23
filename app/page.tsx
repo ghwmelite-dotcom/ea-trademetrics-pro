@@ -605,7 +605,7 @@ export default function HomePage() {
                 Our <span className="text-gradient">Track Record</span>
               </h2>
               <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                Real results from Expert Advisors we've built. All accounts verified through third-party tracking services.
+                Real results from Expert Advisors we&apos;ve built. All accounts verified through third-party tracking services.
               </p>
 
               {/* Mini Stats */}
@@ -717,24 +717,26 @@ export default function HomePage() {
                     <span className="w-3 h-3 rounded-full bg-green-500" />
                   </div>
                   <pre className="text-gray-300 overflow-x-auto">
+                    <code>
 {`// Your Strategy → Our Code
 void OnTick() {
   if(BuySignal()) {
     OpenPosition(OP_BUY);
-    `}<span className="text-[#00ff88]">// Risk-managed entry</span>{`
+    `}<span className="text-[#00ff88]">{`// Risk-managed entry`}</span>{`
   }
 
   ManageTrailingStop();
-  `}<span className="text-[#00d4ff]">// Dynamic SL/TP</span>{`
+  `}<span className="text-[#00d4ff]">{`// Dynamic SL/TP`}</span>{`
 
   if(SellSignal()) {
     OpenPosition(OP_SELL);
   }
 }
 
-`}<span className="text-[#00d4ff]">// Built with precision</span>{`
-`}<span className="text-[#00ff88]">// Tested rigorously</span>{`
-`}<span className="text-gray-500">// Delivered on time</span>
+`}<span className="text-[#00d4ff]">{`// Built with precision`}</span>{`
+`}<span className="text-[#00ff88]">{`// Tested rigorously`}</span>{`
+`}<span className="text-gray-500">{`// Delivered on time`}</span>
+                    </code>
                   </pre>
                 </motion.div>
 
