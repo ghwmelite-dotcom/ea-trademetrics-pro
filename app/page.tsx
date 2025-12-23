@@ -294,6 +294,245 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Premium Tools Showcase Section */}
+      <section className="relative py-24 px-4 overflow-hidden">
+        <GlowingOrbs variant="section" />
+        <div className="container mx-auto relative z-10">
+          <AnimatedSection className="text-center mb-16">
+            <motion.div
+              className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6"
+              whileHover={{ scale: 1.02 }}
+            >
+              <span className="text-[#00d4ff]">✨</span>
+              <span className="text-sm font-medium text-gray-300">Premium Features</span>
+            </motion.div>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-display">
+              Interactive <span className="text-gradient">Trading Tools</span>
+            </h2>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Experience our live demo simulator, track real EA performance, and monitor your project progress in real-time.
+            </p>
+          </AnimatedSection>
+
+          {/* Tool 1: EA Backtest Simulator */}
+          <motion.div
+            className="glass-card rounded-3xl p-8 mb-8 overflow-hidden"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
+              <div>
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="text-4xl">🎮</span>
+                  <div>
+                    <h3 className="text-2xl font-bold text-white font-display">EA Backtest Simulator</h3>
+                    <span className="text-[#00ff88] text-sm font-medium">Interactive Demo</span>
+                  </div>
+                </div>
+                <p className="text-gray-400 mb-6">
+                  Test trading strategies in real-time with our interactive simulator. Choose from MA Crossover, RSI Reversal, or Channel Breakout strategies and watch the equity curve unfold.
+                </p>
+                <div className="flex flex-wrap gap-3 mb-6">
+                  {['3 Strategies', 'Live Equity Curve', 'Full Statistics', 'Adjustable Parameters'].map((feature) => (
+                    <span key={feature} className="px-3 py-1 bg-white/5 rounded-full text-sm text-gray-300 border border-white/10">
+                      {feature}
+                    </span>
+                  ))}
+                </div>
+                <Link href="/tools/demo">
+                  <motion.button
+                    className="px-6 py-3 bg-gradient-to-r from-[#00d4ff] to-[#00ff88] text-black font-bold rounded-xl flex items-center gap-2"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    Launch Simulator
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </motion.button>
+                </Link>
+              </div>
+
+              {/* Mini Chart Preview */}
+              <motion.div
+                className="relative bg-black/30 rounded-2xl p-6 border border-white/10"
+                whileHover={{ scale: 1.02 }}
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <span className="text-sm text-gray-400">Equity Curve Preview</span>
+                  <span className="px-2 py-1 bg-[#00ff88]/20 text-[#00ff88] text-xs rounded-full">+47.3%</span>
+                </div>
+                <svg className="w-full h-32" viewBox="0 0 400 100" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="chartGradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="#00d4ff" />
+                      <stop offset="100%" stopColor="#00ff88" />
+                    </linearGradient>
+                    <linearGradient id="chartFill1" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stopColor="#00ff88" stopOpacity="0.3" />
+                      <stop offset="100%" stopColor="#00ff88" stopOpacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 80 Q50 75 100 60 T200 40 T300 25 T400 15" fill="none" stroke="url(#chartGradient1)" strokeWidth="3" strokeLinecap="round" />
+                  <path d="M0 80 Q50 75 100 60 T200 40 T300 25 T400 15 L400 100 L0 100 Z" fill="url(#chartFill1)" />
+                </svg>
+                <div className="grid grid-cols-4 gap-4 mt-4 text-center">
+                  <div>
+                    <div className="text-white font-bold">156</div>
+                    <div className="text-xs text-gray-500">Trades</div>
+                  </div>
+                  <div>
+                    <div className="text-[#00ff88] font-bold">68.2%</div>
+                    <div className="text-xs text-gray-500">Win Rate</div>
+                  </div>
+                  <div>
+                    <div className="text-white font-bold">2.14</div>
+                    <div className="text-xs text-gray-500">Profit Factor</div>
+                  </div>
+                  <div>
+                    <div className="text-yellow-400 font-bold">12.3%</div>
+                    <div className="text-xs text-gray-500">Max DD</div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Tools 2 & 3: Side by Side */}
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* Tool 2: Performance Dashboard */}
+            <motion.div
+              className="glass-card rounded-2xl p-6 overflow-hidden group"
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-3xl">📈</span>
+                <div>
+                  <h3 className="text-xl font-bold text-white font-display">Live Performance Dashboard</h3>
+                  <span className="text-[#00d4ff] text-sm font-medium">Real Results</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm mb-4">
+                Track real-time performance of EAs we&apos;ve built for clients. Verified results with equity curves and full statistics.
+              </p>
+
+              {/* Mini EA Cards Preview */}
+              <div className="space-y-2 mb-4">
+                {[
+                  { name: 'Trend Hunter Pro', gain: '+48.5%', status: 'live' },
+                  { name: 'Scalper X', gain: '+42.5%', status: 'live' },
+                  { name: 'Grid Master', gain: '+25.0%', status: 'live' },
+                ].map((ea, i) => (
+                  <motion.div
+                    key={ea.name}
+                    className="flex items-center justify-between p-3 bg-black/20 rounded-lg border border-white/5"
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="relative flex h-2 w-2">
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
+                      </span>
+                      <span className="text-sm text-white">{ea.name}</span>
+                    </div>
+                    <span className="text-[#00ff88] font-bold text-sm">{ea.gain}</span>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="flex items-center justify-between">
+                <span className="text-xs text-gray-500">6 Active EAs • Updated Live</span>
+                <Link href="/tools/performance">
+                  <motion.span
+                    className="text-[#00d4ff] text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all"
+                    whileHover={{ x: 5 }}
+                  >
+                    View Dashboard
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </motion.span>
+                </Link>
+              </div>
+            </motion.div>
+
+            {/* Tool 3: Project Tracker */}
+            <motion.div
+              className="glass-card rounded-2xl p-6 overflow-hidden group"
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -5 }}
+            >
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-3xl">📍</span>
+                <div>
+                  <h3 className="text-xl font-bold text-white font-display">Project Progress Tracker</h3>
+                  <span className="text-[#00ff88] text-sm font-medium">Client Portal</span>
+                </div>
+              </div>
+              <p className="text-gray-400 text-sm mb-4">
+                Track your EA development project in real-time. See milestones, receive updates, and know exactly when your bot will be ready.
+              </p>
+
+              {/* Progress Preview */}
+              <div className="bg-black/20 rounded-lg p-4 border border-white/5 mb-4">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-sm text-white font-medium">Multi-Pair Scalper EA</span>
+                  <span className="px-2 py-0.5 bg-[#00d4ff]/20 text-[#00d4ff] text-xs rounded-full">In Development</span>
+                </div>
+                <div className="w-full bg-white/10 rounded-full h-2 mb-2">
+                  <motion.div
+                    className="bg-gradient-to-r from-[#00d4ff] to-[#00ff88] h-2 rounded-full"
+                    initial={{ width: 0 }}
+                    whileInView={{ width: '55%' }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.3 }}
+                  />
+                </div>
+                <div className="flex justify-between text-xs text-gray-500">
+                  <span>55% Complete</span>
+                  <span>Est. Jan 15, 2026</span>
+                </div>
+
+                {/* Mini Timeline */}
+                <div className="flex items-center gap-1 mt-3">
+                  {['Discovery', 'Design', 'Development', 'Testing', 'Delivery'].map((phase, i) => (
+                    <div key={phase} className="flex-1 flex flex-col items-center">
+                      <div className={`w-3 h-3 rounded-full ${i < 3 ? 'bg-[#00ff88]' : i === 3 ? 'bg-[#00d4ff] animate-pulse' : 'bg-white/20'}`} />
+                      <span className="text-[10px] text-gray-500 mt-1 hidden sm:block">{phase}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between">
+                <span className="text-xs text-gray-500">Demo: TMP-2024-A7B3</span>
+                <Link href="/tools/tracker">
+                  <motion.span
+                    className="text-[#00d4ff] text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all"
+                    whileHover={{ x: 5 }}
+                  >
+                    Track Project
+                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </motion.span>
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="relative py-24 px-4 overflow-hidden">
         <GlowingOrbs variant="section" />
