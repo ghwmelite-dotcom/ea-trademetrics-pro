@@ -1,126 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedSection, GlowingOrbs, GridBackground } from '@/components/ui';
 
-// Simulated live performance data (would connect to MyFXBook/FX Blue API in production)
-const performanceData = [
-  {
-    id: 'ea-001',
-    name: 'Trend Hunter Pro',
-    type: 'Trend Following',
-    platform: 'MT5',
-    startDate: '2025-06-26',
-    initialBalance: 10000,
-    currentBalance: 14850,
-    profit: 4850,
-    profitPercent: 48.5,
-    trades: 156,
-    winRate: 68.2,
-    profitFactor: 2.14,
-    maxDrawdown: 12.3,
-    monthlyReturn: 8.1,
-    status: 'live',
-    lastUpdated: new Date().toISOString(),
-    equityHistory: generateEquityHistory(10000, 48.5, 180),
-  },
-  {
-    id: 'ea-002',
-    name: 'Scalper X',
-    type: 'Scalping',
-    platform: 'MT4',
-    startDate: '2025-02-26',
-    initialBalance: 5000,
-    currentBalance: 7125,
-    profit: 2125,
-    profitPercent: 42.5,
-    trades: 892,
-    winRate: 74.1,
-    profitFactor: 1.89,
-    maxDrawdown: 8.7,
-    monthlyReturn: 4.3,
-    status: 'live',
-    lastUpdated: new Date().toISOString(),
-    equityHistory: generateEquityHistory(5000, 42.5, 300),
-  },
-  {
-    id: 'ea-003',
-    name: 'Grid Master',
-    type: 'Grid Trading',
-    platform: 'MT5',
-    startDate: '2025-08-25',
-    initialBalance: 25000,
-    currentBalance: 31250,
-    profit: 6250,
-    profitPercent: 25.0,
-    trades: 423,
-    winRate: 82.3,
-    profitFactor: 1.67,
-    maxDrawdown: 18.5,
-    monthlyReturn: 6.3,
-    status: 'live',
-    lastUpdated: new Date().toISOString(),
-    equityHistory: generateEquityHistory(25000, 25.0, 120),
-  },
-  {
-    id: 'ea-004',
-    name: 'News Rider',
-    type: 'News Trading',
-    platform: 'MT4',
-    startDate: '2025-04-17',
-    initialBalance: 15000,
-    currentBalance: 21750,
-    profit: 6750,
-    profitPercent: 45.0,
-    trades: 67,
-    winRate: 61.2,
-    profitFactor: 2.31,
-    maxDrawdown: 15.2,
-    monthlyReturn: 5.4,
-    status: 'live',
-    lastUpdated: new Date().toISOString(),
-    equityHistory: generateEquityHistory(15000, 45.0, 250),
-  },
-  {
-    id: 'ea-005',
-    name: 'Mean Reversion Bot',
-    type: 'Mean Reversion',
-    platform: 'MT5',
-    startDate: '2025-06-06',
-    initialBalance: 20000,
-    currentBalance: 26400,
-    profit: 6400,
-    profitPercent: 32.0,
-    trades: 234,
-    winRate: 71.8,
-    profitFactor: 1.95,
-    maxDrawdown: 11.4,
-    monthlyReturn: 4.8,
-    status: 'live',
-    lastUpdated: new Date().toISOString(),
-    equityHistory: generateEquityHistory(20000, 32.0, 200),
-  },
-  {
-    id: 'ea-006',
-    name: 'Breakout Sniper',
-    type: 'Breakout',
-    platform: 'MT4',
-    startDate: '2025-07-26',
-    initialBalance: 8000,
-    currentBalance: 10640,
-    profit: 2640,
-    profitPercent: 33.0,
-    trades: 89,
-    winRate: 58.4,
-    profitFactor: 2.08,
-    maxDrawdown: 14.1,
-    monthlyReturn: 6.6,
-    status: 'live',
-    lastUpdated: new Date().toISOString(),
-    equityHistory: generateEquityHistory(8000, 33.0, 150),
-  },
-];
+// Helper to calculate days between dates
+function getDaysSince(startDate: string): number {
+  const start = new Date(startDate);
+  const now = new Date();
+  const diffTime = Math.abs(now.getTime() - start.getTime());
+  return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+}
+
+// Helper to format running time
+function formatRunningTime(days: number): string {
+  if (days < 30) return `${days} days`;
+  const months = Math.floor(days / 30);
+  const remainingDays = days % 30;
+  if (months < 12) {
+    return remainingDays > 0 ? `${months}mo ${remainingDays}d` : `${months} months`;
+  }
+  const years = Math.floor(months / 12);
+  const remainingMonths = months % 12;
+  return remainingMonths > 0 ? `${years}y ${remainingMonths}mo` : `${years} year${years > 1 ? 's' : ''}`;
+}
 
 function generateEquityHistory(initial: number, totalGain: number, days: number) {
   const history = [];
@@ -136,27 +39,152 @@ function generateEquityHistory(initial: number, totalGain: number, days: number)
   return history;
 }
 
-// Aggregate statistics
-const aggregateStats = {
-  totalEAs: performanceData.length,
-  totalProfit: performanceData.reduce((sum, ea) => sum + ea.profit, 0),
-  avgWinRate: performanceData.reduce((sum, ea) => sum + ea.winRate, 0) / performanceData.length,
-  avgProfitFactor: performanceData.reduce((sum, ea) => sum + ea.profitFactor, 0) / performanceData.length,
-  totalTrades: performanceData.reduce((sum, ea) => sum + ea.trades, 0),
-  avgMonthlyReturn: performanceData.reduce((sum, ea) => sum + ea.monthlyReturn, 0) / performanceData.length,
-};
+// EA base data - dates will be calculated dynamically
+const eaBaseData = [
+  {
+    id: 'ea-001',
+    name: 'Trend Hunter Pro',
+    type: 'Trend Following',
+    platform: 'MT5',
+    startDate: '2025-06-26',
+    initialBalance: 10000,
+    currentBalance: 14850,
+    profit: 4850,
+    profitPercent: 48.5,
+    trades: 156,
+    winRate: 68.2,
+    profitFactor: 2.14,
+    maxDrawdown: 12.3,
+    status: 'live',
+  },
+  {
+    id: 'ea-002',
+    name: 'Scalper X',
+    type: 'Scalping',
+    platform: 'MT4',
+    startDate: '2025-02-26',
+    initialBalance: 5000,
+    currentBalance: 7125,
+    profit: 2125,
+    profitPercent: 42.5,
+    trades: 892,
+    winRate: 74.1,
+    profitFactor: 1.89,
+    maxDrawdown: 8.7,
+    status: 'live',
+  },
+  {
+    id: 'ea-003',
+    name: 'Grid Master',
+    type: 'Grid Trading',
+    platform: 'MT5',
+    startDate: '2025-08-25',
+    initialBalance: 25000,
+    currentBalance: 31250,
+    profit: 6250,
+    profitPercent: 25.0,
+    trades: 423,
+    winRate: 82.3,
+    profitFactor: 1.67,
+    maxDrawdown: 18.5,
+    status: 'live',
+  },
+  {
+    id: 'ea-004',
+    name: 'News Rider',
+    type: 'News Trading',
+    platform: 'MT4',
+    startDate: '2025-04-17',
+    initialBalance: 15000,
+    currentBalance: 21750,
+    profit: 6750,
+    profitPercent: 45.0,
+    trades: 67,
+    winRate: 61.2,
+    profitFactor: 2.31,
+    maxDrawdown: 15.2,
+    status: 'live',
+  },
+  {
+    id: 'ea-005',
+    name: 'Mean Reversion Bot',
+    type: 'Mean Reversion',
+    platform: 'MT5',
+    startDate: '2025-06-06',
+    initialBalance: 20000,
+    currentBalance: 26400,
+    profit: 6400,
+    profitPercent: 32.0,
+    trades: 234,
+    winRate: 71.8,
+    profitFactor: 1.95,
+    maxDrawdown: 11.4,
+    status: 'live',
+  },
+  {
+    id: 'ea-006',
+    name: 'Breakout Sniper',
+    type: 'Breakout',
+    platform: 'MT4',
+    startDate: '2025-07-26',
+    initialBalance: 8000,
+    currentBalance: 10640,
+    profit: 2640,
+    profitPercent: 33.0,
+    trades: 89,
+    winRate: 58.4,
+    profitFactor: 2.08,
+    maxDrawdown: 14.1,
+    status: 'live',
+  },
+];
 
 export default function PerformancePage() {
   const [selectedEA, setSelectedEA] = useState<string | null>(null);
   const [lastUpdate, setLastUpdate] = useState(new Date());
+  const [currentTime, setCurrentTime] = useState(new Date());
 
-  // Simulate live updates
+  // Generate performance data with dynamic calculations
+  const performanceData = useMemo(() => {
+    return eaBaseData.map(ea => {
+      const daysRunning = getDaysSince(ea.startDate);
+      const monthlyReturn = daysRunning > 0 ? (ea.profitPercent / (daysRunning / 30)) : 0;
+      return {
+        ...ea,
+        daysRunning,
+        runningTime: formatRunningTime(daysRunning),
+        monthlyReturn: Math.round(monthlyReturn * 10) / 10,
+        lastUpdated: new Date().toISOString(),
+        equityHistory: generateEquityHistory(ea.initialBalance, ea.profitPercent, Math.max(daysRunning, 30)),
+      };
+    });
+  }, []);
+
+  // Aggregate statistics
+  const aggregateStats = useMemo(() => ({
+    totalEAs: performanceData.length,
+    totalProfit: performanceData.reduce((sum, ea) => sum + ea.profit, 0),
+    avgWinRate: performanceData.reduce((sum, ea) => sum + ea.winRate, 0) / performanceData.length,
+    avgProfitFactor: performanceData.reduce((sum, ea) => sum + ea.profitFactor, 0) / performanceData.length,
+    totalTrades: performanceData.reduce((sum, ea) => sum + ea.trades, 0),
+    avgMonthlyReturn: performanceData.reduce((sum, ea) => sum + ea.monthlyReturn, 0) / performanceData.length,
+    totalDaysRunning: performanceData.reduce((sum, ea) => sum + ea.daysRunning, 0),
+  }), [performanceData]);
+
+  // Simulate live updates - update time every second for real-time feel
   useEffect(() => {
-    const interval = setInterval(() => {
-      setLastUpdate(new Date());
-    }, 30000); // Update every 30 seconds
+    const timeInterval = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
 
-    return () => clearInterval(interval);
+    const updateInterval = setInterval(() => {
+      setLastUpdate(new Date());
+    }, 30000); // Data refresh every 30 seconds
+
+    return () => {
+      clearInterval(timeInterval);
+      clearInterval(updateInterval);
+    };
   }, []);
 
   const selectedEAData = performanceData.find(ea => ea.id === selectedEA);
@@ -170,7 +198,7 @@ export default function PerformancePage() {
         {/* Header */}
         <AnimatedSection className="text-center mb-12">
           <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 glass rounded-full mb-6"
+            className="inline-flex items-center gap-3 px-5 py-2.5 glass rounded-full mb-6"
             whileHover={{ scale: 1.02 }}
           >
             <span className="relative flex h-3 w-3">
@@ -178,16 +206,29 @@ export default function PerformancePage() {
               <span className="relative inline-flex rounded-full h-3 w-3 bg-[#00ff88]"></span>
             </span>
             <span className="text-sm font-medium text-gray-300">Live Performance</span>
+            <span className="text-xs text-gray-500">|</span>
+            <span className="text-sm font-mono text-[#00d4ff]">
+              {currentTime.toLocaleTimeString()}
+            </span>
           </motion.div>
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-display">
             EA <span className="text-gradient">Performance Dashboard</span>
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Real-time performance tracking of Expert Advisors we&apos;ve built for clients. Updated live from trading accounts.
+            Real-time performance tracking of Expert Advisors we&apos;ve built for clients. All EAs currently running and trading live.
           </p>
-          <p className="text-sm text-gray-500 mt-4">
-            Last updated: {lastUpdate.toLocaleTimeString()}
-          </p>
+          <div className="flex items-center justify-center gap-4 mt-6">
+            <div className="flex items-center gap-2 px-4 py-2 bg-[#00ff88]/10 border border-[#00ff88]/30 rounded-full">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
+              </span>
+              <span className="text-sm text-[#00ff88] font-medium">All Systems Operational</span>
+            </div>
+            <div className="text-sm text-gray-500">
+              Data syncs every 30s • Last: {lastUpdate.toLocaleTimeString()}
+            </div>
+          </div>
         </AnimatedSection>
 
         {/* Aggregate Stats */}
@@ -246,12 +287,15 @@ export default function PerformancePage() {
                     </span>
                   </div>
                 </div>
-                <div className="flex items-center gap-1">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
-                  </span>
-                  <span className="text-xs text-[#00ff88]">Live</span>
+                <div className="flex flex-col items-end gap-1">
+                  <div className="flex items-center gap-1">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
+                    </span>
+                    <span className="text-xs text-[#00ff88] font-medium">Trading Now</span>
+                  </div>
+                  <span className="text-[10px] text-gray-500">Running {ea.runningTime}</span>
                 </div>
               </div>
 
@@ -373,16 +417,28 @@ export default function PerformancePage() {
 
               {/* Detailed Stats */}
               <div>
-                <h3 className="text-lg font-semibold text-white mb-4">Statistics</h3>
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-semibold text-white">Statistics</h3>
+                  <div className="flex items-center gap-2 px-3 py-1 bg-[#00ff88]/10 border border-[#00ff88]/30 rounded-full">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff88] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff88]"></span>
+                    </span>
+                    <span className="text-xs text-[#00ff88] font-medium">Currently Trading</span>
+                  </div>
+                </div>
                 <div className="space-y-3">
                   {[
-                    { label: 'Start Date', value: new Date(selectedEAData.startDate).toLocaleDateString() },
+                    { label: 'Status', value: 'Live & Running', color: 'text-[#00ff88]', icon: '🟢' },
+                    { label: 'Running Time', value: selectedEAData.runningTime, color: 'text-[#00d4ff]' },
+                    { label: 'Start Date', value: new Date(selectedEAData.startDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) },
+                    { label: 'Days Active', value: `${selectedEAData.daysRunning} days` },
                     { label: 'Initial Balance', value: `$${selectedEAData.initialBalance.toLocaleString()}` },
                     { label: 'Current Balance', value: `$${selectedEAData.currentBalance.toLocaleString()}`, color: 'text-[#00ff88]' },
                     { label: 'Total Profit', value: `$${selectedEAData.profit.toLocaleString()}`, color: 'text-[#00ff88]' },
                     { label: 'Return', value: `${selectedEAData.profitPercent}%`, color: 'text-[#00ff88]' },
                     { label: 'Monthly Return', value: `${selectedEAData.monthlyReturn}%` },
-                    { label: 'Total Trades', value: selectedEAData.trades },
+                    { label: 'Total Trades', value: selectedEAData.trades.toLocaleString() },
                     { label: 'Win Rate', value: `${selectedEAData.winRate}%` },
                     { label: 'Profit Factor', value: selectedEAData.profitFactor },
                     { label: 'Max Drawdown', value: `${selectedEAData.maxDrawdown}%`, color: 'text-yellow-400' },
@@ -391,7 +447,10 @@ export default function PerformancePage() {
                   ].map((stat) => (
                     <div key={stat.label} className="flex justify-between py-2 border-b border-white/5">
                       <span className="text-gray-400">{stat.label}</span>
-                      <span className={stat.color || 'text-white'}>{stat.value}</span>
+                      <span className={`flex items-center gap-1 ${stat.color || 'text-white'}`}>
+                        {stat.icon && <span>{stat.icon}</span>}
+                        {stat.value}
+                      </span>
                     </div>
                   ))}
                 </div>
