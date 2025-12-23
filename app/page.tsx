@@ -515,7 +515,7 @@ export default function HomePage() {
               </div>
 
               <div className="flex items-center justify-between">
-                <span className="text-xs text-gray-500">Demo: TMP-2024-A7B3</span>
+                <span className="text-xs text-gray-500">Demo: TMP-2025-A7B3</span>
                 <Link href="/tools/tracker">
                   <motion.span
                     className="text-[#00d4ff] text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all"

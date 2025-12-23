@@ -46,80 +46,80 @@ const milestones: ProjectMilestone[] = [
 
 // Demo projects (in production, this would come from a database/API)
 const demoProjects: Record<string, Project> = {
-  'TMP-2024-A7B3': {
-    id: 'TMP-2024-A7B3',
+  'TMP-2025-A7B3': {
+    id: 'TMP-2025-A7B3',
     name: 'Multi-Pair Scalper EA',
     client: 'John D.',
     status: 'development',
     progress: 55,
-    startDate: '2024-12-01',
-    estimatedDelivery: '2025-01-10',
+    startDate: '2025-12-05',
+    estimatedDelivery: '2026-01-15',
     type: 'Scalping EA',
     platform: 'MT5',
     currentPhaseDetails: 'Currently implementing the multi-pair correlation filter and position sizing logic. Core entry/exit signals are complete.',
     updates: [
-      { date: '2024-12-20', title: 'Development Started', description: 'Core trading logic implementation begun. Entry signals coded and initial testing complete.', type: 'milestone' },
-      { date: '2024-12-15', title: 'Design Approved', description: 'Strategy architecture finalized. Moving to development phase.', type: 'milestone' },
-      { date: '2024-12-10', title: 'Design Phase', description: 'Designing the multi-pair correlation system and risk management module.', type: 'info' },
-      { date: '2024-12-05', title: 'Requirements Finalized', description: 'All strategy specifications documented and confirmed.', type: 'milestone' },
-      { date: '2024-12-01', title: 'Project Started', description: 'Initial consultation completed. Requirements gathering begun.', type: 'milestone' },
+      { date: '2025-12-22', title: 'Development Progress', description: 'Position sizing module 80% complete. Moving to risk management integration.', type: 'info' },
+      { date: '2025-12-18', title: 'Development Started', description: 'Core trading logic implementation begun. Entry signals coded and initial testing complete.', type: 'milestone' },
+      { date: '2025-12-14', title: 'Design Approved', description: 'Strategy architecture finalized. Moving to development phase.', type: 'milestone' },
+      { date: '2025-12-10', title: 'Design Phase', description: 'Designing the multi-pair correlation system and risk management module.', type: 'info' },
+      { date: '2025-12-05', title: 'Project Started', description: 'Initial consultation completed. Requirements gathering begun.', type: 'milestone' },
     ],
   },
-  'TMP-2024-K9F2': {
-    id: 'TMP-2024-K9F2',
+  'TMP-2025-K9F2': {
+    id: 'TMP-2025-K9F2',
     name: 'News Trading Bot',
     client: 'Sarah M.',
     status: 'testing',
     progress: 78,
-    startDate: '2024-11-15',
-    estimatedDelivery: '2024-12-28',
+    startDate: '2025-11-18',
+    estimatedDelivery: '2025-12-30',
     type: 'News Trading EA',
     platform: 'MT4',
-    currentPhaseDetails: 'Running comprehensive backtests across major news events from 2020-2024. Optimizing entry timing and position sizing.',
+    currentPhaseDetails: 'Running comprehensive backtests across major news events from 2021-2025. Optimizing entry timing and position sizing.',
     updates: [
-      { date: '2024-12-18', title: 'Testing Phase Started', description: 'Beginning extensive backtesting on historical news events.', type: 'milestone' },
-      { date: '2024-12-12', title: 'Development Complete', description: 'All features implemented including news calendar integration.', type: 'milestone' },
-      { date: '2024-12-01', title: 'API Integration', description: 'Successfully integrated economic calendar API for news detection.', type: 'info' },
-      { date: '2024-11-25', title: 'Development Started', description: 'Core news detection algorithm implementation begun.', type: 'milestone' },
-      { date: '2024-11-15', title: 'Project Started', description: 'Requirements gathered and design phase initiated.', type: 'milestone' },
+      { date: '2025-12-21', title: 'Backtesting Progress', description: 'Completed 2023-2025 news events testing. Win rate at 64.2%.', type: 'info' },
+      { date: '2025-12-16', title: 'Testing Phase Started', description: 'Beginning extensive backtesting on historical news events.', type: 'milestone' },
+      { date: '2025-12-10', title: 'Development Complete', description: 'All features implemented including news calendar integration.', type: 'milestone' },
+      { date: '2025-12-01', title: 'API Integration', description: 'Successfully integrated economic calendar API for news detection.', type: 'info' },
+      { date: '2025-11-18', title: 'Project Started', description: 'Requirements gathered and design phase initiated.', type: 'milestone' },
     ],
   },
-  'TMP-2024-M3P8': {
-    id: 'TMP-2024-M3P8',
+  'TMP-2025-M3P8': {
+    id: 'TMP-2025-M3P8',
     name: 'Grid Recovery System',
     client: 'Michael R.',
     status: 'delivery',
     progress: 95,
-    startDate: '2024-10-20',
-    estimatedDelivery: '2024-12-23',
+    startDate: '2025-10-28',
+    estimatedDelivery: '2025-12-24',
     type: 'Grid Trading EA',
     platform: 'MT5',
-    currentPhaseDetails: 'Final documentation being prepared. EA files packaged and ready for delivery. Scheduling handover call.',
+    currentPhaseDetails: 'Final documentation being prepared. EA files packaged and ready for delivery. Scheduling handover call for tomorrow.',
     updates: [
-      { date: '2024-12-22', title: 'Preparing Delivery', description: 'Creating user manual and preparing final files for handover.', type: 'delivery' },
-      { date: '2024-12-15', title: 'Testing Complete', description: 'All tests passed. Profit factor of 1.85 achieved in backtests.', type: 'milestone' },
-      { date: '2024-12-01', title: 'Optimization Complete', description: 'Optimal parameters found for EURUSD, GBPUSD, and USDJPY.', type: 'info' },
-      { date: '2024-11-20', title: 'Development Complete', description: 'Grid system with recovery logic fully implemented.', type: 'milestone' },
-      { date: '2024-10-20', title: 'Project Started', description: 'Kicked off grid trading EA development.', type: 'milestone' },
+      { date: '2025-12-23', title: 'Preparing Delivery', description: 'Creating user manual and preparing final files for handover.', type: 'delivery' },
+      { date: '2025-12-18', title: 'Testing Complete', description: 'All tests passed. Profit factor of 1.85 achieved in backtests.', type: 'milestone' },
+      { date: '2025-12-08', title: 'Optimization Complete', description: 'Optimal parameters found for EURUSD, GBPUSD, and USDJPY.', type: 'info' },
+      { date: '2025-11-22', title: 'Development Complete', description: 'Grid system with recovery logic fully implemented.', type: 'milestone' },
+      { date: '2025-10-28', title: 'Project Started', description: 'Kicked off grid trading EA development.', type: 'milestone' },
     ],
   },
-  'TMP-2024-X5Y1': {
-    id: 'TMP-2024-X5Y1',
+  'TMP-2025-X5Y1': {
+    id: 'TMP-2025-X5Y1',
     name: 'Trend Following Suite',
     client: 'Emma L.',
     status: 'completed',
     progress: 100,
-    startDate: '2024-09-01',
-    estimatedDelivery: '2024-11-15',
+    startDate: '2025-09-15',
+    estimatedDelivery: '2025-11-20',
     type: 'Trend Following EA',
     platform: 'MT4 & MT5',
-    currentPhaseDetails: 'Project completed and delivered. 30-day support period active until January 15, 2025.',
+    currentPhaseDetails: 'Project completed and delivered. 30-day support period active until January 20, 2026.',
     updates: [
-      { date: '2024-12-15', title: 'Support Active', description: '30-day support period ongoing. Client running EA on live account successfully.', type: 'info' },
-      { date: '2024-11-15', title: 'Project Delivered', description: 'EA delivered with full documentation. Handover call completed.', type: 'delivery' },
-      { date: '2024-11-10', title: 'Final Review', description: 'Client approved final version after review session.', type: 'milestone' },
-      { date: '2024-10-25', title: 'Testing Complete', description: 'Achieved 68% win rate and 2.1 profit factor in backtests.', type: 'milestone' },
-      { date: '2024-09-01', title: 'Project Started', description: 'Development of multi-timeframe trend following system begun.', type: 'milestone' },
+      { date: '2025-12-20', title: 'Support Active', description: '30-day support period ongoing. Client running EA on live account with +12.4% gain so far.', type: 'info' },
+      { date: '2025-11-20', title: 'Project Delivered', description: 'EA delivered with full documentation. Handover call completed.', type: 'delivery' },
+      { date: '2025-11-15', title: 'Final Review', description: 'Client approved final version after review session.', type: 'milestone' },
+      { date: '2025-10-30', title: 'Testing Complete', description: 'Achieved 68% win rate and 2.1 profit factor in backtests.', type: 'milestone' },
+      { date: '2025-09-15', title: 'Project Started', description: 'Development of multi-timeframe trend following system begun.', type: 'milestone' },
     ],
   },
 };
@@ -193,7 +193,7 @@ export default function TrackerPage() {
                 value={referenceNumber}
                 onChange={(e) => setReferenceNumber(e.target.value.toUpperCase())}
                 onKeyDown={(e) => e.key === 'Enter' && handleLookup()}
-                placeholder="e.g., TMP-2024-A7B3"
+                placeholder="e.g., TMP-2025-A7B3"
                 className="input-premium w-full uppercase tracking-wider"
               />
             </div>
