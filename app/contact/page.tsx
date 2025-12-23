@@ -2,8 +2,12 @@
 
 import { useState, useCallback } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
-import { AnimatedSection, AnimatedButton, GlowingOrbs } from '@/components/ui';
+import { AnimatedSection, AnimatedButton } from '@/components/ui';
+
+// Lazy load heavy background effects for better mobile performance
+const GlowingOrbs = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.default), { ssr: false });
 import { validateContactForm, type ContactFormData, type ValidationError } from '@/lib/validations';
 import { siteConfig } from '@/lib/config';
 

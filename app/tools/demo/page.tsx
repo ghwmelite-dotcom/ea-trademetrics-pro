@@ -1,8 +1,13 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AnimatedSection, GlowingOrbs, GridBackground } from '@/components/ui';
+import { AnimatedSection } from '@/components/ui';
+
+// Lazy load background effects for better mobile performance
+const GlowingOrbs = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.default), { ssr: false });
+const GridBackground = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.GridBackground), { ssr: false });
 
 // TypeScript interfaces for type safety
 interface OHLCData {

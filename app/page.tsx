@@ -1,8 +1,23 @@
 'use client';
 
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
-import { AnimatedSection, AnimatedButton, AnimatedCard, AnimatedCounter, GlowingOrbs, FloatingParticles, GridBackground } from '@/components/ui';
+import { AnimatedSection, AnimatedButton, AnimatedCard, AnimatedCounter, OptimizedGlowingOrbs } from '@/components/ui';
+
+// Lazy load heavy background effects - they're not critical for LCP
+const GlowingOrbs = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.default), {
+  ssr: false,
+  loading: () => null
+});
+const FloatingParticles = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.FloatingParticles), {
+  ssr: false,
+  loading: () => null
+});
+const GridBackground = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.GridBackground), {
+  ssr: false,
+  loading: () => null
+});
 
 export default function HomePage() {
   const services = [
@@ -647,7 +662,7 @@ export default function HomePage() {
                       </div>
                       <div>
                         <div className="flex items-center gap-2">
-                          <h4 className="font-bold text-white">{ea.name}</h4>
+                          <h3 className="font-bold text-white">{ea.name}</h3>
                           <span className={`text-xs px-2 py-0.5 rounded-full ${
                             ea.status === 'live' ? 'bg-[#00ff88]/20 text-[#00ff88]' : 'bg-yellow-500/20 text-yellow-400'
                           }`}>
@@ -696,7 +711,7 @@ export default function HomePage() {
                   >
                     <div className="text-2xl">{feature.icon}</div>
                     <div>
-                      <h4 className="text-white font-semibold mb-1">{feature.title}</h4>
+                      <h3 className="text-white font-semibold mb-1">{feature.title}</h3>
                       <p className="text-gray-500 text-sm">{feature.description}</p>
                     </div>
                   </motion.div>

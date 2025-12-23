@@ -5,3 +5,14 @@ export { default as AnimatedButton, ArrowButton } from './AnimatedButton';
 export { default as AnimatedCounter, StatsRow } from './AnimatedCounter';
 export { default as GlowingOrbs, FloatingParticles, GridBackground } from './GlowingOrbs';
 export { default as TelegramChat, TelegramChatButton } from './TelegramChat';
+
+// Lazy-loaded components for better performance
+export {
+  LazyGlowingOrbs,
+  LazyFloatingParticles,
+  LazyGridBackground,
+  LazyAnimatedCounter,
+  LazyStatsRow,
+  OptimizedGlowingOrbs,
+  DeferredRender
+} from './LazyComponents';

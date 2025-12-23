@@ -1,8 +1,13 @@
 'use client';
 
 import { useState, useEffect, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
-import { AnimatedSection, GlowingOrbs, GridBackground } from '@/components/ui';
+import { AnimatedSection } from '@/components/ui';
+
+// Lazy load background effects for better mobile performance
+const GlowingOrbs = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.default), { ssr: false });
+const GridBackground = dynamic(() => import('@/components/ui/GlowingOrbs').then(mod => mod.GridBackground), { ssr: false });
 
 // Helper to calculate days between dates
 function getDaysSince(startDate: string): number {
