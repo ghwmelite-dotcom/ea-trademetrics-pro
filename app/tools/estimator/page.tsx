@@ -1,8 +1,8 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { AnimatedSection, AnimatedButton, GlowingOrbs, GridBackground } from '@/components/ui';
+import { AnimatedSection, GlowingOrbs, GridBackground } from '@/components/ui';
 
 interface FormData {
   strategyType: string;
@@ -65,7 +65,121 @@ const urgencyOptions = [
 export default function EstimatorPage() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [quoteGenerated, setQuoteGenerated] = useState(false);
+  const [quoteNumber, setQuoteNumber] = useState('');
+  const quoteRef = useRef<HTMLDivElement>(null);
   const totalSteps = 5;
+
+  const generateQuoteNumber = () => {
+    const timestamp = Date.now().toString(36).toUpperCase();
+    const random = Math.random().toString(36).substring(2, 6).toUpperCase();
+    return `TMP-${timestamp.slice(-4)}-${random}`;
+  };
+
+  const handleGenerateQuote = () => {
+    setQuoteNumber(generateQuoteNumber());
+    setQuoteGenerated(true);
+  };
+
+  const handlePrintQuote = () => {
+    window.print();
+  };
+
+  const handleDownloadQuote = () => {
+    // Create a text version of the quote for download
+    const strategy = strategyTypes.find(s => s.id === formData.strategyType);
+    const platform = platforms.find(p => p.id === formData.platform);
+    const riskMgmt = riskManagementOptions.find(r => r.id === formData.riskManagement);
+    const urgency = urgencyOptions.find(u => u.id === formData.urgency);
+    const selectedFeatures = formData.features.map(f => additionalFeatures.find(af => af.id === f)?.label).filter(Boolean);
+
+    const quoteText = `
+================================================================================
+                         TRADEMETRICS PRO - EA DEVELOPMENT
+                              PROJECT QUOTE ESTIMATE
+================================================================================
+
+Quote Reference: ${quoteNumber}
+Date: ${new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+Valid For: 14 days
+
+--------------------------------------------------------------------------------
+                              PROJECT SPECIFICATIONS
+--------------------------------------------------------------------------------
+
+Strategy Type:        ${strategy?.label} - ${strategy?.description}
+Trading Platform:     ${platform?.label}
+Number of Indicators: ${formData.indicators}
+Timeframes Used:      ${formData.timeframes}
+Multi-Pair Trading:   ${formData.multiPair ? 'Yes' : 'No'}
+Risk Management:      ${riskMgmt?.label} - ${riskMgmt?.description}
+Delivery Timeline:    ${urgency?.label} (${urgency?.description})
+
+${selectedFeatures.length > 0 ? `Additional Features:
+${selectedFeatures.map(f => `  - ${f}`).join('\n')}` : 'Additional Features:   None selected'}
+
+--------------------------------------------------------------------------------
+                              ESTIMATED INVESTMENT
+--------------------------------------------------------------------------------
+
+                    Low Estimate:     $${price.low}
+                    Mid Estimate:     $${price.mid}  (Recommended Budget)
+                    High Estimate:    $${price.high}
+
+--------------------------------------------------------------------------------
+                                 NEXT STEPS
+--------------------------------------------------------------------------------
+
+1. REVIEW THIS QUOTE
+   Take time to review the specifications above. If anything needs adjustment,
+   use our estimator tool again with updated requirements.
+
+2. SCHEDULE A CONSULTATION
+   Book a free 15-minute consultation to discuss your project in detail.
+   Contact: contact@trademetricspro.com
+
+3. PROJECT KICKOFF
+   Once we agree on specifications, you'll receive:
+   - Detailed project proposal
+   - Development timeline
+   - Payment schedule (50% upfront, 50% on completion)
+
+4. DEVELOPMENT & DELIVERY
+   - Regular progress updates
+   - Testing phase with your feedback
+   - Final delivery with documentation
+   - 30-day support period included
+
+--------------------------------------------------------------------------------
+                                  CONTACT US
+--------------------------------------------------------------------------------
+
+Email:      contact@trademetricspro.com
+Website:    https://ea.trademetricspro.com
+Telegram:   @my_ea_hub
+
+================================================================================
+          Thank you for considering TradeMetrics Pro for your EA development!
+================================================================================
+`;
+
+    const blob = new Blob([quoteText], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `TradeMetrics-Quote-${quoteNumber}.txt`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  const handleStartOver = () => {
+    setFormData(initialFormData);
+    setStep(1);
+    setQuoteGenerated(false);
+    setQuoteNumber('');
+  };
 
   const calculatePrice = () => {
     let basePrice = 400; // Base development cost
@@ -452,8 +566,8 @@ export default function EstimatorPage() {
               </motion.div>
             )}
 
-            {/* Step 5: Results */}
-            {step === 5 && (
+            {/* Step 5: Results & Quote Generation */}
+            {step === 5 && !quoteGenerated && (
               <motion.div
                 key="step5"
                 initial={{ opacity: 0, x: 20 }}
@@ -462,7 +576,7 @@ export default function EstimatorPage() {
                 className="glass-card rounded-2xl p-8"
               >
                 <h2 className="text-2xl font-bold text-white mb-2 font-display">Your Estimate</h2>
-                <p className="text-gray-400 mb-6">Based on your requirements, here's the estimated cost.</p>
+                <p className="text-gray-400 mb-6">Based on your requirements, here&apos;s the estimated cost.</p>
 
                 {/* Urgency Selection */}
                 <div className="mb-8">
@@ -547,9 +661,227 @@ export default function EstimatorPage() {
                   >
                     ← Modify
                   </motion.button>
-                  <AnimatedButton href="/contact" variant="glow" className="flex-1">
-                    Get Exact Quote →
-                  </AnimatedButton>
+                  <motion.button
+                    onClick={handleGenerateQuote}
+                    className="flex-1 px-8 py-3 bg-gradient-to-r from-[#00d4ff] to-[#00ff88] text-black font-bold rounded-xl"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Generate My Quote Document
+                  </motion.button>
+                </div>
+              </motion.div>
+            )}
+
+            {/* Step 5b: Generated Quote Document */}
+            {step === 5 && quoteGenerated && (
+              <motion.div
+                key="step5b"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="space-y-6"
+              >
+                {/* Action Buttons - Top */}
+                <div className="flex flex-wrap gap-3 justify-center">
+                  <motion.button
+                    onClick={handleDownloadQuote}
+                    className="flex items-center gap-2 px-6 py-3 bg-[#00d4ff] text-black font-bold rounded-xl"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Download Quote
+                  </motion.button>
+                  <motion.button
+                    onClick={handlePrintQuote}
+                    className="flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-bold rounded-xl"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z" />
+                    </svg>
+                    Print Quote
+                  </motion.button>
+                  <motion.button
+                    onClick={handleStartOver}
+                    className="flex items-center gap-2 px-6 py-3 border border-white/20 text-white font-bold rounded-xl"
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
+                    Start New Quote
+                  </motion.button>
+                </div>
+
+                {/* Quote Document */}
+                <div ref={quoteRef} className="glass-card rounded-2xl p-8 print:bg-white print:text-black" id="quote-document">
+                  {/* Header */}
+                  <div className="border-b border-white/10 print:border-gray-300 pb-6 mb-6">
+                    <div className="flex flex-col sm:flex-row justify-between items-start gap-4">
+                      <div>
+                        <h1 className="text-2xl font-bold text-white print:text-black font-display">TradeMetrics Pro</h1>
+                        <p className="text-gray-400 print:text-gray-600">EA Development Services</p>
+                      </div>
+                      <div className="text-right">
+                        <div className="text-sm text-gray-400 print:text-gray-600">Quote Reference</div>
+                        <div className="text-xl font-mono font-bold text-[#00d4ff] print:text-blue-600">{quoteNumber}</div>
+                        <div className="text-sm text-gray-400 print:text-gray-600 mt-1">
+                          {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Price Section */}
+                  <div className="bg-gradient-to-r from-[#00d4ff]/10 to-[#00ff88]/10 print:bg-gray-100 rounded-2xl p-6 mb-6 text-center">
+                    <div className="text-sm text-gray-400 print:text-gray-600 mb-2">Estimated Investment</div>
+                    <div className="flex items-center justify-center gap-4 flex-wrap">
+                      <div className="text-center">
+                        <div className="text-xs text-gray-500 print:text-gray-500">Low</div>
+                        <div className="text-xl text-gray-400 print:text-gray-600">${price.low}</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-xs text-[#00d4ff] print:text-blue-600">Recommended</div>
+                        <div className="text-4xl font-bold text-white print:text-black">${price.mid}</div>
+                      </div>
+                      <div className="text-center">
+                        <div className="text-xs text-gray-500 print:text-gray-500">High</div>
+                        <div className="text-xl text-gray-400 print:text-gray-600">${price.high}</div>
+                      </div>
+                    </div>
+                    <div className="text-sm text-gray-400 print:text-gray-600 mt-3">
+                      Delivery: <span className="text-[#00d4ff] print:text-blue-600 font-medium">{getTimeline()}</span>
+                    </div>
+                  </div>
+
+                  {/* Specifications */}
+                  <div className="mb-6">
+                    <h2 className="text-lg font-bold text-white print:text-black mb-4">Project Specifications</h2>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <div className="bg-white/5 print:bg-gray-50 rounded-xl p-4">
+                        <div className="text-xs text-gray-500 print:text-gray-500 uppercase tracking-wider mb-1">Strategy Type</div>
+                        <div className="text-white print:text-black font-medium">{strategyTypes.find(s => s.id === formData.strategyType)?.label}</div>
+                        <div className="text-sm text-gray-400 print:text-gray-600">{strategyTypes.find(s => s.id === formData.strategyType)?.description}</div>
+                      </div>
+                      <div className="bg-white/5 print:bg-gray-50 rounded-xl p-4">
+                        <div className="text-xs text-gray-500 print:text-gray-500 uppercase tracking-wider mb-1">Platform</div>
+                        <div className="text-white print:text-black font-medium">{platforms.find(p => p.id === formData.platform)?.label}</div>
+                      </div>
+                      <div className="bg-white/5 print:bg-gray-50 rounded-xl p-4">
+                        <div className="text-xs text-gray-500 print:text-gray-500 uppercase tracking-wider mb-1">Technical Complexity</div>
+                        <div className="text-white print:text-black font-medium">{formData.indicators} Indicators, {formData.timeframes} Timeframe{formData.timeframes > 1 ? 's' : ''}</div>
+                        <div className="text-sm text-gray-400 print:text-gray-600">{formData.multiPair ? 'Multi-pair enabled' : 'Single pair'}</div>
+                      </div>
+                      <div className="bg-white/5 print:bg-gray-50 rounded-xl p-4">
+                        <div className="text-xs text-gray-500 print:text-gray-500 uppercase tracking-wider mb-1">Risk Management</div>
+                        <div className="text-white print:text-black font-medium">{riskManagementOptions.find(r => r.id === formData.riskManagement)?.label}</div>
+                        <div className="text-sm text-gray-400 print:text-gray-600">{riskManagementOptions.find(r => r.id === formData.riskManagement)?.description}</div>
+                      </div>
+                    </div>
+
+                    {/* Additional Features */}
+                    {formData.features.length > 0 && (
+                      <div className="mt-4">
+                        <div className="text-xs text-gray-500 print:text-gray-500 uppercase tracking-wider mb-2">Additional Features</div>
+                        <div className="flex flex-wrap gap-2">
+                          {formData.features.map(featureId => {
+                            const feature = additionalFeatures.find(f => f.id === featureId);
+                            return feature ? (
+                              <span key={featureId} className="px-3 py-1 bg-[#00d4ff]/10 print:bg-blue-100 text-[#00d4ff] print:text-blue-600 rounded-full text-sm">
+                                {feature.label}
+                              </span>
+                            ) : null;
+                          })}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Next Steps */}
+                  <div className="mb-6">
+                    <h2 className="text-lg font-bold text-white print:text-black mb-4">Next Steps</h2>
+                    <div className="space-y-4">
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center text-[#00d4ff] print:text-blue-600 font-bold text-sm">1</div>
+                        <div>
+                          <div className="font-medium text-white print:text-black">Review Your Quote</div>
+                          <div className="text-sm text-gray-400 print:text-gray-600">Take time to review the specifications. This quote is valid for 14 days.</div>
+                        </div>
+                      </div>
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center text-[#00d4ff] print:text-blue-600 font-bold text-sm">2</div>
+                        <div>
+                          <div className="font-medium text-white print:text-black">Schedule a Consultation</div>
+                          <div className="text-sm text-gray-400 print:text-gray-600">Book a free 15-minute call to discuss your project details and get a finalized quote.</div>
+                        </div>
+                      </div>
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center text-[#00d4ff] print:text-blue-600 font-bold text-sm">3</div>
+                        <div>
+                          <div className="font-medium text-white print:text-black">Project Kickoff</div>
+                          <div className="text-sm text-gray-400 print:text-gray-600">Upon agreement, receive a detailed proposal with timeline and payment schedule (50% upfront, 50% on completion).</div>
+                        </div>
+                      </div>
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center text-[#00d4ff] print:text-blue-600 font-bold text-sm">4</div>
+                        <div>
+                          <div className="font-medium text-white print:text-black">Development & Delivery</div>
+                          <div className="text-sm text-gray-400 print:text-gray-600">Regular updates, testing phase, final delivery with documentation, and 30-day support included.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Contact Info */}
+                  <div className="border-t border-white/10 print:border-gray-300 pt-6">
+                    <h2 className="text-lg font-bold text-white print:text-black mb-4">Ready to Proceed?</h2>
+                    <div className="grid sm:grid-cols-3 gap-4">
+                      <a href="mailto:contact@trademetricspro.com" className="flex items-center gap-3 p-4 bg-white/5 print:bg-gray-50 rounded-xl hover:bg-white/10 transition-colors">
+                        <div className="w-10 h-10 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-[#00d4ff] print:text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <div className="text-xs text-gray-500 print:text-gray-500">Email</div>
+                          <div className="text-sm text-white print:text-black">contact@trademetricspro.com</div>
+                        </div>
+                      </a>
+                      <a href="https://t.me/my_ea_hub" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 bg-white/5 print:bg-gray-50 rounded-xl hover:bg-white/10 transition-colors">
+                        <div className="w-10 h-10 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-[#00d4ff] print:text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                          </svg>
+                        </div>
+                        <div>
+                          <div className="text-xs text-gray-500 print:text-gray-500">Telegram</div>
+                          <div className="text-sm text-white print:text-black">@my_ea_hub</div>
+                        </div>
+                      </a>
+                      <a href="/contact" className="flex items-center gap-3 p-4 bg-white/5 print:bg-gray-50 rounded-xl hover:bg-white/10 transition-colors">
+                        <div className="w-10 h-10 rounded-full bg-[#00d4ff]/20 print:bg-blue-100 flex items-center justify-center">
+                          <svg className="w-5 h-5 text-[#00d4ff] print:text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                          </svg>
+                        </div>
+                        <div>
+                          <div className="text-xs text-gray-500 print:text-gray-500">Contact Form</div>
+                          <div className="text-sm text-white print:text-black">Send a Message</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Footer */}
+                  <div className="mt-6 pt-4 border-t border-white/10 print:border-gray-300 text-center text-xs text-gray-500 print:text-gray-500">
+                    <p>Quote Reference: {quoteNumber} | Valid for 14 days | Generated on {new Date().toLocaleDateString()}</p>
+                    <p className="mt-1">TradeMetrics Pro - Professional EA Development Services</p>
+                  </div>
                 </div>
               </motion.div>
             )}
