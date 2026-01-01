@@ -62,9 +62,9 @@
       ],
       "timeframe": "2-4 weeks",
       "priceRange": {
-        "min": 300,
-        "max": 1500,
-        "currency": "USD",
+        "min": 3153,
+        "max": 15765,
+        "currency": "GHS",
         "note": "Pricing depends on complexity, number of indicators, and custom features required"
       },
       "faq": [
@@ -163,9 +163,9 @@
       ],
       "timeframe": "3-6 weeks",
       "priceRange": {
-        "min": 400,
-        "max": 2000,
-        "currency": "USD",
+        "min": 4204,
+        "max": 21020,
+        "currency": "GHS",
         "note": "MT5 development typically costs 20-30% more than MT4 due to advanced features and complexity"
       },
       "faq": [
@@ -264,10 +264,10 @@
       ],
       "timeframe": "1-3 weeks",
       "priceRange": {
-        "min": 200,
-        "max": 1200,
-        "currency": "USD",
-        "note": "Simple indicators start at $200, complex multi-indicator strategies range $600-$1200"
+        "min": 2102,
+        "max": 12612,
+        "currency": "GHS",
+        "note": "Simple indicators start at GH₵2,102, complex multi-indicator strategies range GH₵6,306-GH₵12,612"
       },
       "faq": [
         {
@@ -365,9 +365,9 @@
       ],
       "timeframe": "1-2 weeks",
       "priceRange": {
-        "min": 150,
-        "max": 600,
-        "currency": "USD",
+        "min": 1577,
+        "max": 6306,
+        "currency": "GHS",
         "note": "Pricing depends on number of symbols, optimization complexity, and depth of analysis required"
       },
       "faq": [
@@ -466,10 +466,10 @@
       ],
       "timeframe": "1-3 weeks",
       "priceRange": {
-        "min": 100,
-        "max": 800,
-        "currency": "USD",
-        "note": "Simple modifications $100-300, complex enhancements $300-800 depending on scope"
+        "min": 1051,
+        "max": 8408,
+        "currency": "GHS",
+        "note": "Simple modifications GH₵1,051-GH₵3,153, complex enhancements GH₵3,153-GH₵8,408 depending on scope"
       },
       "faq": [
         {
@@ -478,7 +478,7 @@
         },
         {
           "question": "How much does it cost to add features to an existing EA?",
-          "answer": "Simple additions (like a new indicator or time filter) start at $100-200. Complex enhancements (like rebuilding the risk management system) range $300-800."
+          "answer": "Simple additions (like a new indicator or time filter) start at GH₵1,051-GH₵2,102. Complex enhancements (like rebuilding the risk management system) range GH₵3,153-GH₵8,408."
         },
         {
           "question": "My EA stopped working after a MetaTrader update. Can you fix it?",
@@ -567,10 +567,10 @@
       ],
       "timeframe": "1-3 weeks",
       "priceRange": {
-        "min": 150,
-        "max": 800,
-        "currency": "USD",
-        "note": "Simple indicators $150-300, complex multi-buffer indicators with dashboards $400-800"
+        "min": 1577,
+        "max": 8408,
+        "currency": "GHS",
+        "note": "Simple indicators GH₵1,577-GH₵3,153, complex multi-buffer indicators with dashboards GH₵4,204-GH₵8,408"
       },
       "faq": [
         {
@@ -668,9 +668,9 @@
       ],
       "timeframe": "2-4 weeks",
       "priceRange": {
-        "min": 250,
-        "max": 1000,
-        "currency": "USD",
+        "min": 2628,
+        "max": 10510,
+        "currency": "GHS",
         "note": "Pricing depends on EA complexity and whether enhancements beyond basic conversion are desired"
       },
       "faq": [
@@ -744,7 +744,7 @@
         {
           "step": 1,
           "title": "Plan Selection",
-          "description": "Choose Bronze ($99/mo), Silver ($199/mo), or Gold ($399/mo) plan based on your EA portfolio size and support needs."
+          "description": "Choose Bronze (GH₵1,040/mo), Silver (GH₵2,091/mo), or Gold (GH₵4,193/mo) plan based on your EA portfolio size and support needs."
         },
         {
           "step": 2,
@@ -769,10 +769,10 @@
       ],
       "timeframe": "Ongoing monthly subscription",
       "priceRange": {
-        "min": 99,
-        "max": 399,
-        "currency": "USD",
-        "note": "Bronze $99/mo (1-2 EAs), Silver $199/mo (3-5 EAs), Gold $399/mo (unlimited EAs with white-glove service)"
+        "min": 1040,
+        "max": 4193,
+        "currency": "GHS",
+        "note": "Bronze GH₵1,040/mo (1-2 EAs), Silver GH₵2,091/mo (3-5 EAs), Gold GH₵4,193/mo (unlimited EAs with white-glove service)"
       },
       "faq": [
         {
@@ -870,9 +870,9 @@
       ],
       "timeframe": "3-6 weeks",
       "priceRange": {
-        "min": 500,
-        "max": 2000,
-        "currency": "USD",
+        "min": 5255,
+        "max": 21020,
+        "currency": "GHS",
         "note": "MTF systems require advanced programming and testing, pricing reflects complexity and development time"
       },
       "faq": [
@@ -971,10 +971,10 @@
       ],
       "timeframe": "2-4 weeks",
       "priceRange": {
-        "min": 300,
-        "max": 1200,
-        "currency": "USD",
-        "note": "Standalone risk manager $300-600, full EA integration with advanced features $600-1200"
+        "min": 3153,
+        "max": 12612,
+        "currency": "GHS",
+        "note": "Standalone risk manager GH₵3,153-GH₵6,306, full EA integration with advanced features GH₵6,306-GH₵12,612"
       },
       "faq": [
         {
@@ -1072,10 +1072,10 @@
       ],
       "timeframe": "4-8 weeks",
       "priceRange": {
-        "min": 800,
-        "max": 3000,
-        "currency": "USD",
-        "note": "Basic local copier $800-1200, full signal service with management dashboard $1500-3000"
+        "min": 8408,
+        "max": 31530,
+        "currency": "GHS",
+        "note": "Basic local copier GH₵8,408-GH₵12,612, full signal service with management dashboard GH₵15,765-GH₵31,530"
       },
       "faq": [
         {
@@ -1173,10 +1173,10 @@
       ],
       "timeframe": "30-90 days",
       "priceRange": {
-        "min": 200,
-        "max": 800,
-        "currency": "USD",
-        "note": "30-day test $200-300, 60-day $400-500, 90-day comprehensive validation $600-800"
+        "min": 2102,
+        "max": 8408,
+        "currency": "GHS",
+        "note": "30-day test GH₵2,102-GH₵3,153, 60-day GH₵4,204-GH₵5,255, 90-day comprehensive validation GH₵6,306-GH₵8,408"
       },
       "faq": [
         {
