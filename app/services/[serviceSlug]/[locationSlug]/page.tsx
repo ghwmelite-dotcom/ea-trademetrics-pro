@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { getAllServicePages, getServicePageBySlug } from '@/lib/data';
 import { Metadata } from 'next';
+import { PricingInfo } from '@/components/ServicePriceDisplay';
+import CurrencySelector from '@/components/CurrencySelector';
 
 interface Props {
   params: Promise<{ serviceSlug: string; locationSlug: string }>;
@@ -242,10 +244,14 @@ export default async function ServiceLocationPage({ params }: Props) {
               {/* Pricing */}
               {(page.pricing || page.pricingInfo) && (
                 <div className="bg-white/5 rounded-xl p-6">
-                  <h3 className="text-lg font-bold text-white mb-4">Pricing</h3>
-                  <p className="text-gray-300">
-                    {page.pricingInfo || `Starting from $${page.pricing?.min || 300}`}
-                  </p>
+                  <div className="flex justify-between items-center mb-4">
+                    <h3 className="text-lg font-bold text-white">Pricing</h3>
+                    <CurrencySelector />
+                  </div>
+                  <PricingInfo
+                    pricingInfo={page.pricingInfo}
+                    min={page.pricing?.min || 3153}
+                  />
                 </div>
               )}
             </div>

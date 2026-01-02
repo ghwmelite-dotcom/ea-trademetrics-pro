@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { OrganizationSchema, WebsiteSchema, LocalBusinessSchema } from "@/components/StructuredData";
 import { AnalyticsProvider } from "@/components/Analytics";
+import { CurrencyProvider } from "@/contexts/CurrencyContext";
 import { siteConfig } from "@/lib/config";
 
 const inter = Inter({
@@ -140,22 +141,24 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} font-sans antialiased noise`}>
-        {/* Skip to main content link */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#00d4ff] focus:text-black focus:rounded-lg focus:font-medium"
-        >
-          Skip to main content
-        </a>
+        <CurrencyProvider>
+          {/* Skip to main content link */}
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-[#00d4ff] focus:text-black focus:rounded-lg focus:font-medium"
+          >
+            Skip to main content
+          </a>
 
-        <Header />
-        <main id="main-content" className="relative" role="main">
-          {children}
-        </main>
-        <Footer />
+          <Header />
+          <main id="main-content" className="relative" role="main">
+            {children}
+          </main>
+          <Footer />
 
-        {/* Analytics */}
-        <AnalyticsProvider />
+          {/* Analytics */}
+          <AnalyticsProvider />
+        </CurrencyProvider>
       </body>
     </html>
   );

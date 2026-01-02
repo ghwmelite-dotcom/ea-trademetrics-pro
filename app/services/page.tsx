@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { getAllServices } from '@/lib/data';
 import { Metadata } from 'next';
+import ServicesHeader from '@/components/ServicesHeader';
+import ServicePriceDisplay from '@/components/ServicePriceDisplay';
 
 export const metadata: Metadata = {
   title: 'EA Development Services | TradeMetrics Pro',
@@ -13,15 +15,8 @@ export default async function ServicesPage() {
   return (
     <div className="min-h-screen py-16 px-4">
       <div className="container mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our EA Development Services
-          </h1>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Professional Expert Advisor development for MT4 and MT5. From custom trading bots to TradingView strategy conversion.
-          </p>
-        </div>
+        {/* Header with Currency Selector */}
+        <ServicesHeader />
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -38,9 +33,11 @@ export default async function ServicesPage() {
                 {service.shortDescription}
               </p>
               <div className="flex items-center justify-between">
-                <span className="text-[#00d4ff] font-semibold">
-                  ${service.priceRange.min} - ${service.priceRange.max}
-                </span>
+                <ServicePriceDisplay
+                  min={service.priceRange.min}
+                  max={service.priceRange.max}
+                  className="text-[#00d4ff] font-semibold"
+                />
                 <span className="text-sm text-gray-500">
                   {service.timeframe}
                 </span>

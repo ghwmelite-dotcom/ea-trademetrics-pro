@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { getAllServices, getServiceBySlug, getAllLocations, getServicePagesByServiceId } from '@/lib/data';
 import { Metadata } from 'next';
+import { ServicePriceBadge } from '@/components/ServicePriceDisplay';
+import CurrencySelector from '@/components/CurrencySelector';
 
 interface Props {
   params: Promise<{ serviceSlug: string }>;
@@ -49,16 +51,21 @@ export default async function ServicePage({ params }: Props) {
 
         {/* Hero */}
         <div className="bg-gradient-to-br from-[#00d4ff]/10 to-[#0066ff]/10 rounded-2xl p-8 md:p-12 mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {service.name}
-          </h1>
+          <div className="flex justify-between items-start mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-white">
+              {service.name}
+            </h1>
+            <CurrencySelector />
+          </div>
           <p className="text-xl text-gray-300 mb-6 max-w-3xl">
             {service.shortDescription}
           </p>
           <div className="flex flex-wrap gap-4">
-            <span className="px-4 py-2 bg-[#00d4ff]/20 text-[#00d4ff] rounded-full text-sm font-semibold">
-              ${service.priceRange.min} - ${service.priceRange.max} {service.priceRange.currency}
-            </span>
+            <ServicePriceBadge
+              min={service.priceRange.min}
+              max={service.priceRange.max}
+              currency={service.priceRange.currency}
+            />
             <span className="px-4 py-2 bg-white/10 text-white rounded-full text-sm">
               {service.timeframe}
             </span>
